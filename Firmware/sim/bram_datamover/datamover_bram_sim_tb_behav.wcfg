@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="datamover_bram_sim_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="datamover_bram_sim_tb" />
+            <top_module name="family_support" />
+            <top_module name="glbl" />
+            <top_module name="proc_common_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/fmc_tresetn_i" type="logic">
+      <obj_property name="ElementShortName">fmc_tresetn_i</obj_property>
+      <obj_property name="ObjectShortName">fmc_tresetn_i</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/fmc_tclk_i" type="logic">
+      <obj_property name="ElementShortName">fmc_tclk_i</obj_property>
+      <obj_property name="ObjectShortName">fmc_tclk_i</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/fmc_tclk" type="logic">
+      <obj_property name="ElementShortName">fmc_tclk</obj_property>
+      <obj_property name="ObjectShortName">fmc_tclk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/fmc_tresetn" type="logic">
+      <obj_property name="ElementShortName">fmc_tresetn</obj_property>
+      <obj_property name="ObjectShortName">fmc_tresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="group200" type="group">
+      <obj_property name="label">top_sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/FMC_TCLK_PERIOD" type="array">
+         <obj_property name="ElementShortName">FMC_TCLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FMC_TCLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/RESET_PERIOD" type="array">
+         <obj_property name="ElementShortName">RESET_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESET_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/aresetn" type="logic">
+         <obj_property name="ElementShortName">aresetn</obj_property>
+         <obj_property name="ObjectShortName">aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/clk_in1" type="logic">
+         <obj_property name="ElementShortName">clk_in1</obj_property>
+         <obj_property name="ObjectShortName">clk_in1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_STS_tdata" type="array">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_STS_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_STS_tdata[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_STS_tkeep" type="array">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_STS_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_STS_tkeep[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_STS_tlast" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_STS_tlast</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_STS_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_STS_tready" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_STS_tready</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_STS_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_STS_tvalid" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_STS_tvalid</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_STS_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_tdata" type="array">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_tkeep" type="array">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_tlast" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_tlast</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_tready" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_tready</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_tvalid" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_tvalid</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_S2MM_STS_tdata" type="array">
+         <obj_property name="ElementShortName">M_AXIS_S2MM_STS_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_S2MM_STS_tdata[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_S2MM_STS_tkeep" type="array">
+         <obj_property name="ElementShortName">M_AXIS_S2MM_STS_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_S2MM_STS_tkeep[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_S2MM_STS_tlast" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_S2MM_STS_tlast</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_S2MM_STS_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_S2MM_STS_tready" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_S2MM_STS_tready</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_S2MM_STS_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_S2MM_STS_tvalid" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_S2MM_STS_tvalid</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_S2MM_STS_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_MM2S_CMD_tdata" type="array">
+         <obj_property name="ElementShortName">S_AXIS_MM2S_CMD_tdata[71:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_MM2S_CMD_tdata[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_MM2S_CMD_tready" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_MM2S_CMD_tready</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_MM2S_CMD_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_MM2S_CMD_tvalid" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_MM2S_CMD_tvalid</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_MM2S_CMD_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_CMD_tdata" type="array">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_CMD_tdata[71:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_CMD_tdata[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_CMD_tready" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_CMD_tready</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_CMD_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_CMD_tvalid" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_CMD_tvalid</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_CMD_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tdata" type="array">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tkeep" type="array">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tlast" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tlast</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tready" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tready</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tvalid" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tvalid</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/mm2s_err" type="logic">
+         <obj_property name="ElementShortName">mm2s_err</obj_property>
+         <obj_property name="ObjectShortName">mm2s_err</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/s2mm_err" type="logic">
+         <obj_property name="ElementShortName">s2mm_err</obj_property>
+         <obj_property name="ObjectShortName">s2mm_err</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_STS_tready_reg" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_STS_tready_reg</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_STS_tready_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_MM2S_tready_reg" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_MM2S_tready_reg</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S_tready_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/M_AXIS_S2MM_STS_tready_reg" type="logic">
+         <obj_property name="ElementShortName">M_AXIS_S2MM_STS_tready_reg</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_S2MM_STS_tready_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_MM2S_CMD_tdata_reg" type="array">
+         <obj_property name="ElementShortName">S_AXIS_MM2S_CMD_tdata_reg[71:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_MM2S_CMD_tdata_reg[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_MM2S_CMD_tvalid_reg" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_MM2S_CMD_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_MM2S_CMD_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_CMD_tdata_reg" type="array">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_CMD_tdata_reg[71:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_CMD_tdata_reg[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_CMD_tvalid_reg" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_CMD_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_CMD_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tdata_reg" type="array">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tdata_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tdata_reg[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tkeep_reg" type="array">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tkeep_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tkeep_reg[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tlast_reg" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tlast_reg</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tlast_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/S_AXIS_S2MM_tvalid_reg" type="logic">
+         <obj_property name="ElementShortName">S_AXIS_S2MM_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/next_gen_state" type="array">
+         <obj_property name="ElementShortName">next_gen_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_gen_state[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/gen_state" type="array">
+         <obj_property name="ElementShortName">gen_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">gen_state[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/rd_addr" type="array">
+         <obj_property name="ElementShortName">rd_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_addr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/wr_addr" type="array">
+         <obj_property name="ElementShortName">wr_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_addr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/wr_counter" type="array">
+         <obj_property name="ElementShortName">wr_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_counter[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/rd_counter" type="array">
+         <obj_property name="ElementShortName">rd_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_counter[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/WR_CMD" type="array">
+         <obj_property name="ElementShortName">WR_CMD[2:0]</obj_property>
+         <obj_property name="ObjectShortName">WR_CMD[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/WR_DATA" type="array">
+         <obj_property name="ElementShortName">WR_DATA[2:0]</obj_property>
+         <obj_property name="ObjectShortName">WR_DATA[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/RD_CMD" type="array">
+         <obj_property name="ElementShortName">RD_CMD[2:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_CMD[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/RD_DATA" type="array">
+         <obj_property name="ElementShortName">RD_DATA[2:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_DATA[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/FIXED" type="logic">
+         <obj_property name="ElementShortName">FIXED</obj_property>
+         <obj_property name="ObjectShortName">FIXED</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/INCR" type="logic">
+         <obj_property name="ElementShortName">INCR</obj_property>
+         <obj_property name="ObjectShortName">INCR</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/NUM_WRITE" type="array">
+         <obj_property name="ElementShortName">NUM_WRITE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NUM_WRITE[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group229" type="group">
+      <obj_property name="label">datamover_sigs1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_aclk" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_aclk</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_aclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_aresetn" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_aresetn</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/mm2s_err" type="logic">
+         <obj_property name="ElementShortName">mm2s_err</obj_property>
+         <obj_property name="ObjectShortName">mm2s_err</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_cmdsts_aclk" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_cmdsts_aclk</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_cmdsts_aclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_cmdsts_aresetn" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_cmdsts_aresetn</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_cmdsts_aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_mm2s_cmd_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_mm2s_cmd_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_mm2s_cmd_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_mm2s_cmd_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_mm2s_cmd_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_mm2s_cmd_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_mm2s_cmd_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_mm2s_cmd_tdata[71:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_mm2s_cmd_tdata[71:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_sts_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_sts_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_sts_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tdata[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_sts_tkeep" type="array">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tkeep[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_sts_tlast" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_arid" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arid[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_araddr" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_arlen" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_arsize" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_arburst" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_arprot" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_arcache" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_aruser" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_aruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_aruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_arvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_arvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_arready" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_arready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_rdata" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_rresp" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_rlast" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_rlast</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_rvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_rvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_mm2s_rready" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_rready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group271" type="group">
+      <obj_property name="label">datamover_sigs2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_mm2s_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_tkeep" type="array">
+         <obj_property name="ElementShortName">m_axis_mm2s_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_tlast" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_mm2s_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_aclk" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_aclk</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_aclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_aresetn" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_aresetn</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s2mm_err" type="logic">
+         <obj_property name="ElementShortName">s2mm_err</obj_property>
+         <obj_property name="ObjectShortName">s2mm_err</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_s2mm_cmdsts_awclk" type="logic">
+         <obj_property name="ElementShortName">m_axis_s2mm_cmdsts_awclk</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_cmdsts_awclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_s2mm_cmdsts_aresetn" type="logic">
+         <obj_property name="ElementShortName">m_axis_s2mm_cmdsts_aresetn</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_cmdsts_aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_s2mm_cmd_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_cmd_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_cmd_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_s2mm_cmd_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_cmd_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_cmd_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_s2mm_cmd_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_s2mm_cmd_tdata[71:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_cmd_tdata[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_s2mm_sts_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_s2mm_sts_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_s2mm_sts_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tdata[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_s2mm_sts_tkeep" type="array">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tkeep[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axis_s2mm_sts_tlast" type="logic">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awid" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awid[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awaddr" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awlen" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awsize" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awsize[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awburst" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awburst[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awprot" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awprot[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awcache" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awcache[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awuser" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awuser[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_awvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_awready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_awready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_wdata" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_wstrb" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wstrb[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_wlast" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wlast</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_wvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_wready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_bresp" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_bvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_bvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/m_axi_s2mm_bready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_bready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_s2mm_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_s2mm_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_s2mm_tkeep" type="array">
+         <obj_property name="ElementShortName">s_axis_s2mm_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_s2mm_tlast" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_s2mm_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_datamover_0/s_axis_s2mm_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group316" type="group">
+      <obj_property name="label">bram_ctrl_sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_aclk" type="logic">
+         <obj_property name="ElementShortName">s_axi_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_axi_aclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_aresetn" type="logic">
+         <obj_property name="ElementShortName">s_axi_aresetn</obj_property>
+         <obj_property name="ObjectShortName">s_axi_aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awid" type="array">
+         <obj_property name="ElementShortName">s_axi_awid[4:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awid[4:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awaddr" type="array">
+         <obj_property name="ElementShortName">s_axi_awaddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awaddr[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awlen" type="array">
+         <obj_property name="ElementShortName">s_axi_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awlen[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awsize" type="array">
+         <obj_property name="ElementShortName">s_axi_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awsize[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awburst" type="array">
+         <obj_property name="ElementShortName">s_axi_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awburst[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awlock" type="logic">
+         <obj_property name="ElementShortName">s_axi_awlock</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awlock</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awcache" type="array">
+         <obj_property name="ElementShortName">s_axi_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awcache[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awprot" type="array">
+         <obj_property name="ElementShortName">s_axi_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awprot[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_awready" type="logic">
+         <obj_property name="ElementShortName">s_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_wdata" type="array">
+         <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_wstrb" type="array">
+         <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_wlast" type="logic">
+         <obj_property name="ElementShortName">s_axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_wvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_wready" type="logic">
+         <obj_property name="ElementShortName">s_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_bid" type="array">
+         <obj_property name="ElementShortName">s_axi_bid[4:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bid[4:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_bresp" type="array">
+         <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_bvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_bready" type="logic">
+         <obj_property name="ElementShortName">s_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arid" type="array">
+         <obj_property name="ElementShortName">s_axi_arid[4:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arid[4:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_araddr" type="array">
+         <obj_property name="ElementShortName">s_axi_araddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_araddr[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arlen" type="array">
+         <obj_property name="ElementShortName">s_axi_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arlen[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arsize" type="array">
+         <obj_property name="ElementShortName">s_axi_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arsize[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arburst" type="array">
+         <obj_property name="ElementShortName">s_axi_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arburst[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arlock" type="logic">
+         <obj_property name="ElementShortName">s_axi_arlock</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arlock</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arcache" type="array">
+         <obj_property name="ElementShortName">s_axi_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arcache[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arprot" type="array">
+         <obj_property name="ElementShortName">s_axi_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arprot[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_arready" type="logic">
+         <obj_property name="ElementShortName">s_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_rid" type="array">
+         <obj_property name="ElementShortName">s_axi_rid[4:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rid[4:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_rdata" type="array">
+         <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_rresp" type="array">
+         <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_rlast" type="logic">
+         <obj_property name="ElementShortName">s_axi_rlast</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_rvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/s_axi_rready" type="logic">
+         <obj_property name="ElementShortName">s_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/bram_rst_a" type="logic">
+         <obj_property name="ElementShortName">bram_rst_a</obj_property>
+         <obj_property name="ObjectShortName">bram_rst_a</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/bram_clk_a" type="logic">
+         <obj_property name="ElementShortName">bram_clk_a</obj_property>
+         <obj_property name="ObjectShortName">bram_clk_a</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/bram_en_a" type="logic">
+         <obj_property name="ElementShortName">bram_en_a</obj_property>
+         <obj_property name="ObjectShortName">bram_en_a</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/bram_we_a" type="array">
+         <obj_property name="ElementShortName">bram_we_a[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_we_a[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/bram_addr_a" type="array">
+         <obj_property name="ElementShortName">bram_addr_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addr_a[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/bram_wrdata_a" type="array">
+         <obj_property name="ElementShortName">bram_wrdata_a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_wrdata_a[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0/bram_rddata_a" type="array">
+         <obj_property name="ElementShortName">bram_rddata_a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_rddata_a[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group324" type="group">
+      <obj_property name="label">blkmem_sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0_bram/clka" type="logic">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0_bram/rsta" type="logic">
+         <obj_property name="ElementShortName">rsta</obj_property>
+         <obj_property name="ObjectShortName">rsta</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0_bram/ena" type="logic">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0_bram/wea" type="array">
+         <obj_property name="ElementShortName">wea[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0_bram/addra" type="array">
+         <obj_property name="ElementShortName">addra[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0_bram/dina" type="array">
+         <obj_property name="ElementShortName">dina[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/datamover_bram_sim_tb/u_datamover_bram_top/design_1_i/axi_bram_ctrl_0_bram/douta" type="array">
+         <obj_property name="ElementShortName">douta[31:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

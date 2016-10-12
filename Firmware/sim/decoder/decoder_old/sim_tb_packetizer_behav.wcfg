@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_tb_packetizer_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_tb_packetizer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="37" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/axi_tclk">
+      <obj_property name="ElementShortName">axi_tclk</obj_property>
+      <obj_property name="ObjectShortName">axi_tclk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/axi_tresetn">
+      <obj_property name="ElementShortName">axi_tresetn</obj_property>
+      <obj_property name="ObjectShortName">axi_tresetn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/enable_rx_decode">
+      <obj_property name="ElementShortName">enable_rx_decode</obj_property>
+      <obj_property name="ObjectShortName">enable_rx_decode</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/speed">
+      <obj_property name="ElementShortName">speed[1:0]</obj_property>
+      <obj_property name="ObjectShortName">speed[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/rx_axis_tdata">
+      <obj_property name="ElementShortName">rx_axis_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tdata[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/rx_axis_tvalid">
+      <obj_property name="ElementShortName">rx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/rx_axis_tlast">
+      <obj_property name="ElementShortName">rx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/rx_axis_tready">
+      <obj_property name="ElementShortName">rx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/tdata">
+      <obj_property name="ElementShortName">tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/tvalid">
+      <obj_property name="ElementShortName">tvalid</obj_property>
+      <obj_property name="ObjectShortName">tvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/tlast">
+      <obj_property name="ElementShortName">tlast</obj_property>
+      <obj_property name="ObjectShortName">tlast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/tready">
+      <obj_property name="ElementShortName">tready</obj_property>
+      <obj_property name="ObjectShortName">tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/dest_mac_addr">
+      <obj_property name="ElementShortName">dest_mac_addr[47:0]</obj_property>
+      <obj_property name="ObjectShortName">dest_mac_addr[47:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/src_mac_addr">
+      <obj_property name="ElementShortName">src_mac_addr[47:0]</obj_property>
+      <obj_property name="ObjectShortName">src_mac_addr[47:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/byte_count">
+      <obj_property name="ElementShortName">byte_count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_count[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/header_count">
+      <obj_property name="ElementShortName">header_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">header_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/src_mac_count">
+      <obj_property name="ElementShortName">src_mac_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">src_mac_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/dest_mac_count">
+      <obj_property name="ElementShortName">dest_mac_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dest_mac_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/overhead_count">
+      <obj_property name="ElementShortName">overhead_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">overhead_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/size_count">
+      <obj_property name="ElementShortName">size_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">size_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/counter_count">
+      <obj_property name="ElementShortName">counter_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/pkt_size">
+      <obj_property name="ElementShortName">pkt_size[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pkt_size[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/pkt_counter">
+      <obj_property name="ElementShortName">pkt_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pkt_counter[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/next_gen_state">
+      <obj_property name="ElementShortName">next_gen_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_gen_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/gen_state">
+      <obj_property name="ElementShortName">gen_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">gen_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/rx_axis_tvalid_reg">
+      <obj_property name="ElementShortName">rx_axis_tvalid_reg</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tvalid_reg</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/rx_axis_tlast_reg">
+      <obj_property name="ElementShortName">rx_axis_tlast_reg</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tlast_reg</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/rx_axis_tdata_reg">
+      <obj_property name="ElementShortName">rx_axis_tdata_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tdata_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/rx_axis_tready_int">
+      <obj_property name="ElementShortName">rx_axis_tready_int</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tready_int</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/wr_fifo_rx_axis_tdata_reg">
+      <obj_property name="ElementShortName">wr_fifo_rx_axis_tdata_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_fifo_rx_axis_tdata_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/wr_fifo_rx_axis_tvalid_reg">
+      <obj_property name="ElementShortName">wr_fifo_rx_axis_tvalid_reg</obj_property>
+      <obj_property name="ObjectShortName">wr_fifo_rx_axis_tvalid_reg</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/wr_fifo_rx_axis_tlast_reg">
+      <obj_property name="ElementShortName">wr_fifo_rx_axis_tlast_reg</obj_property>
+      <obj_property name="ObjectShortName">wr_fifo_rx_axis_tlast_reg</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/wr_fifo_rx_axis_tready">
+      <obj_property name="ElementShortName">wr_fifo_rx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">wr_fifo_rx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/basic_rc_counter">
+      <obj_property name="ElementShortName">basic_rc_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">basic_rc_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/add_credit">
+      <obj_property name="ElementShortName">add_credit</obj_property>
+      <obj_property name="ObjectShortName">add_credit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/sim_tb_packetizer/u_decoder_top/credit_count">
+      <obj_property name="ElementShortName">credit_count[12:0]</obj_property>
+      <obj_property name="ObjectShortName">credit_count[12:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/sim_tb_packetizer/u_decoder_top/axi_treset">
+      <obj_property name="ElementShortName">axi_treset</obj_property>
+      <obj_property name="ObjectShortName">axi_treset</obj_property>
+   </wvobject>
+</wave_config>

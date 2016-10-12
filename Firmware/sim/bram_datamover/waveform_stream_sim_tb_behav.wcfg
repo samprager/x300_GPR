@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="waveform_stream_sim_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="family_support" />
+            <top_module name="glbl" />
+            <top_module name="proc_common_pkg" />
+            <top_module name="waveform_stream_sim_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject type="group" fp_name="group2791">
+      <obj_property name="label">sim_tb_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/wr_counter">
+         <obj_property name="ElementShortName">wr_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_counter[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfout_axis_tvalid">
+         <obj_property name="ElementShortName">wfout_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfout_axis_tready_reg">
+         <obj_property name="ElementShortName">wfout_axis_tready_reg</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tready_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfout_axis_tready">
+         <obj_property name="ElementShortName">wfout_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfout_axis_tlast">
+         <obj_property name="ElementShortName">wfout_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/wfout_axis_tkeep">
+         <obj_property name="ElementShortName">wfout_axis_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/wfout_axis_tdata">
+         <obj_property name="ElementShortName">wfout_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfin_axis_tvalid_reg">
+         <obj_property name="ElementShortName">wfin_axis_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfin_axis_tvalid">
+         <obj_property name="ElementShortName">wfin_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfin_axis_tready">
+         <obj_property name="ElementShortName">wfin_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfin_axis_tlast_reg">
+         <obj_property name="ElementShortName">wfin_axis_tlast_reg</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tlast_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wfin_axis_tlast">
+         <obj_property name="ElementShortName">wfin_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/wfin_axis_tkeep_reg">
+         <obj_property name="ElementShortName">wfin_axis_tkeep_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tkeep_reg[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/wfin_axis_tkeep">
+         <obj_property name="ElementShortName">wfin_axis_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/wfin_axis_tdata_reg">
+         <obj_property name="ElementShortName">wfin_axis_tdata_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tdata_reg[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/wfin_axis_tdata">
+         <obj_property name="ElementShortName">wfin_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wf_written">
+         <obj_property name="ElementShortName">wf_written</obj_property>
+         <obj_property name="ObjectShortName">wf_written</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wf_write_ready">
+         <obj_property name="ElementShortName">wf_write_ready</obj_property>
+         <obj_property name="ObjectShortName">wf_write_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/wf_read_ready">
+         <obj_property name="ElementShortName">wf_read_ready</obj_property>
+         <obj_property name="ObjectShortName">wf_read_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/waveform_parameters_reg">
+         <obj_property name="ElementShortName">waveform_parameters_reg[127:0]</obj_property>
+         <obj_property name="ObjectShortName">waveform_parameters_reg[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/waveform_parameters">
+         <obj_property name="ElementShortName">waveform_parameters[127:0]</obj_property>
+         <obj_property name="ObjectShortName">waveform_parameters[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/rd_counter">
+         <obj_property name="ElementShortName">rd_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_counter[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/init_wf_write_reg">
+         <obj_property name="ElementShortName">init_wf_write_reg</obj_property>
+         <obj_property name="ObjectShortName">init_wf_write_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/init_wf_write">
+         <obj_property name="ElementShortName">init_wf_write</obj_property>
+         <obj_property name="ObjectShortName">init_wf_write</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/fmc_tresetn_i">
+         <obj_property name="ElementShortName">fmc_tresetn_i</obj_property>
+         <obj_property name="ObjectShortName">fmc_tresetn_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/fmc_tresetn">
+         <obj_property name="ElementShortName">fmc_tresetn</obj_property>
+         <obj_property name="ObjectShortName">fmc_tresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/fmc_tclk_i">
+         <obj_property name="ElementShortName">fmc_tclk_i</obj_property>
+         <obj_property name="ObjectShortName">fmc_tclk_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/fmc_tclk_fast_i">
+         <obj_property name="ElementShortName">fmc_tclk_fast_i</obj_property>
+         <obj_property name="ObjectShortName">fmc_tclk_fast_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/fmc_tclk_fast">
+         <obj_property name="ElementShortName">fmc_tclk_fast</obj_property>
+         <obj_property name="ObjectShortName">fmc_tclk_fast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/fmc_tclk">
+         <obj_property name="ElementShortName">fmc_tclk</obj_property>
+         <obj_property name="ObjectShortName">fmc_tclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/dds_out_q">
+         <obj_property name="ElementShortName">dds_out_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_out_q[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/dds_out_i">
+         <obj_property name="ElementShortName">dds_out_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_out_i[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/counter">
+         <obj_property name="ElementShortName">counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/chirp_ready">
+         <obj_property name="ElementShortName">chirp_ready</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/chirp_init">
+         <obj_property name="ElementShortName">chirp_init</obj_property>
+         <obj_property name="ObjectShortName">chirp_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/chirp_done">
+         <obj_property name="ElementShortName">chirp_done</obj_property>
+         <obj_property name="ObjectShortName">chirp_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/chirp_active">
+         <obj_property name="ElementShortName">chirp_active</obj_property>
+         <obj_property name="ObjectShortName">chirp_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/RESET_PERIOD">
+         <obj_property name="ElementShortName">RESET_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESET_PERIOD[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/FMC_TCLK_PERIOD">
+         <obj_property name="ElementShortName">FMC_TCLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FMC_TCLK_PERIOD[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1691">
+      <obj_property name="label">waveform_stream_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wr_counter">
+         <obj_property name="ElementShortName">wr_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_counter[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wr_cmd_counter">
+         <obj_property name="ElementShortName">wr_cmd_counter[2:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_cmd_counter[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wr_addr">
+         <obj_property name="ElementShortName">wr_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_addr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfout_axis_tvalid">
+         <obj_property name="ElementShortName">wfout_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfout_axis_tready">
+         <obj_property name="ElementShortName">wfout_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfout_axis_tlast">
+         <obj_property name="ElementShortName">wfout_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfout_axis_tkeep">
+         <obj_property name="ElementShortName">wfout_axis_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfout_axis_tdata">
+         <obj_property name="ElementShortName">wfout_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfin_axis_tvalid">
+         <obj_property name="ElementShortName">wfin_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfin_axis_tready">
+         <obj_property name="ElementShortName">wfin_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfin_axis_tlast">
+         <obj_property name="ElementShortName">wfin_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfin_axis_tkeep">
+         <obj_property name="ElementShortName">wfin_axis_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wfin_axis_tdata">
+         <obj_property name="ElementShortName">wfin_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wf_write_ready_reg">
+         <obj_property name="ElementShortName">wf_write_ready_reg</obj_property>
+         <obj_property name="ObjectShortName">wf_write_ready_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wf_write_ready">
+         <obj_property name="ElementShortName">wf_write_ready</obj_property>
+         <obj_property name="ObjectShortName">wf_write_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/init_wf_write">
+         <obj_property name="ElementShortName">init_wf_write</obj_property>
+         <obj_property name="ObjectShortName">init_wf_write</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wf_read_ready">
+         <obj_property name="ElementShortName">wf_read_ready</obj_property>
+         <obj_property name="ObjectShortName">wf_read_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wf_new_size">
+         <obj_property name="ElementShortName">wf_new_size[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wf_new_size[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/wf_cur_size">
+         <obj_property name="ElementShortName">wf_cur_size[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wf_cur_size[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/waveform_parameters">
+         <obj_property name="ElementShortName">waveform_parameters[127:0]</obj_property>
+         <obj_property name="ObjectShortName">waveform_parameters[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tvalid_reg">
+         <obj_property name="ElementShortName">s_axis_s2mm_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tvalid">
+         <obj_property name="ElementShortName">s_axis_s2mm_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tready">
+         <obj_property name="ElementShortName">s_axis_s2mm_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tlast_reg">
+         <obj_property name="ElementShortName">s_axis_s2mm_tlast_reg</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tlast_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tlast">
+         <obj_property name="ElementShortName">s_axis_s2mm_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tkeep_reg">
+         <obj_property name="ElementShortName">s_axis_s2mm_tkeep_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tkeep_reg[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tkeep">
+         <obj_property name="ElementShortName">s_axis_s2mm_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tdata_reg">
+         <obj_property name="ElementShortName">s_axis_s2mm_tdata_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tdata_reg[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_tdata">
+         <obj_property name="ElementShortName">s_axis_s2mm_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_cmd_tvalid_reg">
+         <obj_property name="ElementShortName">s_axis_s2mm_cmd_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_cmd_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_cmd_tvalid">
+         <obj_property name="ElementShortName">s_axis_s2mm_cmd_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_cmd_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_cmd_tready">
+         <obj_property name="ElementShortName">s_axis_s2mm_cmd_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_cmd_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_cmd_tdata_reg">
+         <obj_property name="ElementShortName">s_axis_s2mm_cmd_tdata_reg[71:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_cmd_tdata_reg[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_s2mm_cmd_tdata">
+         <obj_property name="ElementShortName">s_axis_s2mm_cmd_tdata[71:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_cmd_tdata[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_mm2s_cmd_tvalid_reg">
+         <obj_property name="ElementShortName">s_axis_mm2s_cmd_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">s_axis_mm2s_cmd_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_mm2s_cmd_tvalid">
+         <obj_property name="ElementShortName">s_axis_mm2s_cmd_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_mm2s_cmd_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_mm2s_cmd_tready">
+         <obj_property name="ElementShortName">s_axis_mm2s_cmd_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_mm2s_cmd_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_mm2s_cmd_tdata_reg">
+         <obj_property name="ElementShortName">s_axis_mm2s_cmd_tdata_reg[71:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_mm2s_cmd_tdata_reg[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s_axis_mm2s_cmd_tdata">
+         <obj_property name="ElementShortName">s_axis_mm2s_cmd_tdata[71:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_mm2s_cmd_tdata[71:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/s2mm_err">
+         <obj_property name="ElementShortName">s2mm_err</obj_property>
+         <obj_property name="ObjectShortName">s2mm_err</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/rd_counter">
+         <obj_property name="ElementShortName">rd_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_counter[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/rd_cmd_counter">
+         <obj_property name="ElementShortName">rd_cmd_counter[1:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_cmd_counter[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/rd_addr">
+         <obj_property name="ElementShortName">rd_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_addr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/next_gen_state">
+         <obj_property name="ElementShortName">next_gen_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_gen_state[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/mm2s_err">
+         <obj_property name="ElementShortName">mm2s_err</obj_property>
+         <obj_property name="ObjectShortName">mm2s_err</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_s2mm_sts_tvalid">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_s2mm_sts_tready_reg">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tready_reg</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tready_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_s2mm_sts_tready">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_s2mm_sts_tlast">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_s2mm_sts_tkeep">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tkeep[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_s2mm_sts_tdata">
+         <obj_property name="ElementShortName">m_axis_s2mm_sts_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_s2mm_sts_tdata[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_tvalid">
+         <obj_property name="ElementShortName">m_axis_mm2s_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_tready_reg">
+         <obj_property name="ElementShortName">m_axis_mm2s_tready_reg</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tready_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_tready">
+         <obj_property name="ElementShortName">m_axis_mm2s_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_tlast">
+         <obj_property name="ElementShortName">m_axis_mm2s_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_tkeep">
+         <obj_property name="ElementShortName">m_axis_mm2s_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tkeep[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_tdata">
+         <obj_property name="ElementShortName">m_axis_mm2s_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_sts_tvalid">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_sts_tready_reg">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tready_reg</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tready_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_sts_tready">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_sts_tlast">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_sts_tkeep">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tkeep[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/m_axis_mm2s_sts_tdata">
+         <obj_property name="ElementShortName">m_axis_mm2s_sts_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_sts_tdata[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/gen_state">
+         <obj_property name="ElementShortName">gen_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">gen_state[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/clk_in1">
+         <obj_property name="ElementShortName">clk_in1</obj_property>
+         <obj_property name="ObjectShortName">clk_in1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/aresetn">
+         <obj_property name="ElementShortName">aresetn</obj_property>
+         <obj_property name="ObjectShortName">aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/WR_DATA">
+         <obj_property name="ElementShortName">WR_DATA[2:0]</obj_property>
+         <obj_property name="ObjectShortName">WR_DATA[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/WR_CMD">
+         <obj_property name="ElementShortName">WR_CMD[2:0]</obj_property>
+         <obj_property name="ObjectShortName">WR_CMD[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/RD_DATA">
+         <obj_property name="ElementShortName">RD_DATA[2:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_DATA[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/RD_CMD">
+         <obj_property name="ElementShortName">RD_CMD[2:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_CMD[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/NUM_WRITE">
+         <obj_property name="ElementShortName">NUM_WRITE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NUM_WRITE[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/NUM_BTT">
+         <obj_property name="ElementShortName">NUM_BTT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NUM_BTT[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/INCR">
+         <obj_property name="ElementShortName">INCR</obj_property>
+         <obj_property name="ObjectShortName">INCR</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_waveform_stream/IDLE">
+         <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_waveform_stream/FIXED">
+         <obj_property name="ElementShortName">FIXED</obj_property>
+         <obj_property name="ObjectShortName">FIXED</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group2839">
+      <obj_property name="label">chirp_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/tuning_word_coeff">
+         <obj_property name="ElementShortName">tuning_word_coeff[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tuning_word_coeff[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/tuning_word">
+         <obj_property name="ElementShortName">tuning_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tuning_word[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/s_axis_phase_tvalid">
+         <obj_property name="ElementShortName">s_axis_phase_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_phase_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/phase_acc_long">
+         <obj_property name="ElementShortName">phase_acc_long[31:0]</obj_property>
+         <obj_property name="ObjectShortName">phase_acc_long[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/m_axis_data_tvalid">
+         <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/if_out_valid_sig">
+         <obj_property name="ElementShortName">if_out_valid_sig</obj_property>
+         <obj_property name="ObjectShortName">if_out_valid_sig</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/if_out_q_sig">
+         <obj_property name="ElementShortName">if_out_q_sig[15:0]</obj_property>
+         <obj_property name="ObjectShortName">if_out_q_sig[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/if_out_i_sig">
+         <obj_property name="ElementShortName">if_out_i_sig[15:0]</obj_property>
+         <obj_property name="ObjectShortName">if_out_i_sig[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/freq_offset_in">
+         <obj_property name="ElementShortName">freq_offset_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">freq_offset_in[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/freq_offset">
+         <obj_property name="ElementShortName">freq_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">freq_offset[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/dds_dout_chirp_i">
+         <obj_property name="ElementShortName">dds_dout_chirp_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_chirp_i[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/dds_dout_chirp_q">
+         <obj_property name="ElementShortName">dds_dout_chirp_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_chirp_q[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/dds_dout_chirp_phase">
+         <obj_property name="ElementShortName">dds_dout_chirp_phase[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_chirp_phase[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/dds_dout_chirp_i_q">
+         <obj_property name="ElementShortName">dds_dout_chirp_i_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_chirp_i_q[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_ready_r">
+         <obj_property name="ElementShortName">chirp_ready_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_ready">
+         <obj_property name="ElementShortName">chirp_ready</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_q">
+         <obj_property name="ElementShortName">chirp_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_q[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_init_r">
+         <obj_property name="ElementShortName">chirp_init_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_init_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_init">
+         <obj_property name="ElementShortName">chirp_init</obj_property>
+         <obj_property name="ObjectShortName">chirp_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_i">
+         <obj_property name="ElementShortName">chirp_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_i[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_enable_r">
+         <obj_property name="ElementShortName">chirp_enable_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_enable_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_enable">
+         <obj_property name="ElementShortName">chirp_enable</obj_property>
+         <obj_property name="ObjectShortName">chirp_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_done_r">
+         <obj_property name="ElementShortName">chirp_done_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_done_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_done">
+         <obj_property name="ElementShortName">chirp_done</obj_property>
+         <obj_property name="ObjectShortName">chirp_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_count_max_in">
+         <obj_property name="ElementShortName">chirp_count_max_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max_in[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_count_max">
+         <obj_property name="ElementShortName">chirp_count_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_count">
+         <obj_property name="ElementShortName">chirp_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_active_r">
+         <obj_property name="ElementShortName">chirp_active_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_active_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/chirp_active">
+         <obj_property name="ElementShortName">chirp_active</obj_property>
+         <obj_property name="ObjectShortName">chirp_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/RESET">
+         <obj_property name="ElementShortName">RESET</obj_property>
+         <obj_property name="ObjectShortName">RESET</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/IF_OUT_VALID">
+         <obj_property name="ElementShortName">IF_OUT_VALID</obj_property>
+         <obj_property name="ObjectShortName">IF_OUT_VALID</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/IF_OUT_Q">
+         <obj_property name="ElementShortName">IF_OUT_Q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_OUT_Q[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/waveform_stream_sim_tb/u_chirp_dds/IF_OUT_I">
+         <obj_property name="ElementShortName">IF_OUT_I[15:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_OUT_I[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/waveform_stream_sim_tb/u_chirp_dds/CLOCK">
+         <obj_property name="ElementShortName">CLOCK</obj_property>
+         <obj_property name="ObjectShortName">CLOCK</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,202 @@
+Recreate vivado project:
+
+In kc705_GPR/Design/Firmware/implementation/ run:
+vivado -source gen_vivado_proj.tcl
+
+Tutorial on Indirectly Programming FPGA with BPI Flash Memory:
+http://www.xilinx.com/video/hardware/indirectly-program-fpga-using-vivado.html
+
+Tcl command to create mcs file for BPI:
+write_cfgmem -force -format mcs -interface bpix16 -size 128 -loadbit "up 0x0 kc705_gpr_top.bit" -file kc705_gpr_top_bpix16.mcs
+
+bpi memory device part: 28f00ap30t (28f00ap30t-bpi-x16)
+
+Tcl commands to create and program bpi memory and then program bit stream:
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {28f00ap30t-bpi-x16}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILE_1 {D:/UndergroundRadar/kc705_GPR/Design/Firmware/implement/project_2/project_2.runs/impl_1/kc705_gpr_top_bpix16.mcs} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BPI_RS_PINS {none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+
+set_property PROBES.FILE {D:/UndergroundRadar/kc705_GPR/Design/Firmware/implement/project_2/project_2.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/UndergroundRadar/kc705_GPR/Design/Firmware/implement/project_2/project_2.runs/impl_1/kc705_gpr_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+
+
+Constraining Asynchronous Clocks:
+http://www.xilinx.com/support/answers/44651.html
+
+Additoinal Directive:
+place_design -directive Explore
+
+Clock Generation Error Output:
+
+[Place 30-575] Sub-optimal placement for a clock-capable IO pin and MMCM pair. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets example_clocks/clkin1] >
+
+	example_clocks/clkin1_buf (IBUFDS.O) is locked to IOB_X1Y76
+	 example_clocks/clock_generator/mmcm_adv_inst (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_mmcm_bufg
+	Status: PASS 
+	Rule Description: An MMCM driving a BUFG must be placed on the same half side (top/bottom) of the device
+	 example_clocks/clock_generator/mmcm_adv_inst (MMCME2_ADV.CLKOUT0) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+	 example_clocks/clock_generator/clkout1_buf (BUFGCTRL.I0) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+
+	Clock Rule: rule_mmcm_bufg
+	Status: PASS 
+	Rule Description: An MMCM driving a BUFG must be placed on the same half side (top/bottom) of the device
+	 example_clocks/clock_generator/mmcm_adv_inst (MMCME2_ADV.CLKOUT1) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+	 example_clocks/clock_generator/clkout2_buf (BUFGCTRL.I0) is provisionally placed by clockplacer on BUFGCTRL_X0Y2
+
+	Clock Rule: rule_mmcm_bufg
+	Status: PASS 
+	Rule Description: An MMCM driving a BUFG must be placed on the same half side (top/bottom) of the device
+	 example_clocks/clock_generator/mmcm_adv_inst (MMCME2_ADV.CLKOUT2) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+	 example_clocks/clock_generator/clkout3_buf (BUFGCTRL.I0) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
+
+	Clock Rule: rule_mmcm_bufg
+	Status: PASS 
+	Rule Description: An MMCM driving a BUFG must be placed on the same half side (top/bottom) of the device
+	 example_clocks/clock_generator/mmcm_adv_inst (MMCME2_ADV.CLKOUT3) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+	 example_clocks/clock_generator/clkout4_buf (BUFGCTRL.I0) is provisionally placed by clockplacer on BUFGCTRL_X0Y4
+
+	Clock Rule: rule_mmcm_mmcm
+	Status: PASS 
+	Rule Description: An MMCM driving an MMCM must be in the same CMT column, and they are adjacent to
+	each other (vertically), if the  CLOCK_DEDICATED_ROUTE=BACKBONE constraint is NOT set
+	 example_clocks/clock_generator/mmcm_adv_inst (MMCME2_ADV.CLKFBOUT) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+	 and example_clocks/clock_generator/mmcm_adv_inst (MMCME2_ADV.CLKFBIN) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+
+
+Output Before fix: 
+ >> get_property route [get_nets example_clocks/clkin1]
+ { IOB_IBUF0 RIOI_I0 RIOI_ILOGIC0_D IOI_ILOGIC0_O  { IOI_LOGIC_OUTS18_1 INT_INTERFACE_LOGIC_OUTS18 NN6BEG0 LV0 LV0 NN6BEG1 NW2BEG1 SR1BEG1 CLK_L0 CMT_L_LOWER_B_CLK_IN1_INT CMT_LR_LOWER_B_MMCM_CLKIN1 }  RIOI_I2GCLK_TOP0 HCLK_CMT_CK_IN0 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_BUFG_BUFGCTRL11_I0 }  
+
+Fix:
+
+http://www.xilinx.com/support/answers/60480.html
+
+1) Open the implemented design and from the Tcl console perform the following:
+
+>> report_drc -file pre_wa_drc_chk.rpt
+This performs a DRC check and shows the DRC reported by write_bitstream.
+
+>> route_design -unroute
+Unroutes the entire design.
+
+>> route_design -nets [get_nets example_clocks/clkin1]
+Routes the net reported in the DRC error only.
+
+>> set_property IS_ROUTE_FIXED 1 [get_nets example_clocks/clkin1]
+Locks the net.
+
+>> route_design
+Routes the rest of the design.
+
+>> report_drc -file post_wa_drc_chk.rpt
+DRC error no longer reported.
+
+2) Create a route constraint to add to the XDC file
+
+>> get_property route [get_nets example_clocks/clkin1]
+ { IOB_IBUF0 RIOI_I0 RIOI_ILOGIC0_D IOI_ILOGIC0_O RIOI_I2GCLK_TOP0  { HCLK_CMT_CK_IN0 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_BUFG_BUFGCTRL11_I0 }  HCLK_CMT_MUX_OUT_FREQ_REF0 HCLK_CMT_FREQ_REF_NS0 PLL_CLK_FREQ_BB_BUFOUT_NS0 MMCM_CLK_FREQ_BB_NS0 CMT_L_LOWER_B_CLK_FREQ_BB3 CMT_LR_LOWER_B_MMCM_CLKIN1 }  
+
+3) Add an XDC constraint as follows:
+
+set_property route 
+
+{ IOB_IBUF0 RIOI_I0 RIOI_ILOGIC0_D IOI_ILOGIC0_O RIOI_I2GCLK_TOP0  { HCLK_CMT_CK_IN0 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_HROW_BOT_R_CK_BUFG_CASCO22 CLK_BUFG_BUFGCTRL11_I0 }  HCLK_CMT_MUX_OUT_FREQ_REF0 HCLK_CMT_FREQ_REF_NS0 PLL_CLK_FREQ_BB_BUFOUT_NS0 MMCM_CLK_FREQ_BB_NS0 CMT_L_LOWER_B_CLK_FREQ_BB3 CMT_LR_LOWER_B_MMCM_CLKIN1 } [get_nets example_clocks/clkin1]
+
+Errors: Partial Antenna
+[Drc 23-20] Rule violation (RTSTAT-5) Partial antenna - 2 net(s) have a partial antenna. The problem net(s) are fmc150_dac_adc_inst/KC705_fmc150_inst/clk_in1, example_clocks/clkin1.
+[Drc 23-20] Rule violation (UCIO-1) Unconstrained Logical Port - 3 out of 226 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: gpio_dip_sw[3], gpio_dip_sw[1], gpio_dip_sw[0].
+[Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+
+Fix:
+Select the error message and find out the name of the nets failing.
+ 
+Unroute  those nets with the command:
+route_design -unroute -nets [get_nets <net_name>]
+Reroute the nets with the command:
+route_design -nets [get_nets <net_name>] -effort_level high
+Check that the previous nets were routed with the DRC check tool: 
+report_drc -name <report_name> -rules RTSTAT-5 -verbose
+
+
+Startup Sequence for proper triggering (Chirp):
+1) Program with all DIP switches down
+2) Switch DIP 1 up
+3) Trigger ILA
+
+States:
+1) DIP 1 Down: Original DUC/DDC signal pipeline from example design
+2) DIP 1 Up: Chirp Signal Pipeline
+3) DIP 1 Up, DIP 3 Up: No output
+
+GPIO LEDs:
+gpio_led(0) <= digital_mode;
+gpio_led(1) <= adc_out_dac_in;
+gpio_led(2) <= external_clock;
+gpio_led(3) <= ddc_duc_bypass;
+gpio_led(4) <= pll_status;
+gpio_led(5) <= mmcm_adac_locked;
+gpio_led(6) <= mmcm_locked;
+gpio_led(7) <= ADC_calibration_good;
+
+GPIO Switches:
+digital_mode   <= gpio_dip_sw(0);
+adc_out_dac_in <= gpio_dip_sw(1);
+external_clock <= gpio_dip_sw(2);
+ddc_duc_bypass <= gpio_dip_sw(3);
+
+Fix for Bitstream generation error:
+
+ERROR: [Drc 23-20] Rule violation (RTRES-1) Backbone resources - 1 net(s) have CLOCK_DEDICATED_ROUTE set to BACKBONE but do not use backbone resources. The problem net(s) are clk_in1.
+http://www.xilinx.com/support/answers/60480.html
+
+3/1/2015.
+
+Steps to get ILA Core to trigger (???)
+
+Fix error: 
+[Labtools 27-1395] Unable to arm ILA 'hw_ila_1'. The core clock is slow or no core clock connected for this ILA or the ILA core may not meet timing.
+
+***SOLVED:***
+MUST PROGRAM FPGA Initially with all DIP Switches DOWN
+
+Additional Links:
+
+DDR3 Clocking 
+
+http://www.xilinx.com/support/answers/40603.html
+
+Version Control and Managment Tips for Vivado: 
+
+http://www.fpgadeveloper.com/2014/08/version-control-for-vivado-projects.html
+
+HLS IP Integration:
+http://www.xilinx.com/support/documentation/application_notes/xapp1204-integrating-axi4-ip-using-ip-integrator.pdf
+
+HLS Tutorial:
+http://www.xilinx.com/support/documentation/sw_manuals/xilinx2014_2/ug871-vivado-high-level-synthesis-tutorial.pdf
+
+http://www.fpgadeveloper.com/2014/08/using-the-axi-dma-in-vivado.html
+
+

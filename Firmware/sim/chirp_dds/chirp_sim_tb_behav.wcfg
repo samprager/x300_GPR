@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="chirp_sim_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="chirp_sim_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group23">
+      <obj_property name="label">sim_tb_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/fmc_tresetn_i">
+         <obj_property name="ElementShortName">fmc_tresetn_i</obj_property>
+         <obj_property name="ObjectShortName">fmc_tresetn_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/fmc_tclk_i">
+         <obj_property name="ElementShortName">fmc_tclk_i</obj_property>
+         <obj_property name="ObjectShortName">fmc_tclk_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/fmc_tclk_fast_i">
+         <obj_property name="ElementShortName">fmc_tclk_fast_i</obj_property>
+         <obj_property name="ObjectShortName">fmc_tclk_fast_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/fmc_tclk">
+         <obj_property name="ElementShortName">fmc_tclk</obj_property>
+         <obj_property name="ObjectShortName">fmc_tclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/fmc_tclk_fast">
+         <obj_property name="ElementShortName">fmc_tclk_fast</obj_property>
+         <obj_property name="ObjectShortName">fmc_tclk_fast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/fmc_tresetn">
+         <obj_property name="ElementShortName">fmc_tresetn</obj_property>
+         <obj_property name="ObjectShortName">fmc_tresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/chirp_parameters">
+         <obj_property name="ElementShortName">chirp_parameters[127:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_parameters[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/ch_freq_offset">
+         <obj_property name="ElementShortName">ch_freq_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ch_freq_offset[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/ch_tuning_coef">
+         <obj_property name="ElementShortName">ch_tuning_coef[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ch_tuning_coef[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/ch_counter_max">
+         <obj_property name="ElementShortName">ch_counter_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ch_counter_max[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/ch_ctrl_word">
+         <obj_property name="ElementShortName">ch_ctrl_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ch_ctrl_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/chirp_parameters_reg">
+         <obj_property name="ElementShortName">chirp_parameters_reg[127:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_parameters_reg[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/dds_out_i">
+         <obj_property name="ElementShortName">dds_out_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_out_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/dds_out_q">
+         <obj_property name="ElementShortName">dds_out_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_out_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/chirp_ready">
+         <obj_property name="ElementShortName">chirp_ready</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/chirp_done">
+         <obj_property name="ElementShortName">chirp_done</obj_property>
+         <obj_property name="ObjectShortName">chirp_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/chirp_active">
+         <obj_property name="ElementShortName">chirp_active</obj_property>
+         <obj_property name="ObjectShortName">chirp_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/chirp_init">
+         <obj_property name="ElementShortName">chirp_init</obj_property>
+         <obj_property name="ObjectShortName">chirp_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/chirp_init_reg">
+         <obj_property name="ElementShortName">chirp_init_reg</obj_property>
+         <obj_property name="ObjectShortName">chirp_init_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/chirp_count">
+         <obj_property name="ElementShortName">chirp_count[10:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count[10:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/FMC_TCLK_PERIOD">
+         <obj_property name="ElementShortName">FMC_TCLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FMC_TCLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/RESET_PERIOD">
+         <obj_property name="ElementShortName">RESET_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESET_PERIOD[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group72">
+      <obj_property name="label">chirp_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/CLOCK">
+         <obj_property name="ElementShortName">CLOCK</obj_property>
+         <obj_property name="ObjectShortName">CLOCK</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/RESET">
+         <obj_property name="ElementShortName">RESET</obj_property>
+         <obj_property name="ObjectShortName">RESET</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/IF_OUT_I">
+         <obj_property name="ElementShortName">IF_OUT_I[15:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_OUT_I[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/IF_OUT_Q">
+         <obj_property name="ElementShortName">IF_OUT_Q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_OUT_Q[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/IF_OUT_VALID">
+         <obj_property name="ElementShortName">IF_OUT_VALID</obj_property>
+         <obj_property name="ObjectShortName">IF_OUT_VALID</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_ready">
+         <obj_property name="ElementShortName">chirp_ready</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_done">
+         <obj_property name="ElementShortName">chirp_done</obj_property>
+         <obj_property name="ObjectShortName">chirp_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_active">
+         <obj_property name="ElementShortName">chirp_active</obj_property>
+         <obj_property name="ObjectShortName">chirp_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_init">
+         <obj_property name="ElementShortName">chirp_init</obj_property>
+         <obj_property name="ObjectShortName">chirp_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_enable">
+         <obj_property name="ElementShortName">chirp_enable</obj_property>
+         <obj_property name="ObjectShortName">chirp_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/freq_offset_in">
+         <obj_property name="ElementShortName">freq_offset_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">freq_offset_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/tuning_word_coeff_in">
+         <obj_property name="ElementShortName">tuning_word_coeff_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tuning_word_coeff_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_count_max_in">
+         <obj_property name="ElementShortName">chirp_count_max_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/if_out_valid_sig">
+         <obj_property name="ElementShortName">if_out_valid_sig</obj_property>
+         <obj_property name="ObjectShortName">if_out_valid_sig</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_ready_r">
+         <obj_property name="ElementShortName">chirp_ready_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_done_r">
+         <obj_property name="ElementShortName">chirp_done_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_done_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_active_r">
+         <obj_property name="ElementShortName">chirp_active_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_active_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_init_r">
+         <obj_property name="ElementShortName">chirp_init_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_init_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_enable_r">
+         <obj_property name="ElementShortName">chirp_enable_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_enable_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/s_axis_phase_tvalid">
+         <obj_property name="ElementShortName">s_axis_phase_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_phase_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/chirp_sim_tb/u_chirp_dds/m_axis_data_tvalid">
+         <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_i">
+         <obj_property name="ElementShortName">chirp_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_i[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_q">
+         <obj_property name="ElementShortName">chirp_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_q[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/dds_dout_chirp_i">
+         <obj_property name="ElementShortName">dds_dout_chirp_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_chirp_i[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/dds_dout_chirp_q">
+         <obj_property name="ElementShortName">dds_dout_chirp_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_chirp_q[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/dds_dout_chirp_i_q">
+         <obj_property name="ElementShortName">dds_dout_chirp_i_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_chirp_i_q[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/dds_dout_chirp_phase">
+         <obj_property name="ElementShortName">dds_dout_chirp_phase[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_chirp_phase[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/tuning_word">
+         <obj_property name="ElementShortName">tuning_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tuning_word[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/phase_acc_long">
+         <obj_property name="ElementShortName">phase_acc_long[31:0]</obj_property>
+         <obj_property name="ObjectShortName">phase_acc_long[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_count">
+         <obj_property name="ElementShortName">chirp_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/chirp_count_max">
+         <obj_property name="ElementShortName">chirp_count_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/tuning_word_coeff">
+         <obj_property name="ElementShortName">tuning_word_coeff[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tuning_word_coeff[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/chirp_sim_tb/u_chirp_dds/freq_offset">
+         <obj_property name="ElementShortName">freq_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">freq_offset[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

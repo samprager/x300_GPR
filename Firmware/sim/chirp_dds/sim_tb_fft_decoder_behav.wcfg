@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_tb_cmd_decoder_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_tb_cmd_decoder" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group3870" type="group">
+      <obj_property name="label">dds_top_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/aclk" type="logic">
+         <obj_property name="ElementShortName">aclk</obj_property>
+         <obj_property name="ObjectShortName">aclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/aresetn" type="logic">
+         <obj_property name="ElementShortName">aresetn</obj_property>
+         <obj_property name="ObjectShortName">aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/clk_245" type="logic">
+         <obj_property name="ElementShortName">clk_245</obj_property>
+         <obj_property name="ObjectShortName">clk_245</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/clk_245_rst" type="logic">
+         <obj_property name="ElementShortName">clk_245_rst</obj_property>
+         <obj_property name="ObjectShortName">clk_245_rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/cpu_reset" type="logic">
+         <obj_property name="ElementShortName">cpu_reset</obj_property>
+         <obj_property name="ObjectShortName">cpu_reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tdata" type="array">
+         <obj_property name="ElementShortName">axis_adc_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tvalid" type="logic">
+         <obj_property name="ElementShortName">axis_adc_tvalid</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tlast" type="logic">
+         <obj_property name="ElementShortName">axis_adc_tlast</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tkeep" type="array">
+         <obj_property name="ElementShortName">axis_adc_tkeep[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tkeep[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tstrb" type="array">
+         <obj_property name="ElementShortName">axis_adc_tstrb[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tstrb[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tid" type="array">
+         <obj_property name="ElementShortName">axis_adc_tid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tid[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tdest" type="array">
+         <obj_property name="ElementShortName">axis_adc_tdest[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tdest[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tuser" type="array">
+         <obj_property name="ElementShortName">axis_adc_tuser[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tuser[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/axis_adc_tready" type="logic">
+         <obj_property name="ElementShortName">axis_adc_tready</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/fmc150_status_vector" type="array">
+         <obj_property name="ElementShortName">fmc150_status_vector[3:0]</obj_property>
+         <obj_property name="ObjectShortName">fmc150_status_vector[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_ready" type="logic">
+         <obj_property name="ElementShortName">chirp_ready</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_done" type="logic">
+         <obj_property name="ElementShortName">chirp_done</obj_property>
+         <obj_property name="ObjectShortName">chirp_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_active" type="logic">
+         <obj_property name="ElementShortName">chirp_active</obj_property>
+         <obj_property name="ObjectShortName">chirp_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_init" type="logic">
+         <obj_property name="ElementShortName">chirp_init</obj_property>
+         <obj_property name="ObjectShortName">chirp_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_enable" type="logic">
+         <obj_property name="ElementShortName">chirp_enable</obj_property>
+         <obj_property name="ObjectShortName">chirp_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_enable" type="logic">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_control_word" type="array">
+         <obj_property name="ElementShortName">chirp_control_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_control_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_freq_offset" type="array">
+         <obj_property name="ElementShortName">chirp_freq_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_freq_offset[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_tuning_word_coeff" type="array">
+         <obj_property name="ElementShortName">chirp_tuning_word_coeff[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_tuning_word_coeff[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_count_max" type="array">
+         <obj_property name="ElementShortName">chirp_count_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/fmc150_ctrl_bus" type="array">
+         <obj_property name="ElementShortName">fmc150_ctrl_bus[7:0]</obj_property>
+         <obj_property name="ObjectShortName">fmc150_ctrl_bus[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/fmc150_spi_ctrl_bus_in" type="array">
+         <obj_property name="ElementShortName">fmc150_spi_ctrl_bus_in[67:0]</obj_property>
+         <obj_property name="ObjectShortName">fmc150_spi_ctrl_bus_in[67:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/fmc150_spi_ctrl_bus_out" type="array">
+         <obj_property name="ElementShortName">fmc150_spi_ctrl_bus_out[47:0]</obj_property>
+         <obj_property name="ObjectShortName">fmc150_spi_ctrl_bus_out[47:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/rd_fifo_clk" type="logic">
+         <obj_property name="ElementShortName">rd_fifo_clk</obj_property>
+         <obj_property name="ObjectShortName">rd_fifo_clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/clk_245_76MHz" type="logic">
+         <obj_property name="ElementShortName">clk_245_76MHz</obj_property>
+         <obj_property name="ObjectShortName">clk_245_76MHz</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/clk_491_52MHz" type="logic">
+         <obj_property name="ElementShortName">clk_491_52MHz</obj_property>
+         <obj_property name="ObjectShortName">clk_491_52MHz</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_i" type="array">
+         <obj_property name="ElementShortName">adc_data_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_q" type="array">
+         <obj_property name="ElementShortName">adc_data_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dac_data_i" type="array">
+         <obj_property name="ElementShortName">dac_data_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dac_data_q" type="array">
+         <obj_property name="ElementShortName">dac_data_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_iq" type="array">
+         <obj_property name="ElementShortName">adc_data_iq[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_iq[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dac_data_iq" type="array">
+         <obj_property name="ElementShortName">dac_data_iq[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_iq[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_valid" type="logic">
+         <obj_property name="ElementShortName">data_valid</obj_property>
+         <obj_property name="ObjectShortName">data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_counter" type="array">
+         <obj_property name="ElementShortName">adc_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_counter[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_valid" type="logic">
+         <obj_property name="ElementShortName">adc_data_valid</obj_property>
+         <obj_property name="ObjectShortName">adc_data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_i_r" type="array">
+         <obj_property name="ElementShortName">adc_data_i_r[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_i_r[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_q_r" type="array">
+         <obj_property name="ElementShortName">adc_data_q_r[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_q_r[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_i_rr" type="array">
+         <obj_property name="ElementShortName">adc_data_i_rr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_i_rr[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_q_rr" type="array">
+         <obj_property name="ElementShortName">adc_data_q_rr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_q_rr[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dac_data_i_r" type="array">
+         <obj_property name="ElementShortName">dac_data_i_r[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_i_r[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dac_data_q_r" type="array">
+         <obj_property name="ElementShortName">dac_data_q_r[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_q_r[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dac_data_i_rr" type="array">
+         <obj_property name="ElementShortName">dac_data_i_rr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_i_rr[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dac_data_q_rr" type="array">
+         <obj_property name="ElementShortName">dac_data_q_rr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_q_rr[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_counter_reg" type="array">
+         <obj_property name="ElementShortName">adc_counter_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_counter_reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_valid_r" type="logic">
+         <obj_property name="ElementShortName">adc_data_valid_r</obj_property>
+         <obj_property name="ObjectShortName">adc_data_valid_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_valid_rr" type="logic">
+         <obj_property name="ElementShortName">adc_data_valid_rr</obj_property>
+         <obj_property name="ObjectShortName">adc_data_valid_rr</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_i_delay" type="array">
+         <obj_property name="ElementShortName">adc_data_i_delay[99:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_i_delay[99:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_data_q_delay" type="array">
+         <obj_property name="ElementShortName">adc_data_q_delay[99:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_q_delay[99:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_tdata" type="array">
+         <obj_property name="ElementShortName">adc_fifo_wr_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_tvalid" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_wr_tvalid</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_tlast" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_wr_tlast</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_pre_tlast" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_wr_pre_tlast</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_pre_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_first" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_wr_first</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_first</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_first_r" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_wr_first_r</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_first_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dds_out_i" type="array">
+         <obj_property name="ElementShortName">dds_out_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_out_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dds_out_q" type="array">
+         <obj_property name="ElementShortName">dds_out_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_out_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dds_out_valid" type="logic">
+         <obj_property name="ElementShortName">dds_out_valid</obj_property>
+         <obj_property name="ObjectShortName">dds_out_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_out_lower" type="array">
+         <obj_property name="ElementShortName">data_out_lower[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out_lower[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_out_upper" type="array">
+         <obj_property name="ElementShortName">data_out_upper[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out_upper[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_out_lower_r" type="array">
+         <obj_property name="ElementShortName">data_out_lower_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out_lower_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_out_upper_r" type="array">
+         <obj_property name="ElementShortName">data_out_upper_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out_upper_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dds_latency_counter" type="array">
+         <obj_property name="ElementShortName">dds_latency_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_latency_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/glbl_counter_reg" type="array">
+         <obj_property name="ElementShortName">glbl_counter_reg[63:0]</obj_property>
+         <obj_property name="ObjectShortName">glbl_counter_reg[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/glbl_counter" type="array">
+         <obj_property name="ElementShortName">glbl_counter[63:0]</obj_property>
+         <obj_property name="ObjectShortName">glbl_counter[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dds_route_ctrl_l" type="array">
+         <obj_property name="ElementShortName">dds_route_ctrl_l[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_route_ctrl_l[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dds_route_ctrl_u" type="array">
+         <obj_property name="ElementShortName">dds_route_ctrl_u[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_route_ctrl_u[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_header" type="array">
+         <obj_property name="ElementShortName">chirp_header[511:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_header[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_header_counter" type="array">
+         <obj_property name="ElementShortName">chirp_header_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_header_counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_init_r" type="logic">
+         <obj_property name="ElementShortName">chirp_init_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_init_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/chirp_init_rr" type="logic">
+         <obj_property name="ElementShortName">chirp_init_rr</obj_property>
+         <obj_property name="ObjectShortName">chirp_init_rr</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_tdata_count" type="array">
+         <obj_property name="ElementShortName">adc_fifo_wr_tdata_count[12:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_tdata_count[12:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_rd_data_count" type="array">
+         <obj_property name="ElementShortName">adc_fifo_rd_data_count[9:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_rd_data_count[9:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_ack" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_wr_ack</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_ack</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_valid" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_valid</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_almost_full" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_almost_full</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_almost_full</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_almost_empty" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_almost_empty</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_almost_empty</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_wr_en" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_wr_en</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_rd_en" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_rd_en</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_rd_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_data_out" type="array">
+         <obj_property name="ElementShortName">adc_fifo_data_out[511:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_data_out[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_full" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_full</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_full</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_fifo_empty" type="logic">
+         <obj_property name="ElementShortName">adc_fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_empty</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_enable_r" type="logic">
+         <obj_property name="ElementShortName">adc_enable_r</obj_property>
+         <obj_property name="ObjectShortName">adc_enable_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/adc_enable_rr" type="logic">
+         <obj_property name="ElementShortName">adc_enable_rr</obj_property>
+         <obj_property name="ObjectShortName">adc_enable_rr</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/peak_threshold_i" type="array">
+         <obj_property name="ElementShortName">peak_threshold_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_threshold_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/peak_threshold_q" type="array">
+         <obj_property name="ElementShortName">peak_threshold_q[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_threshold_q[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dw_axis_tdata" type="array">
+         <obj_property name="ElementShortName">dw_axis_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">dw_axis_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dw_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">dw_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">dw_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dw_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">dw_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">dw_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dw_axis_tready" type="logic">
+         <obj_property name="ElementShortName">dw_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">dw_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_iq_tvalid" type="logic">
+         <obj_property name="ElementShortName">data_iq_tvalid</obj_property>
+         <obj_property name="ObjectShortName">data_iq_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_iq_tlast" type="logic">
+         <obj_property name="ElementShortName">data_iq_tlast</obj_property>
+         <obj_property name="ObjectShortName">data_iq_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_iq_first" type="logic">
+         <obj_property name="ElementShortName">data_iq_first</obj_property>
+         <obj_property name="ObjectShortName">data_iq_first</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_counter_id" type="array">
+         <obj_property name="ElementShortName">data_counter_id[63:0]</obj_property>
+         <obj_property name="ObjectShortName">data_counter_id[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/threshold_ctrl_i" type="array">
+         <obj_property name="ElementShortName">threshold_ctrl_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">threshold_ctrl_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/threshold_ctrl_q" type="array">
+         <obj_property name="ElementShortName">threshold_ctrl_q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">threshold_ctrl_q[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/lpf_cutoff_ind" type="array">
+         <obj_property name="ElementShortName">lpf_cutoff_ind[31:0]</obj_property>
+         <obj_property name="ObjectShortName">lpf_cutoff_ind[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/data_iq_tready" type="logic">
+         <obj_property name="ElementShortName">data_iq_tready</obj_property>
+         <obj_property name="ObjectShortName">data_iq_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/pk_axis_tkeep" type="array">
+         <obj_property name="ElementShortName">pk_axis_tkeep[63:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tkeep[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/pk_axis_tdest" type="array">
+         <obj_property name="ElementShortName">pk_axis_tdest[0:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tdest[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/pk_axis_tid" type="array">
+         <obj_property name="ElementShortName">pk_axis_tid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tid[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/pk_axis_tstrb" type="array">
+         <obj_property name="ElementShortName">pk_axis_tstrb[63:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tstrb[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/pk_axis_tuser" type="array">
+         <obj_property name="ElementShortName">pk_axis_tuser[0:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tuser[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/ADC_AXI_DATA_WIDTH" type="array">
+         <obj_property name="ElementShortName">ADC_AXI_DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/ADC_AXI_TID_WIDTH" type="array">
+         <obj_property name="ElementShortName">ADC_AXI_TID_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TID_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/ADC_AXI_TDEST_WIDTH" type="array">
+         <obj_property name="ElementShortName">ADC_AXI_TDEST_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TDEST_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/ADC_AXI_TUSER_WIDTH" type="array">
+         <obj_property name="ElementShortName">ADC_AXI_TUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/ADC_AXI_STREAM_ID" type="logic">
+         <obj_property name="ElementShortName">ADC_AXI_STREAM_ID</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_STREAM_ID</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/ADC_AXI_STREAM_DEST" type="logic">
+         <obj_property name="ElementShortName">ADC_AXI_STREAM_DEST</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_STREAM_DEST</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/FFT_LEN" type="array">
+         <obj_property name="ElementShortName">FFT_LEN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_LEN[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/DDS_LATENCY" type="array">
+         <obj_property name="ElementShortName">DDS_LATENCY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DDS_LATENCY[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/FCUTOFF_IND" type="array">
+         <obj_property name="ElementShortName">FCUTOFF_IND[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FCUTOFF_IND[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/ADC_DELAY" type="array">
+         <obj_property name="ElementShortName">ADC_DELAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_DELAY[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group3986" type="group">
+      <obj_property name="label">dsp_range_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/aclk" type="logic">
+         <obj_property name="ElementShortName">aclk</obj_property>
+         <obj_property name="ObjectShortName">aclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/aresetn" type="logic">
+         <obj_property name="ElementShortName">aresetn</obj_property>
+         <obj_property name="ObjectShortName">aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/adc_iq_tdata" type="array">
+         <obj_property name="ElementShortName">adc_iq_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_iq_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/dac_iq_tdata" type="array">
+         <obj_property name="ElementShortName">dac_iq_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_iq_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/iq_tvalid" type="logic">
+         <obj_property name="ElementShortName">iq_tvalid</obj_property>
+         <obj_property name="ObjectShortName">iq_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/iq_tlast" type="logic">
+         <obj_property name="ElementShortName">iq_tlast</obj_property>
+         <obj_property name="ObjectShortName">iq_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/iq_tready" type="logic">
+         <obj_property name="ElementShortName">iq_tready</obj_property>
+         <obj_property name="ObjectShortName">iq_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/iq_first" type="logic">
+         <obj_property name="ElementShortName">iq_first</obj_property>
+         <obj_property name="ObjectShortName">iq_first</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/counter_id" type="array">
+         <obj_property name="ElementShortName">counter_id[63:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_id[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tdata" type="array">
+         <obj_property name="ElementShortName">pk_axis_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">pk_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">pk_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tkeep" type="array">
+         <obj_property name="ElementShortName">pk_axis_tkeep[63:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tkeep[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tdest" type="array">
+         <obj_property name="ElementShortName">pk_axis_tdest[0:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tdest[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tid" type="array">
+         <obj_property name="ElementShortName">pk_axis_tid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tid[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tstrb" type="array">
+         <obj_property name="ElementShortName">pk_axis_tstrb[63:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tstrb[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tuser" type="array">
+         <obj_property name="ElementShortName">pk_axis_tuser[0:0]</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tuser[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tready" type="logic">
+         <obj_property name="ElementShortName">pk_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_cutoff" type="array">
+         <obj_property name="ElementShortName">lpf_cutoff[31:0]</obj_property>
+         <obj_property name="ObjectShortName">lpf_cutoff[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/threshold_ctrl_i" type="array">
+         <obj_property name="ElementShortName">threshold_ctrl_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">threshold_ctrl_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/threshold_ctrl_q" type="array">
+         <obj_property name="ElementShortName">threshold_ctrl_q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">threshold_ctrl_q[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_ready" type="logic">
+         <obj_property name="ElementShortName">chirp_ready</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_done" type="logic">
+         <obj_property name="ElementShortName">chirp_done</obj_property>
+         <obj_property name="ObjectShortName">chirp_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_active" type="logic">
+         <obj_property name="ElementShortName">chirp_active</obj_property>
+         <obj_property name="ObjectShortName">chirp_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_init" type="logic">
+         <obj_property name="ElementShortName">chirp_init</obj_property>
+         <obj_property name="ObjectShortName">chirp_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_enable" type="logic">
+         <obj_property name="ElementShortName">chirp_enable</obj_property>
+         <obj_property name="ObjectShortName">chirp_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/adc_enable" type="logic">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_control_word" type="array">
+         <obj_property name="ElementShortName">chirp_control_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_control_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_freq_offset" type="array">
+         <obj_property name="ElementShortName">chirp_freq_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_freq_offset[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_tuning_word_coeff" type="array">
+         <obj_property name="ElementShortName">chirp_tuning_word_coeff[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_tuning_word_coeff[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/chirp_count_max" type="array">
+         <obj_property name="ElementShortName">chirp_count_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/adc_data_i" type="array">
+         <obj_property name="ElementShortName">adc_data_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/adc_data_q" type="array">
+         <obj_property name="ElementShortName">adc_data_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/dac_data_i" type="array">
+         <obj_property name="ElementShortName">dac_data_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/dac_data_q" type="array">
+         <obj_property name="ElementShortName">dac_data_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/iq_tvalid_shift" type="array">
+         <obj_property name="ElementShortName">iq_tvalid_shift[2:0]</obj_property>
+         <obj_property name="ObjectShortName">iq_tvalid_shift[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/iq_tlast_shift" type="array">
+         <obj_property name="ElementShortName">iq_tlast_shift[2:0]</obj_property>
+         <obj_property name="ObjectShortName">iq_tlast_shift[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/s_fft_i_axis_tdata" type="array">
+         <obj_property name="ElementShortName">s_fft_i_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_fft_i_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/s_fft_i_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_fft_i_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_fft_i_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/s_fft_i_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">s_fft_i_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_fft_i_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/s_fft_i_axis_tready" type="logic">
+         <obj_property name="ElementShortName">s_fft_i_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">s_fft_i_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/s_fft_q_axis_tdata" type="array">
+         <obj_property name="ElementShortName">s_fft_q_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_fft_q_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/s_fft_q_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_fft_q_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_fft_q_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/s_fft_q_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">s_fft_q_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_fft_q_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/s_fft_q_axis_tready" type="logic">
+         <obj_property name="ElementShortName">s_fft_q_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">s_fft_q_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_i_axis_tdata" type="array">
+         <obj_property name="ElementShortName">m_fft_i_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_fft_i_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_i_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_fft_i_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_fft_i_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_i_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">m_fft_i_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_fft_i_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_i_axis_tready" type="logic">
+         <obj_property name="ElementShortName">m_fft_i_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">m_fft_i_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_i_index" type="array">
+         <obj_property name="ElementShortName">m_fft_i_index[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_fft_i_index[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_q_axis_tdata" type="array">
+         <obj_property name="ElementShortName">m_fft_q_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_fft_q_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_q_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_fft_q_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_fft_q_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_q_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">m_fft_q_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_fft_q_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_q_axis_tready" type="logic">
+         <obj_property name="ElementShortName">m_fft_q_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">m_fft_q_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/m_fft_q_index" type="array">
+         <obj_property name="ElementShortName">m_fft_q_index[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_fft_q_index[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/mixer_out_i" type="array">
+         <obj_property name="ElementShortName">mixer_out_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mixer_out_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/mixer_out_q" type="array">
+         <obj_property name="ElementShortName">mixer_out_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mixer_out_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/mag_i_axis_tdata" type="array">
+         <obj_property name="ElementShortName">mag_i_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mag_i_axis_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/mag_q_axis_tdata" type="array">
+         <obj_property name="ElementShortName">mag_q_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mag_q_axis_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_i_axis_tdata" type="array">
+         <obj_property name="ElementShortName">sq_mag_i_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_i_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_i_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">sq_mag_i_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_i_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_i_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">sq_mag_i_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_i_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_q_axis_tdata" type="array">
+         <obj_property name="ElementShortName">sq_mag_q_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_q_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_q_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">sq_mag_q_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_q_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_q_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">sq_mag_q_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_q_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_i_axis_tdata_overflow" type="logic">
+         <obj_property name="ElementShortName">sq_mag_i_axis_tdata_overflow</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_i_axis_tdata_overflow</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_q_axis_tdata_overflow" type="logic">
+         <obj_property name="ElementShortName">sq_mag_q_axis_tdata_overflow</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_q_axis_tdata_overflow</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_i_axis_tuser" type="array">
+         <obj_property name="ElementShortName">sq_mag_i_axis_tuser[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_i_axis_tuser[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_q_axis_tuser" type="array">
+         <obj_property name="ElementShortName">sq_mag_q_axis_tuser[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_q_axis_tuser[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_i_index" type="array">
+         <obj_property name="ElementShortName">sq_mag_i_index[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_i_index[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/sq_mag_q_index" type="array">
+         <obj_property name="ElementShortName">sq_mag_q_index[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sq_mag_q_index[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_index_i" type="array">
+         <obj_property name="ElementShortName">peak_index_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_index_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_tdata_i" type="array">
+         <obj_property name="ElementShortName">peak_tdata_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_tdata_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_tvalid_i" type="logic">
+         <obj_property name="ElementShortName">peak_tvalid_i</obj_property>
+         <obj_property name="ObjectShortName">peak_tvalid_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_tlast_i" type="logic">
+         <obj_property name="ElementShortName">peak_tlast_i</obj_property>
+         <obj_property name="ObjectShortName">peak_tlast_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_tuser_i" type="array">
+         <obj_property name="ElementShortName">peak_tuser_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_tuser_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/num_peaks_i" type="array">
+         <obj_property name="ElementShortName">num_peaks_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">num_peaks_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_index_q" type="array">
+         <obj_property name="ElementShortName">peak_index_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_index_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_tdata_q" type="array">
+         <obj_property name="ElementShortName">peak_tdata_q[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_tdata_q[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_tvalid_q" type="logic">
+         <obj_property name="ElementShortName">peak_tvalid_q</obj_property>
+         <obj_property name="ObjectShortName">peak_tvalid_q</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_tlast_q" type="logic">
+         <obj_property name="ElementShortName">peak_tlast_q</obj_property>
+         <obj_property name="ObjectShortName">peak_tlast_q</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_tuser_q" type="array">
+         <obj_property name="ElementShortName">peak_tuser_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_tuser_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/num_peaks_q" type="array">
+         <obj_property name="ElementShortName">num_peaks_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">num_peaks_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_result_i" type="array">
+         <obj_property name="ElementShortName">peak_result_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_result_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_result_q" type="array">
+         <obj_property name="ElementShortName">peak_result_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_result_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_val_i" type="array">
+         <obj_property name="ElementShortName">peak_val_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_val_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_num_i" type="array">
+         <obj_property name="ElementShortName">peak_num_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_num_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_val_q" type="array">
+         <obj_property name="ElementShortName">peak_val_q[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_val_q[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_num_q" type="array">
+         <obj_property name="ElementShortName">peak_num_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_num_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/new_peak_i" type="logic">
+         <obj_property name="ElementShortName">new_peak_i</obj_property>
+         <obj_property name="ObjectShortName">new_peak_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/new_peak_q" type="logic">
+         <obj_property name="ElementShortName">new_peak_q</obj_property>
+         <obj_property name="ObjectShortName">new_peak_q</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_tdata_i" type="array">
+         <obj_property name="ElementShortName">lpf_tdata_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">lpf_tdata_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_tvalid_i" type="logic">
+         <obj_property name="ElementShortName">lpf_tvalid_i</obj_property>
+         <obj_property name="ObjectShortName">lpf_tvalid_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_tlast_i" type="logic">
+         <obj_property name="ElementShortName">lpf_tlast_i</obj_property>
+         <obj_property name="ObjectShortName">lpf_tlast_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_tuser_i" type="array">
+         <obj_property name="ElementShortName">lpf_tuser_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">lpf_tuser_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_index_i" type="array">
+         <obj_property name="ElementShortName">lpf_index_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">lpf_index_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_tdata_q" type="array">
+         <obj_property name="ElementShortName">lpf_tdata_q[63:0]</obj_property>
+         <obj_property name="ObjectShortName">lpf_tdata_q[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_tvalid_q" type="logic">
+         <obj_property name="ElementShortName">lpf_tvalid_q</obj_property>
+         <obj_property name="ObjectShortName">lpf_tvalid_q</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_tlast_q" type="logic">
+         <obj_property name="ElementShortName">lpf_tlast_q</obj_property>
+         <obj_property name="ObjectShortName">lpf_tlast_q</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_tuser_q" type="array">
+         <obj_property name="ElementShortName">lpf_tuser_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">lpf_tuser_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/lpf_index_q" type="array">
+         <obj_property name="ElementShortName">lpf_index_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">lpf_index_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_threshold_i_r" type="array">
+         <obj_property name="ElementShortName">peak_threshold_i_r[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_threshold_i_r[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_threshold_q_r" type="array">
+         <obj_property name="ElementShortName">peak_threshold_q_r[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_threshold_q_r[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_threshold_i" type="array">
+         <obj_property name="ElementShortName">peak_threshold_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_threshold_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/peak_threshold_q" type="array">
+         <obj_property name="ElementShortName">peak_threshold_q[63:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_threshold_q[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/dw_axis_tdata" type="array">
+         <obj_property name="ElementShortName">dw_axis_tdata[255:0]</obj_property>
+         <obj_property name="ObjectShortName">dw_axis_tdata[255:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tvalid_r" type="logic">
+         <obj_property name="ElementShortName">pk_axis_tvalid_r</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tvalid_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/pk_axis_tlast_r" type="logic">
+         <obj_property name="ElementShortName">pk_axis_tlast_r</obj_property>
+         <obj_property name="ObjectShortName">pk_axis_tlast_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/config_r" type="array">
+         <obj_property name="ElementShortName">config_r[255:0]</obj_property>
+         <obj_property name="ObjectShortName">config_r[255:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/PK_AXI_DATA_WIDTH" type="array">
+         <obj_property name="ElementShortName">PK_AXI_DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PK_AXI_DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/PK_AXI_TID_WIDTH" type="array">
+         <obj_property name="ElementShortName">PK_AXI_TID_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PK_AXI_TID_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/PK_AXI_TDEST_WIDTH" type="array">
+         <obj_property name="ElementShortName">PK_AXI_TDEST_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PK_AXI_TDEST_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/PK_AXI_TUSER_WIDTH" type="array">
+         <obj_property name="ElementShortName">PK_AXI_TUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PK_AXI_TUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group522" type="group">
+      <obj_property name="label">fft_i_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/aclk" type="logic">
+         <obj_property name="ElementShortName">aclk</obj_property>
+         <obj_property name="ObjectShortName">aclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/aresetn" type="logic">
+         <obj_property name="ElementShortName">aresetn</obj_property>
+         <obj_property name="ObjectShortName">aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">s_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_tlast" type="logic">
+         <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_index" type="array">
+         <obj_property name="ElementShortName">m_index[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_index[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/chirp_ready" type="logic">
+         <obj_property name="ElementShortName">chirp_ready</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/chirp_done" type="logic">
+         <obj_property name="ElementShortName">chirp_done</obj_property>
+         <obj_property name="ObjectShortName">chirp_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/chirp_active" type="logic">
+         <obj_property name="ElementShortName">chirp_active</obj_property>
+         <obj_property name="ObjectShortName">chirp_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/chirp_init" type="logic">
+         <obj_property name="ElementShortName">chirp_init</obj_property>
+         <obj_property name="ObjectShortName">chirp_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/chirp_enable" type="logic">
+         <obj_property name="ElementShortName">chirp_enable</obj_property>
+         <obj_property name="ObjectShortName">chirp_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/adc_enable" type="logic">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/next_gen_state" type="array">
+         <obj_property name="ElementShortName">next_gen_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_gen_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/gen_state" type="array">
+         <obj_property name="ElementShortName">gen_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">gen_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_config_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_fft_config_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_config_tdata[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_config_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_fft_config_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_config_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_config_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_fft_config_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_config_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_data_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_fft_data_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_data_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_data_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_fft_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_data_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_fft_data_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_data_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_data_tlast" type="logic">
+         <obj_property name="ElementShortName">s_axis_fft_data_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_data_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_fft_data_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_fft_data_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_fft_data_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_fft_data_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_fft_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_fft_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_fft_data_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_fft_data_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_fft_data_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_fft_data_tlast" type="logic">
+         <obj_property name="ElementShortName">m_axis_fft_data_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_fft_data_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_fft_data_tuser" type="array">
+         <obj_property name="ElementShortName">m_axis_fft_data_tuser[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_fft_data_tuser[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/fft_event_frame_started" type="logic">
+         <obj_property name="ElementShortName">fft_event_frame_started</obj_property>
+         <obj_property name="ObjectShortName">fft_event_frame_started</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/fft_event_tlast_unexpected" type="logic">
+         <obj_property name="ElementShortName">fft_event_tlast_unexpected</obj_property>
+         <obj_property name="ObjectShortName">fft_event_tlast_unexpected</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/fft_event_tlast_missing" type="logic">
+         <obj_property name="ElementShortName">fft_event_tlast_missing</obj_property>
+         <obj_property name="ObjectShortName">fft_event_tlast_missing</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/fft_event_status_channel_halt" type="logic">
+         <obj_property name="ElementShortName">fft_event_status_channel_halt</obj_property>
+         <obj_property name="ObjectShortName">fft_event_status_channel_halt</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/fft_event_data_in_channel_halt" type="logic">
+         <obj_property name="ElementShortName">fft_event_data_in_channel_halt</obj_property>
+         <obj_property name="ObjectShortName">fft_event_data_in_channel_halt</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/fft_event_data_out_channel_halt" type="logic">
+         <obj_property name="ElementShortName">fft_event_data_out_channel_halt</obj_property>
+         <obj_property name="ObjectShortName">fft_event_data_out_channel_halt</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_fft_status_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_fft_status_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_fft_status_tdata[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_fft_status_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_fft_status_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_fft_status_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_axis_fft_status_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_fft_status_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_fft_status_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_config_tdata_r" type="array">
+         <obj_property name="ElementShortName">s_axis_fft_config_tdata_r[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_config_tdata_r[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_config_tvalid_r" type="logic">
+         <obj_property name="ElementShortName">s_axis_fft_config_tvalid_r</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_config_tvalid_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_data_tdata_r" type="array">
+         <obj_property name="ElementShortName">s_axis_fft_data_tdata_r[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_data_tdata_r[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_data_tvalid_r" type="logic">
+         <obj_property name="ElementShortName">s_axis_fft_data_tvalid_r</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_data_tvalid_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/s_axis_fft_data_tlast_r" type="logic">
+         <obj_property name="ElementShortName">s_axis_fft_data_tlast_r</obj_property>
+         <obj_property name="ObjectShortName">s_axis_fft_data_tlast_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/fft_len_counter" type="array">
+         <obj_property name="ElementShortName">fft_len_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fft_len_counter[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/config_wait_counter" type="array">
+         <obj_property name="ElementShortName">config_wait_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">config_wait_counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/m_index_r" type="array">
+         <obj_property name="ElementShortName">m_index_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_index_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/fwd_inv" type="logic">
+         <obj_property name="ElementShortName">fwd_inv</obj_property>
+         <obj_property name="ObjectShortName">fwd_inv</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/scale_sch" type="array">
+         <obj_property name="ElementShortName">scale_sch[15:0]</obj_property>
+         <obj_property name="ObjectShortName">scale_sch[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/nfft" type="array">
+         <obj_property name="ElementShortName">nfft[4:0]</obj_property>
+         <obj_property name="ObjectShortName">nfft[4:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_LEN" type="array">
+         <obj_property name="ElementShortName">FFT_LEN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_LEN[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_CHANNELS" type="array">
+         <obj_property name="ElementShortName">FFT_CHANNELS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_CHANNELS[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_AXI_DATA_WIDTH" type="array">
+         <obj_property name="ElementShortName">FFT_AXI_DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_AXI_DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_AXI_TID_WIDTH" type="array">
+         <obj_property name="ElementShortName">FFT_AXI_TID_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_AXI_TID_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_AXI_TDEST_WIDTH" type="array">
+         <obj_property name="ElementShortName">FFT_AXI_TDEST_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_AXI_TDEST_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_AXI_TUSER_WIDTH" type="array">
+         <obj_property name="ElementShortName">FFT_AXI_TUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_AXI_TUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_AXI_STREAM_ID" type="logic">
+         <obj_property name="ElementShortName">FFT_AXI_STREAM_ID</obj_property>
+         <obj_property name="ObjectShortName">FFT_AXI_STREAM_ID</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_AXI_STREAM_DEST" type="logic">
+         <obj_property name="ElementShortName">FFT_AXI_STREAM_DEST</obj_property>
+         <obj_property name="ObjectShortName">FFT_AXI_STREAM_DEST</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/FFT_INDEX_LEN" type="array">
+         <obj_property name="ElementShortName">FFT_INDEX_LEN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_INDEX_LEN[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/NEED_SCALING" type="array">
+         <obj_property name="ElementShortName">NEED_SCALING[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NEED_SCALING[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/CONFIG_LATENCY" type="array">
+         <obj_property name="ElementShortName">CONFIG_LATENCY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CONFIG_LATENCY[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/LOG_2_FFT_LEN" type="array">
+         <obj_property name="ElementShortName">LOG_2_FFT_LEN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOG_2_FFT_LEN[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/SCH_SIZE_DIV" type="array">
+         <obj_property name="ElementShortName">SCH_SIZE_DIV[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SCH_SIZE_DIV[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/SCH_SIZE" type="array">
+         <obj_property name="ElementShortName">SCH_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SCH_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/CONFIG_DATA_SIZE" type="array">
+         <obj_property name="ElementShortName">CONFIG_DATA_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CONFIG_DATA_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/CONFIG" type="array">
+         <obj_property name="ElementShortName">CONFIG[2:0]</obj_property>
+         <obj_property name="ObjectShortName">CONFIG[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/WR_DATA" type="array">
+         <obj_property name="ElementShortName">WR_DATA[2:0]</obj_property>
+         <obj_property name="ObjectShortName">WR_DATA[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/ZP_DATA" type="array">
+         <obj_property name="ElementShortName">ZP_DATA[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ZP_DATA[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/sim_tb_cmd_decoder/u_cmd_decoder_top/chirp_dds_top_inst/dsp_range_detector_inst/fft_dsp_i/RD_DATA" type="array">
+         <obj_property name="ElementShortName">RD_DATA[2:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_DATA[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
