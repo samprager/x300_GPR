@@ -1128,14 +1128,14 @@ waveform_stream #(
     .init_wf_write (init_wf_write),
     .wf_write_ready (wf_write_ready),
     .wf_read_ready (wf_read_ready),
-    // data from ADC Data fifo
+    // data to waveform bram
     .wfin_axis_tdata (wfin_axis_tdata),
     .wfin_axis_tvalid(wfin_axis_tvalid),
     .wfin_axis_tlast(wfin_axis_tlast),
     .wfin_axis_tkeep(wfin_axis_tkeep),
     .wfin_axis_tready(wfin_axis_tready),
 
-    // data from ADC Data fifo
+    // data from waveform bram
     .wfout_axis_tdata(wfout_axis_tdata),
     .wfout_axis_tvalid(wfout_axis_tvalid),
     .wfout_axis_tlast(wfout_axis_tlast),

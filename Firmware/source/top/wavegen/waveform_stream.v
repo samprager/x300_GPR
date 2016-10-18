@@ -29,6 +29,8 @@ module waveform_stream # (
     input init_wf_write,
     output wf_write_ready,
     output wf_read_ready,
+
+    output [31:0] wfout_size,
     // data from ADC Data fifo
     input       [31:0]                    wfin_axis_tdata,
     input                                 wfin_axis_tvalid,
@@ -361,6 +363,7 @@ end
 
 assign wf_read_ready = wf_read_ready_reg & wf_written;
 assign wf_write_ready = wf_write_ready_reg;
+assign wfout_size = wf_cur_size;
 
 assign s_axis_s2mm_tvalid = (gen_state == WR_DATA)? wfin_axis_tvalid : 0;
 assign s_axis_s2mm_tdata = wfin_axis_tdata;
