@@ -122,7 +122,7 @@
 *.runs/.jobs/*
 
 #########
-IP Output Products (only need .xci and .coe and .prj files)
+#IP Output Products (only need .xci and .coe and .prj files)
 #########
 */ip/*/*
 !*/ip/*/*.coe
@@ -130,21 +130,26 @@ IP Output Products (only need .xci and .coe and .prj files)
 !*/ip/*/*.prj
 
 #########
-New Version IP Output Products (.xcix
+#New Version IP Output Products (.xcix
 #########
 !*/ip/*.xcix
 !*/ip/*/*.xcix
 
 #########
-Generated Vivado Projects
+#Generated Vivado Projects
 #########
 */implement/*project_*/*/*/*
 
 #########
-Generated Bitstreams and debug nets
+#Generated Bitstreams and debug nets
 #########
 !*/implement/project_*/project_*.runs/impl_*/*.bit
 !*/implement/project_*/project_*.runs/impl_*/*.ltx
 !*/implement/project_*/project_*.runs/impl_*/*.mcs
 !*/implement/project_*/project_*.runs/impl_*/x300_gpr_top.bit
 !*/implement/project_*/project_*.runs/impl_*/debug_nets.ltx
+
+#########
+# Submodules
+#########
+#!*/submodules/*
