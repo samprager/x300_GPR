@@ -3,7 +3,7 @@
 //
 // Note: Register addresses defined radio_core_regs.vh
 
-module noc_block_radio_core #(
+module radar_block #(
   parameter NOC_ID = 64'h12AD_1000_0000_0000,
   parameter MTU = 11,
   parameter NUM_CHANNELS = 1,
