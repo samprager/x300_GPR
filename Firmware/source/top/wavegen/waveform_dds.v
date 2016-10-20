@@ -40,9 +40,10 @@ module waveform_dds(
     input                                 wfrm_axis_tlast,
     output                                wfrm_axis_tready,
 
-    output                                wfrm_data_valid,
     output      [15:0]                    wfrm_data_i,
-    output      [15:0]                    wfrm_data_q
+    output      [15:0]                    wfrm_data_q,
+    output                                wfrm_data_valid,
+    output                                wfrm_data_last
    );
 
 
@@ -167,6 +168,7 @@ begin
    end
 end
 
+assign wfrm_data_last = chirp_done;
 assign wfrm_data_valid = wfrm_data_valid_r;
 assign wfrm_data_i = wfrm_data_iq_r[15:0];
 assign wfrm_data_q = wfrm_data_iq_r[31:16];

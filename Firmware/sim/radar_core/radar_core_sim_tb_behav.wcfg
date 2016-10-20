@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="radar_core_sim_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="glbl" />
+            <top_module name="lib_pkg" />
+            <top_module name="radar_core_sim_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="26531100000000fs"></ZoomStartTime>
+      <ZoomEndTime time="26627100000001fs"></ZoomEndTime>
+      <Cursor1Time time="26572500000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group94">
+      <obj_property name="label">SimSigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/resetn_i">
+         <obj_property name="ElementShortName">resetn_i</obj_property>
+         <obj_property name="ObjectShortName">resetn_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/clk_i">
+         <obj_property name="ElementShortName">clk_i</obj_property>
+         <obj_property name="ObjectShortName">clk_i</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/resetn">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/bus_clk">
+         <obj_property name="ElementShortName">bus_clk</obj_property>
+         <obj_property name="ObjectShortName">bus_clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/bus_rst">
+         <obj_property name="ElementShortName">bus_rst</obj_property>
+         <obj_property name="ObjectShortName">bus_rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radio_clk">
+         <obj_property name="ElementShortName">radio_clk</obj_property>
+         <obj_property name="ObjectShortName">radio_clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radio_rst">
+         <obj_property name="ElementShortName">radio_rst</obj_property>
+         <obj_property name="ObjectShortName">radio_rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/m_axis_data_tdata">
+         <obj_property name="ElementShortName">m_axis_data_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/m_axis_data_tuser">
+         <obj_property name="ElementShortName">m_axis_data_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/m_axis_data_tlast">
+         <obj_property name="ElementShortName">m_axis_data_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/m_axis_data_tvalid">
+         <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/m_axis_data_tready">
+         <obj_property name="ElementShortName">m_axis_data_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/s_axis_data_tdata">
+         <obj_property name="ElementShortName">s_axis_data_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/s_axis_data_tuser">
+         <obj_property name="ElementShortName">s_axis_data_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/s_axis_data_tlast">
+         <obj_property name="ElementShortName">s_axis_data_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/s_axis_data_tvalid">
+         <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/s_axis_data_tready">
+         <obj_property name="ElementShortName">s_axis_data_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/set_stb">
+         <obj_property name="ElementShortName">set_stb</obj_property>
+         <obj_property name="ObjectShortName">set_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/set_addr">
+         <obj_property name="ElementShortName">set_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">set_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/set_data">
+         <obj_property name="ElementShortName">set_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/set_stb_r">
+         <obj_property name="ElementShortName">set_stb_r</obj_property>
+         <obj_property name="ObjectShortName">set_stb_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/set_addr_r">
+         <obj_property name="ElementShortName">set_addr_r[7:0]</obj_property>
+         <obj_property name="ObjectShortName">set_addr_r[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/set_data_r">
+         <obj_property name="ElementShortName">set_data_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set_data_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/stb_count">
+         <obj_property name="ElementShortName">stb_count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">stb_count[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/rx_counter">
+         <obj_property name="ElementShortName">rx_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_counter[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/vita_counter">
+         <obj_property name="ElementShortName">vita_counter[63:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_counter[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/wfin_axis_tdata_reg">
+         <obj_property name="ElementShortName">wfin_axis_tdata_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tdata_reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/wfin_axis_tvalid_reg">
+         <obj_property name="ElementShortName">wfin_axis_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/wfin_axis_tlast_reg">
+         <obj_property name="ElementShortName">wfin_axis_tlast_reg</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tlast_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/wfin_axis_tkeep_reg">
+         <obj_property name="ElementShortName">wfin_axis_tkeep_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tkeep_reg[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/counter">
+         <obj_property name="ElementShortName">counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/wf_written">
+         <obj_property name="ElementShortName">wf_written</obj_property>
+         <obj_property name="ObjectShortName">wf_written</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/wfrm_ind">
+         <obj_property name="ElementShortName">wfrm_ind[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_ind[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/wfrm_len">
+         <obj_property name="ElementShortName">wfrm_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_len[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/wfrm_id">
+         <obj_property name="ElementShortName">wfrm_id[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_id[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/wfrm_placeholder">
+         <obj_property name="ElementShortName">wfrm_placeholder[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_placeholder[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/wfrm_cmd">
+         <obj_property name="ElementShortName">wfrm_cmd[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_cmd[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/wfrm_counter">
+         <obj_property name="ElementShortName">wfrm_counter[1:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_counter[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/reg_counter">
+         <obj_property name="ElementShortName">reg_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/chirp_count">
+         <obj_property name="ElementShortName">chirp_count[10:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count[10:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/awg_control_word_r">
+         <obj_property name="ElementShortName">awg_control_word_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_control_word_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/awg_control_word">
+         <obj_property name="ElementShortName">awg_control_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_control_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/leds">
+         <obj_property name="ElementShortName">leds[31:0]</obj_property>
+         <obj_property name="ObjectShortName">leds[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/fp_gpio_r_in">
+         <obj_property name="ElementShortName">fp_gpio_r_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fp_gpio_r_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/fp_gpio_r_out">
+         <obj_property name="ElementShortName">fp_gpio_r_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fp_gpio_r_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/fp_gpio_r_ddr">
+         <obj_property name="ElementShortName">fp_gpio_r_ddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fp_gpio_r_ddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/db_gpio_in">
+         <obj_property name="ElementShortName">db_gpio_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">db_gpio_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/db_gpio_out">
+         <obj_property name="ElementShortName">db_gpio_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">db_gpio_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/db_gpio_ddr">
+         <obj_property name="ElementShortName">db_gpio_ddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">db_gpio_ddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/misc_outs">
+         <obj_property name="ElementShortName">misc_outs[31:0]</obj_property>
+         <obj_property name="ObjectShortName">misc_outs[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/misc_ins">
+         <obj_property name="ElementShortName">misc_ins[31:0]</obj_property>
+         <obj_property name="ObjectShortName">misc_ins[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/sen">
+         <obj_property name="ElementShortName">sen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sen[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/sclk">
+         <obj_property name="ElementShortName">sclk</obj_property>
+         <obj_property name="ObjectShortName">sclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/mosi">
+         <obj_property name="ElementShortName">mosi</obj_property>
+         <obj_property name="ObjectShortName">mosi</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/miso">
+         <obj_property name="ElementShortName">miso</obj_property>
+         <obj_property name="ObjectShortName">miso</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/clear_tx">
+         <obj_property name="ElementShortName">clear_tx</obj_property>
+         <obj_property name="ObjectShortName">clear_tx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/clear_rx">
+         <obj_property name="ElementShortName">clear_rx</obj_property>
+         <obj_property name="ObjectShortName">clear_rx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/src_sid">
+         <obj_property name="ElementShortName">src_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">src_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/dst_sid">
+         <obj_property name="ElementShortName">dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/rx_resp_dst_sid">
+         <obj_property name="ElementShortName">rx_resp_dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_resp_dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/tx_resp_dst_sid">
+         <obj_property name="ElementShortName">tx_resp_dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_resp_dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/rb_stb">
+         <obj_property name="ElementShortName">rb_stb</obj_property>
+         <obj_property name="ObjectShortName">rb_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/rb_addr">
+         <obj_property name="ElementShortName">rb_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rb_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/rb_data">
+         <obj_property name="ElementShortName">rb_data[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rb_data[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/vita_time">
+         <obj_property name="ElementShortName">vita_time[63:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_time[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/vita_time_lastpps">
+         <obj_property name="ElementShortName">vita_time_lastpps[63:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_time_lastpps[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/resp_tdata">
+         <obj_property name="ElementShortName">resp_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">resp_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/resp_tlast">
+         <obj_property name="ElementShortName">resp_tlast[0:0]</obj_property>
+         <obj_property name="ObjectShortName">resp_tlast[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/resp_tvalid">
+         <obj_property name="ElementShortName">resp_tvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">resp_tvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/resp_tready">
+         <obj_property name="ElementShortName">resp_tready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">resp_tready[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/tx_stb">
+         <obj_property name="ElementShortName">tx_stb</obj_property>
+         <obj_property name="ObjectShortName">tx_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/rx_stb">
+         <obj_property name="ElementShortName">rx_stb</obj_property>
+         <obj_property name="ObjectShortName">rx_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/tx">
+         <obj_property name="ElementShortName">tx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/rx">
+         <obj_property name="ElementShortName">rx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/rx_shift_reg">
+         <obj_property name="ElementShortName">rx_shift_reg[7:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_shift_reg[7:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/i">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/CLK_PERIOD">
+         <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/RESET_PERIOD">
+         <obj_property name="ElementShortName">RESET_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESET_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/SR_CH_COUNTER_ADDR">
+         <obj_property name="ElementShortName">SR_CH_COUNTER_ADDR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_CH_COUNTER_ADDR[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/SR_CH_TUNING_COEF_ADDR">
+         <obj_property name="ElementShortName">SR_CH_TUNING_COEF_ADDR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_CH_TUNING_COEF_ADDR[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/SR_CH_FREQ_OFFSET_ADDR">
+         <obj_property name="ElementShortName">SR_CH_FREQ_OFFSET_ADDR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_CH_FREQ_OFFSET_ADDR[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/SR_AWG_CTRL_WORD_ADDR">
+         <obj_property name="ElementShortName">SR_AWG_CTRL_WORD_ADDR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_AWG_CTRL_WORD_ADDR[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/SR_PRF_INT_ADDR">
+         <obj_property name="ElementShortName">SR_PRF_INT_ADDR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_PRF_INT_ADDR[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/SR_PRF_FRAC_ADDR">
+         <obj_property name="ElementShortName">SR_PRF_FRAC_ADDR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_PRF_FRAC_ADDR[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/SR_ADC_SAMPLE_ADDR">
+         <obj_property name="ElementShortName">SR_ADC_SAMPLE_ADDR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_ADC_SAMPLE_ADDR[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/CTRL_WORD_SEL_CHIRP">
+         <obj_property name="ElementShortName">CTRL_WORD_SEL_CHIRP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTRL_WORD_SEL_CHIRP[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/CTRL_WORD_SEL_AWG">
+         <obj_property name="ElementShortName">CTRL_WORD_SEL_AWG[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTRL_WORD_SEL_AWG[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/NUM_CHANNELS">
+         <obj_property name="ElementShortName">NUM_CHANNELS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NUM_CHANNELS[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/BASE">
+         <obj_property name="ElementShortName">BASE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BASE[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/RX_DELAY">
+         <obj_property name="ElementShortName">RX_DELAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RX_DELAY[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group272">
+      <obj_property name="label">RadarCore</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/clear_rx">
+         <obj_property name="ElementShortName">clear_rx</obj_property>
+         <obj_property name="ObjectShortName">clear_rx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/clear_tx">
+         <obj_property name="ElementShortName">clear_tx</obj_property>
+         <obj_property name="ObjectShortName">clear_tx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/src_sid">
+         <obj_property name="ElementShortName">src_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">src_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/dst_sid">
+         <obj_property name="ElementShortName">dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rx_resp_dst_sid">
+         <obj_property name="ElementShortName">rx_resp_dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_resp_dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/tx_resp_dst_sid">
+         <obj_property name="ElementShortName">tx_resp_dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_resp_dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rx">
+         <obj_property name="ElementShortName">rx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rx_stb">
+         <obj_property name="ElementShortName">rx_stb</obj_property>
+         <obj_property name="ObjectShortName">rx_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/tx">
+         <obj_property name="ElementShortName">tx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/tx_stb">
+         <obj_property name="ElementShortName">tx_stb</obj_property>
+         <obj_property name="ObjectShortName">tx_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/vita_time">
+         <obj_property name="ElementShortName">vita_time[63:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_time[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/vita_time_lastpps">
+         <obj_property name="ElementShortName">vita_time_lastpps[63:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_time_lastpps[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/pps">
+         <obj_property name="ElementShortName">pps</obj_property>
+         <obj_property name="ObjectShortName">pps</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/misc_ins">
+         <obj_property name="ElementShortName">misc_ins[31:0]</obj_property>
+         <obj_property name="ObjectShortName">misc_ins[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/misc_outs">
+         <obj_property name="ElementShortName">misc_outs[31:0]</obj_property>
+         <obj_property name="ObjectShortName">misc_outs[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/fp_gpio_in">
+         <obj_property name="ElementShortName">fp_gpio_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fp_gpio_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/fp_gpio_out">
+         <obj_property name="ElementShortName">fp_gpio_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fp_gpio_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/fp_gpio_ddr">
+         <obj_property name="ElementShortName">fp_gpio_ddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fp_gpio_ddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/db_gpio_in">
+         <obj_property name="ElementShortName">db_gpio_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">db_gpio_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/db_gpio_out">
+         <obj_property name="ElementShortName">db_gpio_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">db_gpio_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/db_gpio_ddr">
+         <obj_property name="ElementShortName">db_gpio_ddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">db_gpio_ddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/leds">
+         <obj_property name="ElementShortName">leds[31:0]</obj_property>
+         <obj_property name="ObjectShortName">leds[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/spi_clk">
+         <obj_property name="ElementShortName">spi_clk</obj_property>
+         <obj_property name="ObjectShortName">spi_clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/spi_rst">
+         <obj_property name="ElementShortName">spi_rst</obj_property>
+         <obj_property name="ObjectShortName">spi_rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/sen">
+         <obj_property name="ElementShortName">sen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sen[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/sclk">
+         <obj_property name="ElementShortName">sclk</obj_property>
+         <obj_property name="ObjectShortName">sclk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/mosi">
+         <obj_property name="ElementShortName">mosi</obj_property>
+         <obj_property name="ObjectShortName">mosi</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/miso">
+         <obj_property name="ElementShortName">miso</obj_property>
+         <obj_property name="ObjectShortName">miso</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/set_stb">
+         <obj_property name="ElementShortName">set_stb</obj_property>
+         <obj_property name="ObjectShortName">set_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/set_addr">
+         <obj_property name="ElementShortName">set_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">set_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/set_data">
+         <obj_property name="ElementShortName">set_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rb_stb">
+         <obj_property name="ElementShortName">rb_stb</obj_property>
+         <obj_property name="ObjectShortName">rb_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rb_addr">
+         <obj_property name="ElementShortName">rb_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rb_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rb_data">
+         <obj_property name="ElementShortName">rb_data[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rb_data[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/tx_tdata">
+         <obj_property name="ElementShortName">tx_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/tx_tlast">
+         <obj_property name="ElementShortName">tx_tlast</obj_property>
+         <obj_property name="ObjectShortName">tx_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/tx_tvalid">
+         <obj_property name="ElementShortName">tx_tvalid</obj_property>
+         <obj_property name="ObjectShortName">tx_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/tx_tready">
+         <obj_property name="ElementShortName">tx_tready</obj_property>
+         <obj_property name="ObjectShortName">tx_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/tx_tuser">
+         <obj_property name="ElementShortName">tx_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rx_tdata">
+         <obj_property name="ElementShortName">rx_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rx_tlast">
+         <obj_property name="ElementShortName">rx_tlast</obj_property>
+         <obj_property name="ObjectShortName">rx_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rx_tvalid">
+         <obj_property name="ElementShortName">rx_tvalid</obj_property>
+         <obj_property name="ObjectShortName">rx_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rx_tready">
+         <obj_property name="ElementShortName">rx_tready</obj_property>
+         <obj_property name="ObjectShortName">rx_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rx_tuser">
+         <obj_property name="ElementShortName">rx_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/resp_tdata">
+         <obj_property name="ElementShortName">resp_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">resp_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/resp_tlast">
+         <obj_property name="ElementShortName">resp_tlast</obj_property>
+         <obj_property name="ObjectShortName">resp_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/resp_tvalid">
+         <obj_property name="ElementShortName">resp_tvalid</obj_property>
+         <obj_property name="ObjectShortName">resp_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/resp_tready">
+         <obj_property name="ElementShortName">resp_tready</obj_property>
+         <obj_property name="ObjectShortName">resp_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/loopback">
+         <obj_property name="ElementShortName">loopback</obj_property>
+         <obj_property name="ObjectShortName">loopback</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/test_readback">
+         <obj_property name="ElementShortName">test_readback[31:0]</obj_property>
+         <obj_property name="ObjectShortName">test_readback[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/db_rb_stb">
+         <obj_property name="ElementShortName">db_rb_stb</obj_property>
+         <obj_property name="ObjectShortName">db_rb_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/db_rb_data">
+         <obj_property name="ElementShortName">db_rb_data[63:0]</obj_property>
+         <obj_property name="ObjectShortName">db_rb_data[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/run_tx">
+         <obj_property name="ElementShortName">run_tx</obj_property>
+         <obj_property name="ObjectShortName">run_tx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/run_rx">
+         <obj_property name="ElementShortName">run_rx</obj_property>
+         <obj_property name="ObjectShortName">run_rx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_ready">
+         <obj_property name="ElementShortName">awg_ready</obj_property>
+         <obj_property name="ObjectShortName">awg_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_done">
+         <obj_property name="ElementShortName">awg_done</obj_property>
+         <obj_property name="ObjectShortName">awg_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_active">
+         <obj_property name="ElementShortName">awg_active</obj_property>
+         <obj_property name="ObjectShortName">awg_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_init">
+         <obj_property name="ElementShortName">awg_init</obj_property>
+         <obj_property name="ObjectShortName">awg_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_enable">
+         <obj_property name="ElementShortName">awg_enable</obj_property>
+         <obj_property name="ObjectShortName">awg_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/adc_enable">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/adc_run">
+         <obj_property name="ElementShortName">adc_run</obj_property>
+         <obj_property name="ObjectShortName">adc_run</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/adc_last">
+         <obj_property name="ElementShortName">adc_last</obj_property>
+         <obj_property name="ObjectShortName">adc_last</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_control_word">
+         <obj_property name="ElementShortName">awg_control_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_control_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/num_adc_samples">
+         <obj_property name="ElementShortName">num_adc_samples[31:0]</obj_property>
+         <obj_property name="ObjectShortName">num_adc_samples[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_out_i">
+         <obj_property name="ElementShortName">awg_out_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_out_q">
+         <obj_property name="ElementShortName">awg_out_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_data_valid">
+         <obj_property name="ElementShortName">awg_data_valid</obj_property>
+         <obj_property name="ObjectShortName">awg_data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_data_last">
+         <obj_property name="ElementShortName">awg_data_last</obj_property>
+         <obj_property name="ObjectShortName">awg_data_last</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_data_len">
+         <obj_property name="ElementShortName">awg_data_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_data_len[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_data_tuser">
+         <obj_property name="ElementShortName">awg_data_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_data_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_out_i_shift">
+         <obj_property name="ElementShortName">awg_out_i_shift[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_i_shift[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_out_q_shift">
+         <obj_property name="ElementShortName">awg_out_q_shift[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_q_shift[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_data_valid_shift">
+         <obj_property name="ElementShortName">awg_data_valid_shift</obj_property>
+         <obj_property name="ObjectShortName">awg_data_valid_shift</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_data_last_shift">
+         <obj_property name="ElementShortName">awg_data_last_shift</obj_property>
+         <obj_property name="ObjectShortName">awg_data_last_shift</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_out_i_d">
+         <obj_property name="ElementShortName">awg_out_i_d[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_i_d[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/awg_out_q_d">
+         <obj_property name="ElementShortName">awg_out_q_d[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_q_d[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_data_valid_d">
+         <obj_property name="ElementShortName">awg_data_valid_d</obj_property>
+         <obj_property name="ObjectShortName">awg_data_valid_d</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/awg_data_last_d">
+         <obj_property name="ElementShortName">awg_data_last_d</obj_property>
+         <obj_property name="ObjectShortName">awg_data_last_d</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/tx_out_tdata">
+         <obj_property name="ElementShortName">tx_out_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_out_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/tx_out_tuser">
+         <obj_property name="ElementShortName">tx_out_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_out_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/tx_out_tlast">
+         <obj_property name="ElementShortName">tx_out_tlast</obj_property>
+         <obj_property name="ObjectShortName">tx_out_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/tx_out_tvalid">
+         <obj_property name="ElementShortName">tx_out_tvalid</obj_property>
+         <obj_property name="ObjectShortName">tx_out_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/tx_out_tready">
+         <obj_property name="ElementShortName">tx_out_tready</obj_property>
+         <obj_property name="ObjectShortName">tx_out_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/sample_awg">
+         <obj_property name="ElementShortName">sample_awg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_awg[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/tx_idle">
+         <obj_property name="ElementShortName">tx_idle[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_idle[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/sample_tx">
+         <obj_property name="ElementShortName">sample_tx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_tx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/txresp_tdata">
+         <obj_property name="ElementShortName">txresp_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">txresp_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/txresp_tuser">
+         <obj_property name="ElementShortName">txresp_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">txresp_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/txresp_tlast">
+         <obj_property name="ElementShortName">txresp_tlast</obj_property>
+         <obj_property name="ObjectShortName">txresp_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/txresp_tvalid">
+         <obj_property name="ElementShortName">txresp_tvalid</obj_property>
+         <obj_property name="ObjectShortName">txresp_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/txresp_tready">
+         <obj_property name="ElementShortName">txresp_tready</obj_property>
+         <obj_property name="ObjectShortName">txresp_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/sample_rx">
+         <obj_property name="ElementShortName">sample_rx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_rx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/sample_rx_stb">
+         <obj_property name="ElementShortName">sample_rx_stb</obj_property>
+         <obj_property name="ObjectShortName">sample_rx_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rxresp_tdata">
+         <obj_property name="ElementShortName">rxresp_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rxresp_tuser">
+         <obj_property name="ElementShortName">rxresp_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rxresp_tlast">
+         <obj_property name="ElementShortName">rxresp_tlast</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rxresp_tvalid">
+         <obj_property name="ElementShortName">rxresp_tvalid</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rxresp_tready">
+         <obj_property name="ElementShortName">rxresp_tready</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rx_command_i">
+         <obj_property name="ElementShortName">rx_command_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_command_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/rx_time_i">
+         <obj_property name="ElementShortName">rx_time_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_time_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/rx_store_command">
+         <obj_property name="ElementShortName">rx_store_command</obj_property>
+         <obj_property name="ObjectShortName">rx_store_command</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tdata">
+         <obj_property name="ElementShortName">axis_adc_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tvalid">
+         <obj_property name="ElementShortName">axis_adc_tvalid</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tlast">
+         <obj_property name="ElementShortName">axis_adc_tlast</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tkeep">
+         <obj_property name="ElementShortName">axis_adc_tkeep[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tkeep[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tstrb">
+         <obj_property name="ElementShortName">axis_adc_tstrb[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tstrb[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tid">
+         <obj_property name="ElementShortName">axis_adc_tid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tid[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tdest">
+         <obj_property name="ElementShortName">axis_adc_tdest[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tdest[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tuser">
+         <obj_property name="ElementShortName">axis_adc_tuser[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tuser[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/axis_adc_tready">
+         <obj_property name="ElementShortName">axis_adc_tready</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/iq_tdata">
+         <obj_property name="ElementShortName">iq_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">iq_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/iq_tvalid">
+         <obj_property name="ElementShortName">iq_tvalid</obj_property>
+         <obj_property name="ObjectShortName">iq_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/iq_tlast">
+         <obj_property name="ElementShortName">iq_tlast</obj_property>
+         <obj_property name="ObjectShortName">iq_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/iq_tready">
+         <obj_property name="ElementShortName">iq_tready</obj_property>
+         <obj_property name="ObjectShortName">iq_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/iq_first">
+         <obj_property name="ElementShortName">iq_first</obj_property>
+         <obj_property name="ObjectShortName">iq_first</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/counter_id">
+         <obj_property name="ElementShortName">counter_id[63:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_id[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group277">
+         <obj_property name="label">PARAMETERS</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RADIO_NUM">
+            <obj_property name="ElementShortName">RADIO_NUM[31:0]</obj_property>
+            <obj_property name="ObjectShortName">RADIO_NUM[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/USE_SPI_CLK">
+            <obj_property name="ElementShortName">USE_SPI_CLK[31:0]</obj_property>
+            <obj_property name="ObjectShortName">USE_SPI_CLK[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_TIME_HI">
+            <obj_property name="ElementShortName">SR_TIME_HI[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_TIME_HI[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_TIME_LO">
+            <obj_property name="ElementShortName">SR_TIME_LO[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_TIME_LO[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_TIME_CTRL">
+            <obj_property name="ElementShortName">SR_TIME_CTRL[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_TIME_CTRL[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_CLEAR_CMDS">
+            <obj_property name="ElementShortName">SR_CLEAR_CMDS[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_CLEAR_CMDS[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_LOOPBACK">
+            <obj_property name="ElementShortName">SR_LOOPBACK[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_LOOPBACK[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_TEST">
+            <obj_property name="ElementShortName">SR_TEST[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_TEST[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_CODEC_IDLE">
+            <obj_property name="ElementShortName">SR_CODEC_IDLE[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_CODEC_IDLE[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_TX_CTRL_ERROR_POLICY">
+            <obj_property name="ElementShortName">SR_TX_CTRL_ERROR_POLICY[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_TX_CTRL_ERROR_POLICY[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_RX_CTRL_COMMAND">
+            <obj_property name="ElementShortName">SR_RX_CTRL_COMMAND[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_RX_CTRL_COMMAND[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_RX_CTRL_TIME_HI">
+            <obj_property name="ElementShortName">SR_RX_CTRL_TIME_HI[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_RX_CTRL_TIME_HI[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_RX_CTRL_TIME_LO">
+            <obj_property name="ElementShortName">SR_RX_CTRL_TIME_LO[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_RX_CTRL_TIME_LO[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_RX_CTRL_HALT">
+            <obj_property name="ElementShortName">SR_RX_CTRL_HALT[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_RX_CTRL_HALT[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_RX_CTRL_MAXLEN">
+            <obj_property name="ElementShortName">SR_RX_CTRL_MAXLEN[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_RX_CTRL_MAXLEN[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_RX_CTRL_CLEAR_CMDS">
+            <obj_property name="ElementShortName">SR_RX_CTRL_CLEAR_CMDS[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_RX_CTRL_CLEAR_CMDS[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_RX_CTRL_OUTPUT_FORMAT">
+            <obj_property name="ElementShortName">SR_RX_CTRL_OUTPUT_FORMAT[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_RX_CTRL_OUTPUT_FORMAT[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_MISC_OUTS">
+            <obj_property name="ElementShortName">SR_MISC_OUTS[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_MISC_OUTS[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_SPI">
+            <obj_property name="ElementShortName">SR_SPI[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_SPI[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_LEDS">
+            <obj_property name="ElementShortName">SR_LEDS[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_LEDS[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_FP_GPIO">
+            <obj_property name="ElementShortName">SR_FP_GPIO[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_FP_GPIO[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_DB_GPIO">
+            <obj_property name="ElementShortName">SR_DB_GPIO[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_DB_GPIO[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_EXTERNAL_BASE">
+            <obj_property name="ElementShortName">SR_EXTERNAL_BASE[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_EXTERNAL_BASE[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_VITA_TIME">
+            <obj_property name="ElementShortName">RB_VITA_TIME[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_VITA_TIME[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_VITA_LASTPPS">
+            <obj_property name="ElementShortName">RB_VITA_LASTPPS[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_VITA_LASTPPS[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_TEST">
+            <obj_property name="ElementShortName">RB_TEST[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_TEST[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_TXRX">
+            <obj_property name="ElementShortName">RB_TXRX[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_TXRX[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_RADIO_NUM">
+            <obj_property name="ElementShortName">RB_RADIO_NUM[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_RADIO_NUM[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_MISC_IO">
+            <obj_property name="ElementShortName">RB_MISC_IO[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_MISC_IO[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_SPI">
+            <obj_property name="ElementShortName">RB_SPI[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_SPI[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_LEDS">
+            <obj_property name="ElementShortName">RB_LEDS[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_LEDS[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_DB_GPIO">
+            <obj_property name="ElementShortName">RB_DB_GPIO[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_DB_GPIO[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/RB_FP_GPIO">
+            <obj_property name="ElementShortName">RB_FP_GPIO[7:0]</obj_property>
+            <obj_property name="ObjectShortName">RB_FP_GPIO[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_CH_COUNTER_ADDR">
+            <obj_property name="ElementShortName">SR_CH_COUNTER_ADDR[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_CH_COUNTER_ADDR[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_CH_TUNING_COEF_ADDR">
+            <obj_property name="ElementShortName">SR_CH_TUNING_COEF_ADDR[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_CH_TUNING_COEF_ADDR[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_CH_FREQ_OFFSET_ADDR">
+            <obj_property name="ElementShortName">SR_CH_FREQ_OFFSET_ADDR[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_CH_FREQ_OFFSET_ADDR[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_AWG_CTRL_WORD_ADDR">
+            <obj_property name="ElementShortName">SR_AWG_CTRL_WORD_ADDR[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_AWG_CTRL_WORD_ADDR[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_PRF_INT_ADDR">
+            <obj_property name="ElementShortName">SR_PRF_INT_ADDR[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_PRF_INT_ADDR[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_PRF_FRAC_ADDR">
+            <obj_property name="ElementShortName">SR_PRF_FRAC_ADDR[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_PRF_FRAC_ADDR[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SR_ADC_SAMPLE_ADDR">
+            <obj_property name="ElementShortName">SR_ADC_SAMPLE_ADDR[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SR_ADC_SAMPLE_ADDR[7:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/CHIRP_CLK_FREQ">
+            <obj_property name="ElementShortName">CHIRP_CLK_FREQ[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CHIRP_CLK_FREQ[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/ADC_SAMPLE_COUNT_INIT">
+            <obj_property name="ElementShortName">ADC_SAMPLE_COUNT_INIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ADC_SAMPLE_COUNT_INIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/CHIRP_PRF_INT_COUNT_INIT">
+            <obj_property name="ElementShortName">CHIRP_PRF_INT_COUNT_INIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CHIRP_PRF_INT_COUNT_INIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/CHIRP_PRF_FRAC_COUNT_INIT">
+            <obj_property name="ElementShortName">CHIRP_PRF_FRAC_COUNT_INIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CHIRP_PRF_FRAC_COUNT_INIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/CHIRP_TUNING_COEF_INIT">
+            <obj_property name="ElementShortName">CHIRP_TUNING_COEF_INIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CHIRP_TUNING_COEF_INIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/CHIRP_COUNT_MAX_INIT">
+            <obj_property name="ElementShortName">CHIRP_COUNT_MAX_INIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CHIRP_COUNT_MAX_INIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/CHIRP_FREQ_OFFSET_INIT">
+            <obj_property name="ElementShortName">CHIRP_FREQ_OFFSET_INIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CHIRP_FREQ_OFFSET_INIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/AWG_CTRL_WORD_INIT">
+            <obj_property name="ElementShortName">AWG_CTRL_WORD_INIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">AWG_CTRL_WORD_INIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/ADC_AXI_DATA_WIDTH">
+            <obj_property name="ElementShortName">ADC_AXI_DATA_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ADC_AXI_DATA_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/ADC_AXI_TID_WIDTH">
+            <obj_property name="ElementShortName">ADC_AXI_TID_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ADC_AXI_TID_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/ADC_AXI_TDEST_WIDTH">
+            <obj_property name="ElementShortName">ADC_AXI_TDEST_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ADC_AXI_TDEST_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/ADC_AXI_TUSER_WIDTH">
+            <obj_property name="ElementShortName">ADC_AXI_TUSER_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ADC_AXI_TUSER_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/ADC_AXI_STREAM_ID">
+            <obj_property name="ElementShortName">ADC_AXI_STREAM_ID</obj_property>
+            <obj_property name="ObjectShortName">ADC_AXI_STREAM_ID</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/ADC_AXI_STREAM_DEST">
+            <obj_property name="ElementShortName">ADC_AXI_STREAM_DEST</obj_property>
+            <obj_property name="ObjectShortName">ADC_AXI_STREAM_DEST</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/PK_AXI_DATA_WIDTH">
+            <obj_property name="ElementShortName">PK_AXI_DATA_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">PK_AXI_DATA_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/PK_AXI_TID_WIDTH">
+            <obj_property name="ElementShortName">PK_AXI_TID_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">PK_AXI_TID_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/PK_AXI_TDEST_WIDTH">
+            <obj_property name="ElementShortName">PK_AXI_TDEST_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">PK_AXI_TDEST_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/PK_AXI_TUSER_WIDTH">
+            <obj_property name="ElementShortName">PK_AXI_TUSER_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">PK_AXI_TUSER_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/PK_AXI_STREAM_ID">
+            <obj_property name="ElementShortName">PK_AXI_STREAM_ID</obj_property>
+            <obj_property name="ObjectShortName">PK_AXI_STREAM_ID</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="logic" fp_name="/radar_core_sim_tb/radar_core/PK_AXI_STREAM_DEST">
+            <obj_property name="ElementShortName">PK_AXI_STREAM_DEST</obj_property>
+            <obj_property name="ObjectShortName">PK_AXI_STREAM_DEST</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/SIMULATION">
+            <obj_property name="ElementShortName">SIMULATION[31:0]</obj_property>
+            <obj_property name="ObjectShortName">SIMULATION[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/FFT_LEN">
+            <obj_property name="ElementShortName">FFT_LEN[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FFT_LEN[31:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/radar_core_sim_tb/radar_core/FCUTOFF_IND">
+            <obj_property name="ElementShortName">FCUTOFF_IND[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FCUTOFF_IND[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

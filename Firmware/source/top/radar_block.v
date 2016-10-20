@@ -35,18 +35,18 @@ module radar_block #(
   output [NUM_CHANNELS*32-1:0] leds,
   input spi_clk, input spi_rst,
   output [NUM_CHANNELS*8-1:0] sen, output [NUM_CHANNELS-1:0] sclk, output [NUM_CHANNELS-1:0] mosi, input [NUM_CHANNELS-1:0] miso,
-  output [63:0] debug,
+  output [63:0] debug
 
   // --Sample Data Out Signals
- output [SAMP_AXI_DATA_WIDTH-1:0]     samp_axis_tdata,
- output                               samp_axis_tvalid,
- output                               samp_axis_tlast,
- output [SAMP_AXI_DATA_WIDTH/8-1:0]   samp_axis_tkeep,
- output [SAMP_AXI_DATA_WIDTH/8-1:0]   samp_axis_tstrb,
- output [SAMP_AXI_TID_WIDTH-1:0]      samp_axis_tid,
- output [SAMP_AXI_TDEST_WIDTH-1:0]    samp_axis_tdest,
- output [SAMP_AXI_TUSER_WIDTH-1:0]    samp_axis_tuser,
- input                                samp_axis_tready
+ // output [SAMP_AXI_DATA_WIDTH-1:0]     samp_axis_tdata,
+ // output                               samp_axis_tvalid,
+ // output                               samp_axis_tlast,
+ // output [SAMP_AXI_DATA_WIDTH/8-1:0]   samp_axis_tkeep,
+ // output [SAMP_AXI_DATA_WIDTH/8-1:0]   samp_axis_tstrb,
+ // output [SAMP_AXI_TID_WIDTH-1:0]      samp_axis_tid,
+ // output [SAMP_AXI_TDEST_WIDTH-1:0]    samp_axis_tdest,
+ // output [SAMP_AXI_TUSER_WIDTH-1:0]    samp_axis_tuser,
+ // input                                samp_axis_tready
 
 
 );
@@ -150,6 +150,7 @@ module radar_block #(
     .out_set_stb(set_stb_mux), .out_set_addr(set_addr_mux), .out_set_data(set_data_mux), .ready(1'b1));
 
   // VITA time is shared between radio cores
+  `include "radio_core_regs.vh"
   `include "radar_core_regs.vh"
   wire [63:0] vita_time_lastpps;
   timekeeper #(

@@ -37,7 +37,7 @@ module radar_core #(
   output [63:0] resp_tdata, output resp_tlast, output resp_tvalid, input resp_tready
 );
 
-
+  `include "radio_core_regs.vh"
   `include "radar_core_regs.vh"
 
   /********************************************************
@@ -72,6 +72,8 @@ module radar_core #(
   /********************************************************
   ** Daughter board control
   ********************************************************/
+  wire run_tx, run_rx;
+
   db_control #(
     .USE_SPI_CLK(USE_SPI_CLK))
   db_control (
@@ -89,14 +91,16 @@ module radar_core #(
     ** Waveform Generator and Radar Control Blocks
     ********************************************************/
 
-  localparam CHIRP_CLK_FREQ = 245760000;    // Hz
+  localparam CHIRP_CLK_FREQ = 200000000;    // Hz
   localparam ADC_SAMPLE_COUNT_INIT = 32'h000001fe;
   localparam CHIRP_PRF_INT_COUNT_INIT = 32'h00000000;
-  localparam CHIRP_PRF_FRAC_COUNT_INIT = 32'h1d4c0000;
+  //localparam CHIRP_PRF_FRAC_COUNT_INIT = 32'h1d4c0000;
+  localparam CHIRP_PRF_FRAC_COUNT_INIT = 32'h00000fff;
+
   localparam CHIRP_TUNING_COEF_INIT = 32'b1;
   localparam CHIRP_COUNT_MAX_INIT = 32'h00000dff; // 3584 samples
   localparam CHIRP_FREQ_OFFSET_INIT = 32'h0b00; // 2816 -> 10.56 MHz min freq
-  localparam CHIRP_CTRL_WORD_INIT = 32'h10;
+  localparam AWG_CTRL_WORD_INIT = 32'h10;
 
   wire awg_ready;
   wire awg_done;
@@ -104,12 +108,38 @@ module radar_core #(
   wire awg_init;
   wire awg_enable;
   wire adc_enable;
+  wire adc_run;
+  wire adc_last;
 
-  wire [31:0] chirp_control_word;
+  wire [31:0] awg_control_word;
+  wire [31:0] num_adc_samples;
 
-  setting_reg #(.my_addr(SR_CH_CTRL_WORD_ADDR), .at_reset(CHIRP_CTRL_WORD_INIT)) sr_ch_ctrl_word (
-    .clk(clk),.rst(rst),.strobe(set_stb),.addr(set_addr),
-    .in(set_data),.out(chirp_control_word),.changed());
+
+    wire [15:0] awg_out_i;
+    wire [15:0] awg_out_q;
+    wire awg_data_valid;
+    wire awg_data_last;
+    wire [31:0] awg_data_len;         // payload len in samples
+    wire [127:0] awg_data_tuser;
+
+    wire [31:0] tx_out_tdata;
+    wire [127:0] tx_out_tuser;
+    wire tx_out_tlast, tx_out_tvalid, tx_out_tready;
+
+    wire [31:0] sample_awg;
+
+/********************************************************
+** 32 bit Control Word Format:
+********************************************************/
+// [3:0] - Data Packet Lower 32b Source Select
+// [7:4] - Data Packet Upper 32b Source Select
+// [9:8] - DDS/AWG Source select: Chirp = 2'b00, AWG = 2'b11
+// [31:10] - Unused
+// Source Select code: 0=ADC, 1=DAC, 2=ADC Counter, 3=Glbl Counter
+
+  setting_reg #(.my_addr(SR_AWG_CTRL_WORD_ADDR), .at_reset(AWG_CTRL_WORD_INIT)) sr_awg_ctrl_word (
+    .clk(clk),.rst(reset),.strobe(set_stb),.addr(set_addr),
+    .in(set_data),.out(awg_control_word),.changed());
 
   radar_pulse_controller #(
       .CLK_FREQ (CHIRP_CLK_FREQ),
@@ -128,22 +158,19 @@ module radar_core #(
     .reset(reset),
     .set_stb(set_stb), .set_addr(set_addr), .set_data(set_data),
 
+    .num_adc_samples (num_adc_samples),
+    .awg_data_valid(awg_data_valid),
+
     .awg_ready (awg_ready),
     .awg_done (awg_done),
     .awg_active (awg_active),
     .awg_init  (awg_init),
     .awg_enable  (awg_enable),
-    .adc_enable   (adc_enable)
+    .adc_enable   (adc_enable),
+    .adc_run (adc_run),
+    .adc_last (adc_last)
   );
 
-  wire [15:0] awg_out_i;
-  wire [15:0] awg_out_q;
-  wire awg_data_valid;
-  wire [31:0] awg_data_len;         // payload len in samples
-  wire [127:0] awg_data_tuser;
-
-  wire run_awg;
-  wire [31:0] sample_awg;
   wavegen_block #(
       .CHIRP_TUNING_COEF_INIT(CHIRP_TUNING_COEF_INIT),
       .CHIRP_COUNT_MAX_INIT (CHIRP_COUNT_MAX_INIT),
@@ -161,20 +188,21 @@ module radar_core #(
       .awg_out_i(awg_out_i),
       .awg_out_q(awg_out_q),
       .awg_data_valid(awg_data_valid),
+      .awg_data_last(awg_data_last),
       .awg_data_len(awg_data_len),
 
       .set_stb(set_stb), .set_addr(set_addr), .set_data(set_data),
 
-      .wr_axis_tdata(tx_tdata),
-      .wr_axis_tvalid(tx_tvalid),
-      .wr_axis_tlast(tx_tlast),
+      .wr_axis_tdata(tx_out_tdata),
+      .wr_axis_tvalid(tx_out_tvalid),
+      .wr_axis_tlast(tx_out_tlast),
       .wr_axis_tuser(),
       .wr_axis_tkeep(),
       .wr_axis_tdest(),
       .wr_axis_tid(),
-      .wr_axis_tready(tx_tready),
+      .wr_axis_tready(tx_out_tready),
 
-      .chirp_control_word(chirp_control_word),
+      .awg_control_word(awg_control_word),
 
 
       .awg_ready (awg_ready),
@@ -187,13 +215,11 @@ module radar_core #(
  );
  cvita_hdr_encoder cvita_hdr_encoder (
    .pkt_type(2'd0), .eob(1'b1), .has_time(1'b0),
-   .seqnum(12'd0), .payload_length({awg_data_len[14:0],2'b00}), .dst_sid(dst_sid), .src_sid(src_sid),
+   .seqnum(12'd0), .payload_length({awg_data_len[13:0],2'b00}), .dst_sid(dst_sid), .src_sid(src_sid),
    .vita_time(vita_time),
    .header(awg_data_tuser));
 
 
- assign run_awg = ~(strobe & ~awg_data_valid);
- assign sample_awg = {awg_out_i,awg_out_q};
   /********************************************************
   ** TX Chain
   ********************************************************/
@@ -206,6 +232,14 @@ module radar_core #(
   wire [63:0] txresp_tdata;
   wire [127:0] txresp_tuser;
   wire txresp_tlast, txresp_tvalid, txresp_tready;
+  radar_tx_controller #(.SR_ERROR_POLICY(SR_TX_CTRL_ERROR_POLICY)) radar_tx_controller (
+    .clk(clk), .reset(reset), .clear(clear_tx),
+    .set_stb(set_stb), .set_addr(set_addr), .set_data(set_data),
+    .vita_time(vita_time), .resp_sid({src_sid, tx_resp_dst_sid}),
+    .tx_tdata(tx_tdata), .tx_tlast(tx_tlast), .tx_tvalid(tx_tvalid), .tx_tready(tx_tready), .tx_tuser(tx_tuser),
+    .resp_tdata(txresp_tdata), .resp_tlast(txresp_tlast), .resp_tvalid(txresp_tvalid), .resp_tready(txresp_tready), .resp_tuser(txresp_tuser),
+    .tx_out_tdata(tx_out_tdata), .tx_out_tlast(tx_out_tlast), .tx_out_tvalid(tx_out_tvalid), .tx_out_tready(tx_out_tready), .tx_out_tuser(tx_out_tuser));
+
   // tx_control_gen3 #(.SR_ERROR_POLICY(SR_TX_CTRL_ERROR_POLICY)) tx_control_gen3 (
   //   .clk(clk), .reset(reset), .clear(clear_tx),
   //   .set_stb(set_stb), .set_addr(set_addr), .set_data(set_data),
@@ -216,171 +250,40 @@ module radar_core #(
 
  // assign tx = run_tx ? sample_tx : tx_idle;
 
- assign tx = run_awg ? sample_awg : tx_idle;
+ // Register output
+ wire [15:0] awg_out_i_d;
+ wire [15:0] awg_out_q_d;
+ wire awg_data_valid_d;
+ wire awg_data_last_d;
 
- assign txresp_tdata = 'b0;
- assign txresp_tuser = 'b0;
- assign txresp_tlast = 0;
- assign txresp_tvalid = 0;
+ axi_fifo_flop2 #(.WIDTH(33))
+ axi_fifo_flop2 (
+   .clk(clk), .reset(reset), .clear(0),
+   .i_tdata({awg_data_last, awg_out_i, awg_out_q}), .i_tvalid(awg_data_valid), .i_tready(),
+   .o_tdata({awg_data_last_d, awg_out_i_d,awg_out_q_d}), .o_tvalid(awg_data_valid_d), .o_tready(1'b1),
+   .space(), .occupied());
 
+localparam AWG_OUT_DELAY = 3;
+reg [33:0] awg_data_shift [0:AWG_OUT_DELAY-1];
+wire [15:0] awg_out_i_shift;
+wire [15:0] awg_out_q_shift;
+wire awg_data_valid_shift;
+wire awg_data_last_shift;
+integer i;
+always @(posedge clk) begin
+    awg_data_shift[0] <= {awg_data_valid_d, awg_data_last_d,awg_out_i_d,awg_out_q_d};
+    for(i=1;i<AWG_OUT_DELAY;i=i+1) begin
+        awg_data_shift[i] <= awg_data_shift[i-1];
+    end
+end
+assign {awg_data_valid_shift,awg_data_last_shift,awg_out_i_shift,awg_out_q_shift} = awg_data_shift[AWG_OUT_DELAY-1];
 
- localparam ADC_AXI_DATA_WIDTH = 64;
- localparam ADC_AXI_TID_WIDTH = 1;
- localparam ADC_AXI_TDEST_WIDTH = 1;
- localparam ADC_AXI_TUSER_WIDTH = 1;
- localparam ADC_AXI_STREAM_ID = 1'b0;
- localparam ADC_AXI_STREAM_DEST = 1'b0;
-
- localparam PK_AXI_DATA_WIDTH = 512;
- localparam PK_AXI_TID_WIDTH = 1;
- localparam PK_AXI_TDEST_WIDTH = 1;
- localparam PK_AXI_TUSER_WIDTH = 1;
- localparam PK_AXI_STREAM_ID = 1'b0;
- localparam PK_AXI_STREAM_DEST = 1'b0;
-
- localparam SIMULATION = 0;
- localparam FFT_LEN = 4096;//32768
-
- localparam FCUTOFF_IND = FFT_LEN/2;
-
- wire [ADC_AXI_DATA_WIDTH-1:0]     axis_adc_tdata;
- wire axis_adc_tvalid;
- wire axis_adc_tlast;
- wire [ADC_AXI_DATA_WIDTH/8-1:0]   axis_adc_tkeep;
- wire [ADC_AXI_DATA_WIDTH/8-1:0]   axis_adc_tstrb;
- wire [ADC_AXI_TID_WIDTH-1:0] axis_adc_tid;
- wire [ADC_AXI_TDEST_WIDTH-1:0] axis_adc_tdest;
- wire [ADC_AXI_TUSER_WIDTH-1:0] axis_adc_tuser;
- wire axis_adc_tready;
-
- wire [63:0] iq_tdata;
- wire iq_tvalid;
- wire iq_tlast;
- wire iq_tready;
- wire iq_first;
- wire [63:0] counter_id;
-
-
- radar_sample_synchronizer #(
-     .ADC_AXI_DATA_WIDTH(ADC_AXI_DATA_WIDTH),
-     .ADC_AXI_TID_WIDTH(ADC_AXI_TID_WIDTH),
-     .ADC_AXI_TDEST_WIDTH(ADC_AXI_TDEST_WIDTH),
-     .ADC_AXI_TUSER_WIDTH(ADC_AXI_TUSER_WIDTH),
-     .ADC_AXI_STREAM_ID(ADC_AXI_STREAM_ID),
-     .ADC_AXI_STREAM_DEST(ADC_AXI_STREAM_DEST),
-     .PK_AXI_DATA_WIDTH(PK_AXI_DATA_WIDTH),
-     .PK_AXI_TID_WIDTH(PK_AXI_TID_WIDTH),
-     .PK_AXI_TDEST_WIDTH(PK_AXI_TDEST_WIDTH),
-     .PK_AXI_TUSER_WIDTH(PK_AXI_TUSER_WIDTH),
-     .PK_AXI_STREAM_ID(PK_AXI_STREAM_ID),
-     .PK_AXI_STREAM_DEST(PK_AXI_STREAM_DEST)
- )
- radar_sample_synchronizer (
-     .clk (clk), // AXI input clock
-     .reset (reset), // Active low AXI reset signal
-
-     // --ADC Data Out Signals
-    .iq_tdata(iq_tdata),
-    .iq_tvalid(iq_tvalid),
-    .iq_tlast(iq_tlast),
-    .iq_tready(iq_tready),
-    .iq_first(iq_first),
-    .counter_id(),
-
-    .adc_data_iq(rx),
-    .dac_data_iq(tx),
-    .adc_data_valid(rx_stb),
-
-
-    .axis_adc_tdata                      (axis_adc_tdata),
-    .axis_adc_tvalid                     (axis_adc_tvalid),
-    .axis_adc_tlast                      (axis_adc_tlast),
-    .axis_adc_tkeep                      (axis_adc_tkeep),
-    .axis_adc_tid                        (axis_adc_tid),
-    .axis_adc_tdest                      (axis_adc_tdest),
-    .axis_adc_tuser                      (axis_adc_tuser),
-    .axis_adc_tready                     (axis_adc_tready),
-    .axis_adc_tstrb                      (axis_adc_tstrb),
-
-    .chirp_control_word(chirp_control_word),
-    .awg_init(awg_init),
-    .awg_enable(awg_enable),
-    .adc_enable(adc_enable)
-
-  );
-
-  // --ADC AXI-Stream Data Out Signals from fmc150_dac_adc module
- wire [PK_AXI_DATA_WIDTH-1:0]   axis_pk_tdata;
- wire                            axis_pk_tvalid;
- wire                            axis_pk_tlast;
- wire [PK_AXI_DATA_WIDTH/8-1:0] axis_pk_tkeep;
- wire [PK_AXI_TID_WIDTH-1:0]    axis_pk_tid;
- wire [PK_AXI_TDEST_WIDTH-1:0]  axis_pk_tdest;
- wire [PK_AXI_TUSER_WIDTH-1:0]  axis_pk_tuser;
- wire                            axis_pk_tready;
- wire [PK_AXI_DATA_WIDTH/8-1:0] axis_pk_tstrb;
-
-  wire [31:0] lpf_cutoff_ind;
-  wire[7:0] threshold_ctrl_i;
-  wire[7:0] threshold_ctrl_q;
-
-  assign lpf_cutoff_ind = FCUTOFF_IND;
-  assign threshold_ctrl_i = {4'hf,4'h1};
-  assign threshold_ctrl_q = {4'hf,4'h1};
-
-  matched_filter_range_detector #(
-       .PK_AXI_DATA_WIDTH(PK_AXI_DATA_WIDTH),
-       .PK_AXI_TID_WIDTH (PK_AXI_TID_WIDTH),
-       .PK_AXI_TDEST_WIDTH(PK_AXI_TDEST_WIDTH),
-       .PK_AXI_TUSER_WIDTH(PK_AXI_TUSER_WIDTH),
-       .PK_AXI_STREAM_ID (PK_AXI_STREAM_ID),
-       .PK_AXI_STREAM_DEST (PK_AXI_STREAM_DEST),
-       .FFT_LEN(FFT_LEN),
-       .SIMULATION(SIMULATION)
-
-)
-matched_filter_range_detector_inst(
-
-     .aclk(clk), // AXI input clock
-     .aresetn(~reset), // Active low AXI reset signal
-
-     // --ADC Data Out Signals
-    .adc_iq_tdata(iq_tdata[31:0]),
-    .dac_iq_tdata(iq_tdata[63:32]),
-    .iq_tvalid(iq_tvalid),
-    .iq_tlast(iq_tlast),
-    .iq_tready(iq_tready),
-    .iq_first(iq_first),
-    .counter_id(vita_time),
-
-    .pk_axis_tdata(axis_pk_tdata),
-    .pk_axis_tvalid(axis_pk_tvalid),
-    .pk_axis_tlast(axis_pk_tlast),
-    .pk_axis_tkeep(axis_pk_tkeep),
-    .pk_axis_tdest(axis_pk_tdest),
-    .pk_axis_tid(axis_pk_tid),
-    .pk_axis_tstrb(axis_pk_tstrb),
-    .pk_axis_tuser(axis_pk_tuser),
-    .pk_axis_tready(axis_pk_tready),
-
-    .lpf_cutoff(lpf_cutoff_ind),
-    .threshold_ctrl(threshold_ctrl_i),    // {4b word index, 4b word value} in 64bit threshold
-   // .threshold_ctrl_q(threshold_ctrl_q),    // {4b word index, 4b word value} in 64bit threshold
-
-  // Control Module signals
-   .chirp_ready                         (awg_ready),
-   .chirp_done                          (awg_done),
-   .chirp_active                        (awg_active),
-   .chirp_init                          (awg_init),
-   .chirp_enable                        (awg_enable),
-   .chirp_enable                        (adc_enable),
-   .chirp_control_word          (chirp_control_word),
-   .chirp_freq_offset           (chirp_freq_offset),
-   .chirp_tuning_word_coeff     (chirp_tuning_word_coeff),
-   .chirp_count_max             (chirp_count_max)
-
-     );
-
+assign run_tx = ~(tx_stb & ~awg_data_valid_shift);
+assign sample_awg = {awg_out_i_shift,awg_out_q_shift};
+assign tx = run_tx ? sample_awg : tx_idle;
+ // assign run_tx = ~(tx_stb & ~awg_data_valid);
+ // assign sample_awg = {awg_out_i,awg_out_q};
+ // assign tx = run_tx ? sample_awg : tx_idle;
 
   /********************************************************
   ** RX Chain
@@ -391,7 +294,21 @@ matched_filter_range_detector_inst(
   wire [63:0] rxresp_tdata;
   wire [127:0] rxresp_tuser;
   wire rxresp_tlast, rxresp_tvalid, rxresp_tready;
-  rx_control_gen3 #(
+
+  wire [31:0] rx_command_i;
+  wire [63:0] rx_time_i;
+  wire rx_store_command;
+  rx_command_gen rx_command_gen(
+        .clk(clk), .reset(reset),
+        .command_i(rx_command_i), .time_i(rx_time_i), .store_command(rx_store_command),
+        .awg_data_len(awg_data_len),
+        .num_adc_samples (num_adc_samples),
+        .vita_time(vita_time),
+        .awg_init (awg_init),
+        .adc_run (adc_run),
+        .adc_enable (adc_enable));
+
+  radar_rx_controller#(
     .SR_RX_CTRL_COMMAND(SR_RX_CTRL_COMMAND),
     .SR_RX_CTRL_TIME_HI(SR_RX_CTRL_TIME_HI),
     .SR_RX_CTRL_TIME_LO(SR_RX_CTRL_TIME_LO),
@@ -400,13 +317,187 @@ matched_filter_range_detector_inst(
     .SR_RX_CTRL_CLEAR_CMDS(SR_RX_CTRL_CLEAR_CMDS),
     .SR_RX_CTRL_OUTPUT_FORMAT(SR_RX_CTRL_OUTPUT_FORMAT)
   )
-  rx_control_gen3 (
+  radar_rx_controller (
     .clk(clk), .reset(reset), .clear(clear_rx),
     .vita_time(vita_time), .sid({src_sid, dst_sid}), .resp_sid({src_sid, rx_resp_dst_sid}),
     .set_stb(set_stb), .set_addr(set_addr), .set_data(set_data),
+    .command_i(rx_command_i), .time_i(rx_time_i), .store_command(rx_store_command),
     .rx_tdata(rx_tdata), .rx_tlast(rx_tlast), .rx_tvalid(rx_tvalid), .rx_tready(rx_tready), .rx_tuser(rx_tuser),
     .resp_tdata(rxresp_tdata), .resp_tlast(rxresp_tlast), .resp_tvalid(rxresp_tvalid), .resp_tready(rxresp_tready), .resp_tuser(rxresp_tuser),
     .strobe(sample_rx_stb), .sample(sample_rx), .run(run_rx));
+  // rx_control_gen3 #(
+  //   .SR_RX_CTRL_COMMAND(SR_RX_CTRL_COMMAND),
+  //   .SR_RX_CTRL_TIME_HI(SR_RX_CTRL_TIME_HI),
+  //   .SR_RX_CTRL_TIME_LO(SR_RX_CTRL_TIME_LO),
+  //   .SR_RX_CTRL_HALT(SR_RX_CTRL_HALT),
+  //   .SR_RX_CTRL_MAXLEN(SR_RX_CTRL_MAXLEN),
+  //   .SR_RX_CTRL_CLEAR_CMDS(SR_RX_CTRL_CLEAR_CMDS),
+  //   .SR_RX_CTRL_OUTPUT_FORMAT(SR_RX_CTRL_OUTPUT_FORMAT)
+  // )
+  // rx_control_gen3 (
+  //   .clk(clk), .reset(reset), .clear(clear_rx),
+  //   .vita_time(vita_time), .sid({src_sid, dst_sid}), .resp_sid({src_sid, rx_resp_dst_sid}),
+  //   .set_stb(set_stb), .set_addr(set_addr), .set_data(set_data),
+  //   .rx_tdata(rx_tdata), .rx_tlast(rx_tlast), .rx_tvalid(rx_tvalid), .rx_tready(rx_tready), .rx_tuser(rx_tuser),
+  //   .resp_tdata(rxresp_tdata), .resp_tlast(rxresp_tlast), .resp_tvalid(rxresp_tvalid), .resp_tready(rxresp_tready), .resp_tuser(rxresp_tuser),
+  //   .strobe(sample_rx_stb), .sample(sample_rx), .run(run_rx));
+
+  localparam ADC_AXI_DATA_WIDTH = 512;//64;
+  localparam ADC_AXI_TID_WIDTH = 1;
+  localparam ADC_AXI_TDEST_WIDTH = 1;
+  localparam ADC_AXI_TUSER_WIDTH = 1;
+  localparam ADC_AXI_STREAM_ID = 1'b0;
+  localparam ADC_AXI_STREAM_DEST = 1'b1;
+
+  localparam PK_AXI_DATA_WIDTH = 512;
+  localparam PK_AXI_TID_WIDTH = 1;
+  localparam PK_AXI_TDEST_WIDTH = 1;
+  localparam PK_AXI_TUSER_WIDTH = 1;
+  localparam PK_AXI_STREAM_ID = 1'b0;
+  localparam PK_AXI_STREAM_DEST = 1'b1;
+
+  localparam SIMULATION = 0;
+  localparam FFT_LEN = 4096;//32768
+
+  localparam FCUTOFF_IND = FFT_LEN/2;
+
+  wire [ADC_AXI_DATA_WIDTH-1:0]     axis_adc_tdata;
+  wire axis_adc_tvalid;
+  wire axis_adc_tlast;
+  wire [ADC_AXI_DATA_WIDTH/8-1:0]   axis_adc_tkeep;
+  wire [ADC_AXI_DATA_WIDTH/8-1:0]   axis_adc_tstrb;
+  wire [ADC_AXI_TID_WIDTH-1:0] axis_adc_tid;
+  wire [ADC_AXI_TDEST_WIDTH-1:0] axis_adc_tdest;
+  wire [ADC_AXI_TUSER_WIDTH-1:0] axis_adc_tuser;
+  wire axis_adc_tready;
+
+  wire [63:0] iq_tdata;
+  wire iq_tvalid;
+  wire iq_tlast;
+  wire iq_tready;
+  wire iq_first;
+  wire [63:0] counter_id;
+
+
+
+  radar_sample_synchronizer #(
+      .ADC_AXI_DATA_WIDTH(ADC_AXI_DATA_WIDTH),
+      .ADC_AXI_TID_WIDTH(ADC_AXI_TID_WIDTH),
+      .ADC_AXI_TDEST_WIDTH(ADC_AXI_TDEST_WIDTH),
+      .ADC_AXI_TUSER_WIDTH(ADC_AXI_TUSER_WIDTH),
+      .ADC_AXI_STREAM_ID(ADC_AXI_STREAM_ID),
+      .ADC_AXI_STREAM_DEST(ADC_AXI_STREAM_DEST)
+  )
+  radar_sample_synchronizer (
+      .clk (clk), // AXI input clock
+      .reset (reset), // Active low AXI reset signal
+
+      // --TX and RX Data Out Signals
+     .iq_tdata(iq_tdata),
+     .iq_tvalid(iq_tvalid),
+     .iq_tlast(iq_tlast),
+     .iq_tready(iq_tready),
+     .iq_first(iq_first),
+     .counter_id(),
+
+     .dac_data_iq(tx),
+     .adc_data_iq(sample_rx),
+     .adc_data_valid(sample_rx_stb),
+
+
+     .axis_adc_tdata                      (axis_adc_tdata),
+     .axis_adc_tvalid                     (axis_adc_tvalid),
+     .axis_adc_tlast                      (axis_adc_tlast),
+     .axis_adc_tkeep                      (axis_adc_tkeep),
+     .axis_adc_tid                        (axis_adc_tid),
+     .axis_adc_tdest                      (axis_adc_tdest),
+     .axis_adc_tuser                      (axis_adc_tuser),
+     .axis_adc_tready                     (axis_adc_tready),
+     .axis_adc_tstrb                      (axis_adc_tstrb),
+
+     .awg_control_word(awg_control_word),
+     .awg_init(awg_init),
+     .awg_enable(awg_enable),
+     .adc_enable(adc_enable),
+     .adc_run(adc_run),
+     .adc_last(adc_last)
+
+   );
+   assign iq_tready = 1'b1;
+   assign axis_adc_tready = 1'b1;
+
+   // --ADC AXI-Stream Data Out Signals from fmc150_dac_adc module
+  // wire [PK_AXI_DATA_WIDTH-1:0]   axis_pk_tdata;
+  // wire                            axis_pk_tvalid;
+  // wire                            axis_pk_tlast;
+  // wire [PK_AXI_DATA_WIDTH/8-1:0] axis_pk_tkeep;
+  // wire [PK_AXI_TID_WIDTH-1:0]    axis_pk_tid;
+  // wire [PK_AXI_TDEST_WIDTH-1:0]  axis_pk_tdest;
+  // wire [PK_AXI_TUSER_WIDTH-1:0]  axis_pk_tuser;
+  // wire                            axis_pk_tready;
+  // wire [PK_AXI_DATA_WIDTH/8-1:0] axis_pk_tstrb;
+
+   // wire [31:0] lpf_cutoff_ind;
+   // wire[7:0] threshold_ctrl_i;
+   // wire[7:0] threshold_ctrl_q;
+
+   // assign lpf_cutoff_ind = FCUTOFF_IND;
+   // assign threshold_ctrl_i = {4'hf,4'h1};
+   // assign threshold_ctrl_q = {4'hf,4'h1};
+
+ //   matched_filter_range_detector #(
+ //        .PK_AXI_DATA_WIDTH(PK_AXI_DATA_WIDTH),
+ //        .PK_AXI_TID_WIDTH (PK_AXI_TID_WIDTH),
+ //        .PK_AXI_TDEST_WIDTH(PK_AXI_TDEST_WIDTH),
+ //        .PK_AXI_TUSER_WIDTH(PK_AXI_TUSER_WIDTH),
+ //        .PK_AXI_STREAM_ID (PK_AXI_STREAM_ID),
+ //        .PK_AXI_STREAM_DEST (PK_AXI_STREAM_DEST),
+ //        .FFT_LEN(FFT_LEN),
+ //        .SIMULATION(SIMULATION)
+ //
+ // )
+ // matched_filter_range_detector_inst(
+ //
+ //      .aclk(clk), // AXI input clock
+ //      .aresetn(~reset), // Active low AXI reset signal
+ //
+ //      // --ADC Data Out Signals
+ //     .adc_iq_tdata(iq_tdata[31:0]),
+ //     .dac_iq_tdata(iq_tdata[63:32]),
+ //     .iq_tvalid(iq_tvalid),
+ //     .iq_tlast(iq_tlast),
+ //     .iq_tready(iq_tready),
+ //     .iq_first(iq_first),
+ //     .counter_id(vita_time),
+ //
+ //     .pk_axis_tdata(axis_pk_tdata),
+ //     .pk_axis_tvalid(axis_pk_tvalid),
+ //     .pk_axis_tlast(axis_pk_tlast),
+ //     .pk_axis_tkeep(axis_pk_tkeep),
+ //     .pk_axis_tdest(axis_pk_tdest),
+ //     .pk_axis_tid(axis_pk_tid),
+ //     .pk_axis_tstrb(axis_pk_tstrb),
+ //     .pk_axis_tuser(axis_pk_tuser),
+ //     .pk_axis_tready(axis_pk_tready),
+ //
+ //     .lpf_cutoff(lpf_cutoff_ind),
+ //     .threshold_ctrl(threshold_ctrl_i),    // {4b word index, 4b word value} in 64bit threshold
+ //    // .threshold_ctrl_q(threshold_ctrl_q),    // {4b word index, 4b word value} in 64bit threshold
+ //
+ //   // Control Module signals
+ //    .chirp_ready                         (awg_ready),
+ //    .chirp_done                          (awg_done),
+ //    .chirp_active                        (awg_active),
+ //    .chirp_init                          (awg_init),
+ //    .chirp_enable                        (awg_enable),
+ //    .adc_enable                        (adc_enable),
+ //    .awg_control_word            (awg_control_word),
+ //    .chirp_freq_offset           (chirp_freq_offset),
+ //    .chirp_tuning_word_coeff     (chirp_tuning_word_coeff),
+ //    .chirp_count_max             (chirp_count_max)
+ //
+ //      );
+
 
   // Generate error response packets from TX & RX control
   axi_packet_mux #(.NUM_INPUTS(2), .FIFO_SIZE(5)) axi_packet_mux (

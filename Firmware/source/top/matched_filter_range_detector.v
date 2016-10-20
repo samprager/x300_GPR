@@ -46,7 +46,7 @@ module matched_filter_range_detector #
   input chirp_init,
   input chirp_enable,
   input adc_enable,
-  input [31:0] chirp_control_word,
+  input [31:0] awg_control_word,
   input [31:0] chirp_freq_offset,
   input [31:0] chirp_tuning_word_coeff,
   input [31:0] chirp_count_max
@@ -197,7 +197,7 @@ end
 always @(posedge aclk) begin
   if(iq_first) begin
     // config_r[63:0] <= counter_id;
-    // config_r[95:64] <= chirp_control_word;
+    // config_r[95:64] <= awg_control_word;
     // config_r[127:96] <= chirp_freq_offset;
     // config_r[159:128] <= chirp_tuning_word_coeff;
     // config_r[191:160] <= chirp_count_max;
@@ -210,7 +210,7 @@ always @(posedge aclk) begin
     config_r[55:48] <= threshold_ctrl;
     config_r[63:56] <= threshold_ctrl;
     config_r[127:64] <= counter_id;
-    config_r[159:128] <= chirp_control_word;
+    config_r[159:128] <= awg_control_word;
     config_r[191:160] <= chirp_freq_offset;
     config_r[223:192] <= chirp_tuning_word_coeff;
     config_r[255:224] <= chirp_count_max;

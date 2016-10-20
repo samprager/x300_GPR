@@ -270,7 +270,7 @@ begin
   if (rising_edge(clk)) then
 	  if_out_i_sig <= chirp_i;	-- connect Chirp DDS output directly to DAC @ 245.76 MSPS
       if_out_q_sig <= chirp_q;
-      if_out_valid_sig <= '1';
+      if_out_valid_sig <= chirp_active_r;
   end if;
 end process TX_mux_to_DAC;
 

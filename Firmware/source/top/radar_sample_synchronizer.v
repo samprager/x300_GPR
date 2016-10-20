@@ -29,13 +29,6 @@ module radar_sample_synchronizer #
      parameter ADC_AXI_STREAM_ID = 1'b0,
      parameter ADC_AXI_STREAM_DEST = 1'b0,
 
-     parameter PK_AXI_DATA_WIDTH = 512,
-     parameter PK_AXI_TID_WIDTH = 1,
-     parameter PK_AXI_TDEST_WIDTH = 1,
-     parameter PK_AXI_TUSER_WIDTH = 1,
-     parameter PK_AXI_STREAM_ID = 1'b0,
-     parameter PK_AXI_STREAM_DEST = 1'b0,
-
      parameter SIMULATION = 0,
      parameter FFT_LEN = 4096//32768
 
@@ -68,12 +61,14 @@ module radar_sample_synchronizer #
   output [ADC_AXI_TUSER_WIDTH-1:0] axis_adc_tuser,
   input axis_adc_tready,
 
-  input [31:0] chirp_control_word,
+  input [31:0] awg_control_word,
 
         // Control Module signals
   input  awg_init,
   input  awg_enable,
-  input  adc_enable
+  input  adc_enable,
+  input adc_run,
+  input adc_last
    );
 
   localparam DDS_LATENCY = 2;
@@ -153,13 +148,13 @@ assign dds_source_ctrl = dds_source_ctrl_r;
 
 
   always @(posedge clk) begin
-     dds_route_ctrl_l_r <= chirp_control_word[1:0];
-     dds_route_ctrl_u_r <= chirp_control_word[5:4];
+     dds_route_ctrl_l_r <= awg_control_word[1:0];
+     dds_route_ctrl_u_r <= awg_control_word[5:4];
   end
 
   always @(posedge clk) begin
      if (!awg_enable)
-         dds_source_ctrl_r <= chirp_control_word[9:8];
+         dds_source_ctrl_r <= awg_control_word[9:8];
   end
 
    always @(posedge clk) begin

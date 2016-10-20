@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="wavegen_sim_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="glbl" />
+            <top_module name="lib_pkg" />
+            <top_module name="wavegen_sim_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="20646500000000fs"></ZoomStartTime>
+      <ZoomEndTime time="21107500000001fs"></ZoomEndTime>
+      <Cursor1Time time="20982500000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="group" fp_name="group125">
+      <obj_property name="label">WavegenBlock</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_out_i">
+         <obj_property name="ElementShortName">awg_out_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_i[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_out_q">
+         <obj_property name="ElementShortName">awg_out_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_q[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_data_valid">
+         <obj_property name="ElementShortName">awg_data_valid</obj_property>
+         <obj_property name="ObjectShortName">awg_data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_data_len">
+         <obj_property name="ElementShortName">awg_data_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_data_len[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_data_len">
+         <obj_property name="ElementShortName">awg_data_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_data_len[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_data_last">
+         <obj_property name="ElementShortName">awg_data_last</obj_property>
+         <obj_property name="ObjectShortName">awg_data_last</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/set_stb">
+         <obj_property name="ElementShortName">set_stb</obj_property>
+         <obj_property name="ObjectShortName">set_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/set_addr">
+         <obj_property name="ElementShortName">set_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">set_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/set_data">
+         <obj_property name="ElementShortName">set_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wr_axis_tdata">
+         <obj_property name="ElementShortName">wr_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_axis_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wr_axis_tvalid">
+         <obj_property name="ElementShortName">wr_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">wr_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wr_axis_tlast">
+         <obj_property name="ElementShortName">wr_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">wr_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wr_axis_tready">
+         <obj_property name="ElementShortName">wr_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">wr_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wr_axis_tuser">
+         <obj_property name="ElementShortName">wr_axis_tuser[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_axis_tuser[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wr_axis_tkeep">
+         <obj_property name="ElementShortName">wr_axis_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_axis_tkeep[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wr_axis_tdest">
+         <obj_property name="ElementShortName">wr_axis_tdest[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_axis_tdest[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wr_axis_tid">
+         <obj_property name="ElementShortName">wr_axis_tid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_axis_tid[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_control_word">
+         <obj_property name="ElementShortName">awg_control_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_control_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_ready">
+         <obj_property name="ElementShortName">awg_ready</obj_property>
+         <obj_property name="ObjectShortName">awg_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_done">
+         <obj_property name="ElementShortName">awg_done</obj_property>
+         <obj_property name="ObjectShortName">awg_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_active">
+         <obj_property name="ElementShortName">awg_active</obj_property>
+         <obj_property name="ObjectShortName">awg_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_init">
+         <obj_property name="ElementShortName">awg_init</obj_property>
+         <obj_property name="ObjectShortName">awg_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/awg_enable">
+         <obj_property name="ElementShortName">awg_enable</obj_property>
+         <obj_property name="ObjectShortName">awg_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/adc_enable">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirp_freq_offset">
+         <obj_property name="ElementShortName">chirp_freq_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_freq_offset[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirp_tuning_word_coeff">
+         <obj_property name="ElementShortName">chirp_tuning_word_coeff[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_tuning_word_coeff[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirp_count_max">
+         <obj_property name="ElementShortName">chirp_count_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfin_axis_tdata">
+         <obj_property name="ElementShortName">wfin_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfin_axis_tvalid">
+         <obj_property name="ElementShortName">wfin_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfin_axis_tlast">
+         <obj_property name="ElementShortName">wfin_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfin_axis_tuser">
+         <obj_property name="ElementShortName">wfin_axis_tuser[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tuser[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfin_axis_tkeep">
+         <obj_property name="ElementShortName">wfin_axis_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tkeep[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfin_axis_tdest">
+         <obj_property name="ElementShortName">wfin_axis_tdest[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tdest[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfin_axis_tid">
+         <obj_property name="ElementShortName">wfin_axis_tid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tid[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfin_axis_tready">
+         <obj_property name="ElementShortName">wfin_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfout_axis_tdata">
+         <obj_property name="ElementShortName">wfout_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfout_axis_tvalid">
+         <obj_property name="ElementShortName">wfout_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfout_axis_tlast">
+         <obj_property name="ElementShortName">wfout_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfout_axis_tkeep">
+         <obj_property name="ElementShortName">wfout_axis_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tkeep[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfout_axis_tready">
+         <obj_property name="ElementShortName">wfout_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">wfout_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/waveform_parameters">
+         <obj_property name="ElementShortName">waveform_parameters[127:0]</obj_property>
+         <obj_property name="ObjectShortName">waveform_parameters[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/init_wf_write">
+         <obj_property name="ElementShortName">init_wf_write</obj_property>
+         <obj_property name="ObjectShortName">init_wf_write</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wf_write_ready">
+         <obj_property name="ElementShortName">wf_write_ready</obj_property>
+         <obj_property name="ObjectShortName">wf_write_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wf_read_ready">
+         <obj_property name="ElementShortName">wf_read_ready</obj_property>
+         <obj_property name="ObjectShortName">wf_read_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfout_size">
+         <obj_property name="ElementShortName">wfout_size[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfout_size[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfrm_data_i">
+         <obj_property name="ElementShortName">wfrm_data_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_data_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/wfrm_data_q">
+         <obj_property name="ElementShortName">wfrm_data_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_data_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfrm_data_valid">
+         <obj_property name="ElementShortName">wfrm_data_valid</obj_property>
+         <obj_property name="ObjectShortName">wfrm_data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirp_data_i">
+         <obj_property name="ElementShortName">chirp_data_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_data_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirp_data_q">
+         <obj_property name="ElementShortName">chirp_data_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_data_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirp_data_valid">
+         <obj_property name="ElementShortName">chirp_data_valid</obj_property>
+         <obj_property name="ObjectShortName">chirp_data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirp_data_last">
+         <obj_property name="ElementShortName">chirp_data_last</obj_property>
+         <obj_property name="ObjectShortName">chirp_data_last</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/adc_counter">
+         <obj_property name="ElementShortName">adc_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_counter[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/adc_data_valid">
+         <obj_property name="ElementShortName">adc_data_valid</obj_property>
+         <obj_property name="ObjectShortName">adc_data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/dds_source_ctrl">
+         <obj_property name="ElementShortName">dds_source_ctrl[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_source_ctrl[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/dds_source_select">
+         <obj_property name="ElementShortName">dds_source_select</obj_property>
+         <obj_property name="ObjectShortName">dds_source_select</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/dds_source_ctrl_r">
+         <obj_property name="ElementShortName">dds_source_ctrl_r[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_source_ctrl_r[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfrm_ready">
+         <obj_property name="ElementShortName">wfrm_ready</obj_property>
+         <obj_property name="ObjectShortName">wfrm_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfrm_done">
+         <obj_property name="ElementShortName">wfrm_done</obj_property>
+         <obj_property name="ObjectShortName">wfrm_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfrm_active">
+         <obj_property name="ElementShortName">wfrm_active</obj_property>
+         <obj_property name="ObjectShortName">wfrm_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfrm_init">
+         <obj_property name="ElementShortName">wfrm_init</obj_property>
+         <obj_property name="ObjectShortName">wfrm_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/wfrm_enable">
+         <obj_property name="ElementShortName">wfrm_enable</obj_property>
+         <obj_property name="ObjectShortName">wfrm_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/dds_ready">
+         <obj_property name="ElementShortName">dds_ready</obj_property>
+         <obj_property name="ObjectShortName">dds_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/dds_done">
+         <obj_property name="ElementShortName">dds_done</obj_property>
+         <obj_property name="ObjectShortName">dds_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/dds_active">
+         <obj_property name="ElementShortName">dds_active</obj_property>
+         <obj_property name="ObjectShortName">dds_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/dds_init">
+         <obj_property name="ElementShortName">dds_init</obj_property>
+         <obj_property name="ObjectShortName">dds_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/dds_enable">
+         <obj_property name="ElementShortName">dds_enable</obj_property>
+         <obj_property name="ObjectShortName">dds_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/CHIRP_TUNING_COEF_INIT">
+         <obj_property name="ElementShortName">CHIRP_TUNING_COEF_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_TUNING_COEF_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/CHIRP_COUNT_MAX_INIT">
+         <obj_property name="ElementShortName">CHIRP_COUNT_MAX_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_COUNT_MAX_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/CHIRP_FREQ_OFFSET_INIT">
+         <obj_property name="ElementShortName">CHIRP_FREQ_OFFSET_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_FREQ_OFFSET_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/SR_CH_COUNTER_ADDR">
+         <obj_property name="ElementShortName">SR_CH_COUNTER_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_CH_COUNTER_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/SR_CH_TUNING_COEF_ADDR">
+         <obj_property name="ElementShortName">SR_CH_TUNING_COEF_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_CH_TUNING_COEF_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/SR_CH_FREQ_OFFSET_ADDR">
+         <obj_property name="ElementShortName">SR_CH_FREQ_OFFSET_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_CH_FREQ_OFFSET_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/DDS_LATENCY">
+         <obj_property name="ElementShortName">DDS_LATENCY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DDS_LATENCY[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group157">
+      <obj_property name="label">Chirpgen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_out_i">
+         <obj_property name="ElementShortName">chirp_out_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_out_i[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_out_q">
+         <obj_property name="ElementShortName">chirp_out_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_out_q[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_out_valid">
+         <obj_property name="ElementShortName">chirp_out_valid</obj_property>
+         <obj_property name="ObjectShortName">chirp_out_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_out_last">
+         <obj_property name="ElementShortName">chirp_out_last</obj_property>
+         <obj_property name="ObjectShortName">chirp_out_last</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_ready">
+         <obj_property name="ElementShortName">chirp_ready</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_done">
+         <obj_property name="ElementShortName">chirp_done</obj_property>
+         <obj_property name="ObjectShortName">chirp_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_active">
+         <obj_property name="ElementShortName">chirp_active</obj_property>
+         <obj_property name="ObjectShortName">chirp_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_init">
+         <obj_property name="ElementShortName">chirp_init</obj_property>
+         <obj_property name="ObjectShortName">chirp_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_enable">
+         <obj_property name="ElementShortName">chirp_enable</obj_property>
+         <obj_property name="ObjectShortName">chirp_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/freq_offset_in">
+         <obj_property name="ElementShortName">freq_offset_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">freq_offset_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/tuning_word_coeff_in">
+         <obj_property name="ElementShortName">tuning_word_coeff_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tuning_word_coeff_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_count_max_in">
+         <obj_property name="ElementShortName">chirp_count_max_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_i">
+         <obj_property name="ElementShortName">chirp_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_q">
+         <obj_property name="ElementShortName">chirp_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_valid">
+         <obj_property name="ElementShortName">chirp_valid</obj_property>
+         <obj_property name="ObjectShortName">chirp_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_ready_r">
+         <obj_property name="ElementShortName">chirp_ready_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_ready_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_active_r">
+         <obj_property name="ElementShortName">chirp_active_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_active_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_done_r">
+         <obj_property name="ElementShortName">chirp_done_r</obj_property>
+         <obj_property name="ObjectShortName">chirp_done_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/phase_acc">
+         <obj_property name="ElementShortName">phase_acc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">phase_acc[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/tuning_word">
+         <obj_property name="ElementShortName">tuning_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tuning_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/tuning_word_coeff">
+         <obj_property name="ElementShortName">tuning_word_coeff[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tuning_word_coeff[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_count">
+         <obj_property name="ElementShortName">chirp_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/chirp_count_max">
+         <obj_property name="ElementShortName">chirp_count_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_max[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/freq_offset">
+         <obj_property name="ElementShortName">freq_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">freq_offset[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/dds_dout_tdata">
+         <obj_property name="ElementShortName">dds_dout_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/dds_dout_tvalid">
+         <obj_property name="ElementShortName">dds_dout_tvalid</obj_property>
+         <obj_property name="ObjectShortName">dds_dout_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/dds_phase_tdata">
+         <obj_property name="ElementShortName">dds_phase_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_phase_tdata[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/dds_phase_tvalid">
+         <obj_property name="ElementShortName">dds_phase_tvalid</obj_property>
+         <obj_property name="ObjectShortName">dds_phase_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/dds_phase_tvalid_r">
+         <obj_property name="ElementShortName">dds_phase_tvalid_r</obj_property>
+         <obj_property name="ObjectShortName">dds_phase_tvalid_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/dds_aresetn">
+         <obj_property name="ElementShortName">dds_aresetn</obj_property>
+         <obj_property name="ObjectShortName">dds_aresetn</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/dds_latency_counter">
+         <obj_property name="ElementShortName">dds_latency_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_latency_counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_wavegen_block/chirpgen_inst/DDS_LATENCY">
+         <obj_property name="ElementShortName">DDS_LATENCY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DDS_LATENCY[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group674">
+      <obj_property name="label">Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/set_stb">
+         <obj_property name="ElementShortName">set_stb</obj_property>
+         <obj_property name="ObjectShortName">set_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/set_addr">
+         <obj_property name="ElementShortName">set_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">set_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/set_data">
+         <obj_property name="ElementShortName">set_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_ready">
+         <obj_property name="ElementShortName">awg_ready</obj_property>
+         <obj_property name="ObjectShortName">awg_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_active">
+         <obj_property name="ElementShortName">awg_active</obj_property>
+         <obj_property name="ObjectShortName">awg_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_done">
+         <obj_property name="ElementShortName">awg_done</obj_property>
+         <obj_property name="ObjectShortName">awg_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_init">
+         <obj_property name="ElementShortName">awg_init</obj_property>
+         <obj_property name="ObjectShortName">awg_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_enable">
+         <obj_property name="ElementShortName">awg_enable</obj_property>
+         <obj_property name="ObjectShortName">awg_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/adc_enable">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/next_gen_state">
+         <obj_property name="ElementShortName">next_gen_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_gen_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/gen_state">
+         <obj_property name="ElementShortName">gen_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">gen_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/chirp_count">
+         <obj_property name="ElementShortName">chirp_count[63:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/overhead_count">
+         <obj_property name="ElementShortName">overhead_count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">overhead_count[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/adc_collect_count">
+         <obj_property name="ElementShortName">adc_collect_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_collect_count[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/process_count">
+         <obj_property name="ElementShortName">process_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">process_count[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_ready_int">
+         <obj_property name="ElementShortName">awg_ready_int</obj_property>
+         <obj_property name="ObjectShortName">awg_ready_int</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_active_int">
+         <obj_property name="ElementShortName">awg_active_int</obj_property>
+         <obj_property name="ObjectShortName">awg_active_int</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_done_int">
+         <obj_property name="ElementShortName">awg_done_int</obj_property>
+         <obj_property name="ObjectShortName">awg_done_int</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_init_int">
+         <obj_property name="ElementShortName">awg_init_int</obj_property>
+         <obj_property name="ObjectShortName">awg_init_int</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/awg_enable_int">
+         <obj_property name="ElementShortName">awg_enable_int</obj_property>
+         <obj_property name="ObjectShortName">awg_enable_int</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/adc_enable_int">
+         <obj_property name="ElementShortName">adc_enable_int</obj_property>
+         <obj_property name="ObjectShortName">adc_enable_int</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/chirp_count_int">
+         <obj_property name="ElementShortName">chirp_count_int[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_int[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/chirp_count_frac">
+         <obj_property name="ElementShortName">chirp_count_frac[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count_frac[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/adc_sample_count">
+         <obj_property name="ElementShortName">adc_sample_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_sample_count[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/update_chirp_count_int">
+         <obj_property name="ElementShortName">update_chirp_count_int</obj_property>
+         <obj_property name="ObjectShortName">update_chirp_count_int</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/update_chirp_count_frac">
+         <obj_property name="ElementShortName">update_chirp_count_frac</obj_property>
+         <obj_property name="ObjectShortName">update_chirp_count_frac</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/update_adc_sample_count">
+         <obj_property name="ElementShortName">update_adc_sample_count</obj_property>
+         <obj_property name="ObjectShortName">update_adc_sample_count</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/chirp_prf_count_max">
+         <obj_property name="ElementShortName">chirp_prf_count_max[63:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_prf_count_max[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/adc_collect_count_max">
+         <obj_property name="ElementShortName">adc_collect_count_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_collect_count_max[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/CLK_FREQ">
+         <obj_property name="ElementShortName">CLK_FREQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_FREQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/CHIRP_PRP">
+         <obj_property name="ElementShortName">CHIRP_PRP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_PRP[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/ADC_SAMPLE_COUNT_INIT">
+         <obj_property name="ElementShortName">ADC_SAMPLE_COUNT_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_SAMPLE_COUNT_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/CHIRP_PRF_INT_COUNT_INIT">
+         <obj_property name="ElementShortName">CHIRP_PRF_INT_COUNT_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_PRF_INT_COUNT_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/CHIRP_PRF_FRAC_COUNT_INIT">
+         <obj_property name="ElementShortName">CHIRP_PRF_FRAC_COUNT_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_PRF_FRAC_COUNT_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/SR_PRF_INT_ADDR">
+         <obj_property name="ElementShortName">SR_PRF_INT_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_PRF_INT_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/SR_PRF_FRAC_ADDR">
+         <obj_property name="ElementShortName">SR_PRF_FRAC_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_PRF_FRAC_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/SR_ADC_SAMPLE_ADDR">
+         <obj_property name="ElementShortName">SR_ADC_SAMPLE_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_ADC_SAMPLE_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/IDLE">
+         <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/ACTIVE">
+         <obj_property name="ElementShortName">ACTIVE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ACTIVE[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/CHIRP">
+         <obj_property name="ElementShortName">CHIRP[2:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/COLLECT">
+         <obj_property name="ElementShortName">COLLECT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">COLLECT[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/PROCESS">
+         <obj_property name="ElementShortName">PROCESS[2:0]</obj_property>
+         <obj_property name="ObjectShortName">PROCESS[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/u_radar_pulse_controller/OVERHEAD">
+         <obj_property name="ElementShortName">OVERHEAD[2:0]</obj_property>
+         <obj_property name="ObjectShortName">OVERHEAD[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group290">
+      <obj_property name="label">Synchronizer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/iq_tdata">
+         <obj_property name="ElementShortName">iq_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">iq_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/iq_tvalid">
+         <obj_property name="ElementShortName">iq_tvalid</obj_property>
+         <obj_property name="ObjectShortName">iq_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/iq_tlast">
+         <obj_property name="ElementShortName">iq_tlast</obj_property>
+         <obj_property name="ObjectShortName">iq_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/iq_tready">
+         <obj_property name="ElementShortName">iq_tready</obj_property>
+         <obj_property name="ObjectShortName">iq_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/iq_first">
+         <obj_property name="ElementShortName">iq_first</obj_property>
+         <obj_property name="ObjectShortName">iq_first</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/counter_id">
+         <obj_property name="ElementShortName">counter_id[63:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_id[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_data_iq">
+         <obj_property name="ElementShortName">adc_data_iq[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_iq[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dac_data_iq">
+         <obj_property name="ElementShortName">dac_data_iq[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_data_iq[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_data_valid">
+         <obj_property name="ElementShortName">adc_data_valid</obj_property>
+         <obj_property name="ObjectShortName">adc_data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tdata">
+         <obj_property name="ElementShortName">axis_adc_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tvalid">
+         <obj_property name="ElementShortName">axis_adc_tvalid</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tlast">
+         <obj_property name="ElementShortName">axis_adc_tlast</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tkeep">
+         <obj_property name="ElementShortName">axis_adc_tkeep[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tkeep[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tstrb">
+         <obj_property name="ElementShortName">axis_adc_tstrb[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tstrb[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tid">
+         <obj_property name="ElementShortName">axis_adc_tid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tid[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tdest">
+         <obj_property name="ElementShortName">axis_adc_tdest[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tdest[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tuser">
+         <obj_property name="ElementShortName">axis_adc_tuser[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tuser[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/axis_adc_tready">
+         <obj_property name="ElementShortName">axis_adc_tready</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/awg_control_word">
+         <obj_property name="ElementShortName">awg_control_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_control_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/awg_init">
+         <obj_property name="ElementShortName">awg_init</obj_property>
+         <obj_property name="ObjectShortName">awg_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/awg_enable">
+         <obj_property name="ElementShortName">awg_enable</obj_property>
+         <obj_property name="ObjectShortName">awg_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_enable">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_run">
+         <obj_property name="ElementShortName">adc_run</obj_property>
+         <obj_property name="ObjectShortName">adc_run</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_counter">
+         <obj_property name="ElementShortName">adc_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_counter[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dds_route_ctrl_u">
+         <obj_property name="ElementShortName">dds_route_ctrl_u[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_route_ctrl_u[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dds_route_ctrl_l">
+         <obj_property name="ElementShortName">dds_route_ctrl_l[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_route_ctrl_l[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dds_source_ctrl">
+         <obj_property name="ElementShortName">dds_source_ctrl[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_source_ctrl[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dds_source_select">
+         <obj_property name="ElementShortName">dds_source_select</obj_property>
+         <obj_property name="ObjectShortName">dds_source_select</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dds_route_ctrl_u_r">
+         <obj_property name="ElementShortName">dds_route_ctrl_u_r[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_route_ctrl_u_r[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dds_route_ctrl_l_r">
+         <obj_property name="ElementShortName">dds_route_ctrl_l_r[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_route_ctrl_l_r[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dds_source_ctrl_r">
+         <obj_property name="ElementShortName">dds_source_ctrl_r[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_source_ctrl_r[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_tdata">
+         <obj_property name="ElementShortName">adc_fifo_wr_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_tvalid">
+         <obj_property name="ElementShortName">adc_fifo_wr_tvalid</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_tlast">
+         <obj_property name="ElementShortName">adc_fifo_wr_tlast</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_pre_tlast">
+         <obj_property name="ElementShortName">adc_fifo_wr_pre_tlast</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_pre_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_first">
+         <obj_property name="ElementShortName">adc_fifo_wr_first</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_first</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_first_r">
+         <obj_property name="ElementShortName">adc_fifo_wr_first_r</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_first_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_tdata_count">
+         <obj_property name="ElementShortName">adc_fifo_wr_tdata_count[12:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_tdata_count[12:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_rd_data_count">
+         <obj_property name="ElementShortName">adc_fifo_rd_data_count[9:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_rd_data_count[9:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_ack">
+         <obj_property name="ElementShortName">adc_fifo_wr_ack</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_ack</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_valid">
+         <obj_property name="ElementShortName">adc_fifo_valid</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_almost_full">
+         <obj_property name="ElementShortName">adc_fifo_almost_full</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_almost_full</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_almost_empty">
+         <obj_property name="ElementShortName">adc_fifo_almost_empty</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_almost_empty</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_wr_en">
+         <obj_property name="ElementShortName">adc_fifo_wr_en</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_wr_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_rd_en">
+         <obj_property name="ElementShortName">adc_fifo_rd_en</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_rd_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_data_out">
+         <obj_property name="ElementShortName">adc_fifo_data_out[511:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_data_out[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_data_out_reversed">
+         <obj_property name="ElementShortName">adc_fifo_data_out_reversed[511:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_data_out_reversed[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_full">
+         <obj_property name="ElementShortName">adc_fifo_full</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_full</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_fifo_empty">
+         <obj_property name="ElementShortName">adc_fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">adc_fifo_empty</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_enable_r">
+         <obj_property name="ElementShortName">adc_enable_r</obj_property>
+         <obj_property name="ObjectShortName">adc_enable_r</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_enable_rr">
+         <obj_property name="ElementShortName">adc_enable_rr</obj_property>
+         <obj_property name="ObjectShortName">adc_enable_rr</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/dds_latency_counter">
+         <obj_property name="ElementShortName">dds_latency_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dds_latency_counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/glbl_counter_reg">
+         <obj_property name="ElementShortName">glbl_counter_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">glbl_counter_reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/data_alignment_counter">
+         <obj_property name="ElementShortName">data_alignment_counter[5:0]</obj_property>
+         <obj_property name="ObjectShortName">data_alignment_counter[5:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/data_word_counter">
+         <obj_property name="ElementShortName">data_word_counter[5:0]</obj_property>
+         <obj_property name="ObjectShortName">data_word_counter[5:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/align_data">
+         <obj_property name="ElementShortName">align_data</obj_property>
+         <obj_property name="ObjectShortName">align_data</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/adc_counter_reg">
+         <obj_property name="ElementShortName">adc_counter_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_counter_reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/glbl_counter">
+         <obj_property name="ElementShortName">glbl_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">glbl_counter[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/data_command_word">
+         <obj_property name="ElementShortName">data_command_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_command_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/data_out_upper">
+         <obj_property name="ElementShortName">data_out_upper[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out_upper[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/data_out_lower">
+         <obj_property name="ElementShortName">data_out_lower[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out_lower[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/ADC_AXI_DATA_WIDTH">
+         <obj_property name="ElementShortName">ADC_AXI_DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/ADC_AXI_TID_WIDTH">
+         <obj_property name="ElementShortName">ADC_AXI_TID_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TID_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/ADC_AXI_TDEST_WIDTH">
+         <obj_property name="ElementShortName">ADC_AXI_TDEST_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TDEST_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/ADC_AXI_TUSER_WIDTH">
+         <obj_property name="ElementShortName">ADC_AXI_TUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/ADC_AXI_STREAM_ID">
+         <obj_property name="ElementShortName">ADC_AXI_STREAM_ID</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_STREAM_ID</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/ADC_AXI_STREAM_DEST">
+         <obj_property name="ElementShortName">ADC_AXI_STREAM_DEST</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_STREAM_DEST</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/SIMULATION">
+         <obj_property name="ElementShortName">SIMULATION[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SIMULATION[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/FFT_LEN">
+         <obj_property name="ElementShortName">FFT_LEN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FFT_LEN[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/DDS_LATENCY">
+         <obj_property name="ElementShortName">DDS_LATENCY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DDS_LATENCY[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/DDS_CHIRP_DELAY">
+         <obj_property name="ElementShortName">DDS_CHIRP_DELAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DDS_CHIRP_DELAY[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/DDS_WFRM_DELAY">
+         <obj_property name="ElementShortName">DDS_WFRM_DELAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DDS_WFRM_DELAY[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/DDS_WFRM_DELAY_END">
+         <obj_property name="ElementShortName">DDS_WFRM_DELAY_END[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DDS_WFRM_DELAY_END[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/FCUTOFF_IND">
+         <obj_property name="ElementShortName">FCUTOFF_IND[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FCUTOFF_IND[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/DATA_FIRST_COMMAND">
+         <obj_property name="ElementShortName">DATA_FIRST_COMMAND[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_FIRST_COMMAND[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_sample_synchronizer/DATA_LAST_COMMAND">
+         <obj_property name="ElementShortName">DATA_LAST_COMMAND[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_LAST_COMMAND[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group309">
+      <obj_property name="label">Cmd Gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_gen/command_i">
+         <obj_property name="ElementShortName">command_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">command_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_gen/time_i">
+         <obj_property name="ElementShortName">time_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">time_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/store_command">
+         <obj_property name="ElementShortName">store_command</obj_property>
+         <obj_property name="ObjectShortName">store_command</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_gen/awg_data_len">
+         <obj_property name="ElementShortName">awg_data_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_data_len[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_gen/num_adc_samples">
+         <obj_property name="ElementShortName">num_adc_samples[31:0]</obj_property>
+         <obj_property name="ObjectShortName">num_adc_samples[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_gen/vita_time">
+         <obj_property name="ElementShortName">vita_time[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_time[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/awg_init">
+         <obj_property name="ElementShortName">awg_init</obj_property>
+         <obj_property name="ObjectShortName">awg_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/adc_enable">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_gen/numlines">
+         <obj_property name="ElementShortName">numlines[31:0]</obj_property>
+         <obj_property name="ObjectShortName">numlines[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/send_imm">
+         <obj_property name="ElementShortName">send_imm</obj_property>
+         <obj_property name="ObjectShortName">send_imm</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/chain">
+         <obj_property name="ElementShortName">chain</obj_property>
+         <obj_property name="ObjectShortName">chain</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/reload">
+         <obj_property name="ElementShortName">reload</obj_property>
+         <obj_property name="ObjectShortName">reload</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/stop">
+         <obj_property name="ElementShortName">stop</obj_property>
+         <obj_property name="ObjectShortName">stop</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_gen/command_i_r">
+         <obj_property name="ElementShortName">command_i_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">command_i_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_gen/time_i_r">
+         <obj_property name="ElementShortName">time_i_r[63:0]</obj_property>
+         <obj_property name="ObjectShortName">time_i_r[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_command_gen/store_command_r">
+         <obj_property name="ElementShortName">store_command_r</obj_property>
+         <obj_property name="ObjectShortName">store_command_r</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group391">
+      <obj_property name="label">RX CTRL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/clear">
+         <obj_property name="ElementShortName">clear</obj_property>
+         <obj_property name="ObjectShortName">clear</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/vita_time">
+         <obj_property name="ElementShortName">vita_time[63:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_time[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/sid">
+         <obj_property name="ElementShortName">sid[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sid[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/resp_sid">
+         <obj_property name="ElementShortName">resp_sid[31:0]</obj_property>
+         <obj_property name="ObjectShortName">resp_sid[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/set_stb">
+         <obj_property name="ElementShortName">set_stb</obj_property>
+         <obj_property name="ObjectShortName">set_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/set_addr">
+         <obj_property name="ElementShortName">set_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">set_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/set_data">
+         <obj_property name="ElementShortName">set_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/command_i">
+         <obj_property name="ElementShortName">command_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">command_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/time_i">
+         <obj_property name="ElementShortName">time_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">time_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/store_command">
+         <obj_property name="ElementShortName">store_command</obj_property>
+         <obj_property name="ObjectShortName">store_command</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_tdata">
+         <obj_property name="ElementShortName">rx_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_tlast">
+         <obj_property name="ElementShortName">rx_tlast</obj_property>
+         <obj_property name="ObjectShortName">rx_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_tvalid">
+         <obj_property name="ElementShortName">rx_tvalid</obj_property>
+         <obj_property name="ObjectShortName">rx_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_tready">
+         <obj_property name="ElementShortName">rx_tready</obj_property>
+         <obj_property name="ObjectShortName">rx_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_tuser">
+         <obj_property name="ElementShortName">rx_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/resp_tdata">
+         <obj_property name="ElementShortName">resp_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">resp_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/resp_tuser">
+         <obj_property name="ElementShortName">resp_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">resp_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/resp_tlast">
+         <obj_property name="ElementShortName">resp_tlast</obj_property>
+         <obj_property name="ObjectShortName">resp_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/resp_tvalid">
+         <obj_property name="ElementShortName">resp_tvalid</obj_property>
+         <obj_property name="ObjectShortName">resp_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/resp_tready">
+         <obj_property name="ElementShortName">resp_tready</obj_property>
+         <obj_property name="ObjectShortName">resp_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/run">
+         <obj_property name="ElementShortName">run</obj_property>
+         <obj_property name="ObjectShortName">run</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/sample">
+         <obj_property name="ElementShortName">sample[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sample[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/strobe">
+         <obj_property name="ElementShortName">strobe</obj_property>
+         <obj_property name="ObjectShortName">strobe</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_reg_tdata">
+         <obj_property name="ElementShortName">rx_reg_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_reg_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/error">
+         <obj_property name="ElementShortName">error[31:0]</obj_property>
+         <obj_property name="ObjectShortName">error[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_reg_tlast">
+         <obj_property name="ElementShortName">rx_reg_tlast</obj_property>
+         <obj_property name="ObjectShortName">rx_reg_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_reg_tvalid">
+         <obj_property name="ElementShortName">rx_reg_tvalid</obj_property>
+         <obj_property name="ObjectShortName">rx_reg_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_reg_tready">
+         <obj_property name="ElementShortName">rx_reg_tready</obj_property>
+         <obj_property name="ObjectShortName">rx_reg_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_reg_tuser">
+         <obj_property name="ElementShortName">rx_reg_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_reg_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/error_tuser">
+         <obj_property name="ElementShortName">error_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">error_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/overflow">
+         <obj_property name="ElementShortName">overflow</obj_property>
+         <obj_property name="ObjectShortName">overflow</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/send_imm">
+         <obj_property name="ElementShortName">send_imm</obj_property>
+         <obj_property name="ObjectShortName">send_imm</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/chain">
+         <obj_property name="ElementShortName">chain</obj_property>
+         <obj_property name="ObjectShortName">chain</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/reload">
+         <obj_property name="ElementShortName">reload</obj_property>
+         <obj_property name="ObjectShortName">reload</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/stop">
+         <obj_property name="ElementShortName">stop</obj_property>
+         <obj_property name="ObjectShortName">stop</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/numlines">
+         <obj_property name="ElementShortName">numlines[27:0]</obj_property>
+         <obj_property name="ObjectShortName">numlines[27:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/rcvtime">
+         <obj_property name="ElementShortName">rcvtime[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rcvtime[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/use_timestamps">
+         <obj_property name="ElementShortName">use_timestamps</obj_property>
+         <obj_property name="ObjectShortName">use_timestamps</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/now">
+         <obj_property name="ElementShortName">now</obj_property>
+         <obj_property name="ObjectShortName">now</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/early">
+         <obj_property name="ElementShortName">early</obj_property>
+         <obj_property name="ObjectShortName">early</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/late">
+         <obj_property name="ElementShortName">late</obj_property>
+         <obj_property name="ObjectShortName">late</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/command_valid">
+         <obj_property name="ElementShortName">command_valid</obj_property>
+         <obj_property name="ObjectShortName">command_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/command_ready">
+         <obj_property name="ElementShortName">command_ready</obj_property>
+         <obj_property name="ObjectShortName">command_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/chain_sav">
+         <obj_property name="ElementShortName">chain_sav</obj_property>
+         <obj_property name="ObjectShortName">chain_sav</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/reload_sav">
+         <obj_property name="ElementShortName">reload_sav</obj_property>
+         <obj_property name="ObjectShortName">reload_sav</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/clear_halt">
+         <obj_property name="ElementShortName">clear_halt</obj_property>
+         <obj_property name="ObjectShortName">clear_halt</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/halt">
+         <obj_property name="ElementShortName">halt</obj_property>
+         <obj_property name="ObjectShortName">halt</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/set_halt">
+         <obj_property name="ElementShortName">set_halt</obj_property>
+         <obj_property name="ObjectShortName">set_halt</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/maxlen">
+         <obj_property name="ElementShortName">maxlen[15:0]</obj_property>
+         <obj_property name="ObjectShortName">maxlen[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/eob">
+         <obj_property name="ElementShortName">eob</obj_property>
+         <obj_property name="ObjectShortName">eob</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/start_time">
+         <obj_property name="ElementShortName">start_time[63:0]</obj_property>
+         <obj_property name="ObjectShortName">start_time[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/clear_cmds">
+         <obj_property name="ElementShortName">clear_cmds</obj_property>
+         <obj_property name="ObjectShortName">clear_cmds</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/ibs_state">
+         <obj_property name="ElementShortName">ibs_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ibs_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/lines_left">
+         <obj_property name="ElementShortName">lines_left[27:0]</obj_property>
+         <obj_property name="ObjectShortName">lines_left[27:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/repeat_lines">
+         <obj_property name="ElementShortName">repeat_lines[27:0]</obj_property>
+         <obj_property name="ObjectShortName">repeat_lines[27:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/lines_left_pkt">
+         <obj_property name="ElementShortName">lines_left_pkt[15:0]</obj_property>
+         <obj_property name="ObjectShortName">lines_left_pkt[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/seqnum_cnt">
+         <obj_property name="ElementShortName">seqnum_cnt[11:0]</obj_property>
+         <obj_property name="ObjectShortName">seqnum_cnt[11:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/error_header">
+         <obj_property name="ElementShortName">error_header[127:0]</obj_property>
+         <obj_property name="ObjectShortName">error_header[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/rx_header">
+         <obj_property name="ElementShortName">rx_header[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_header[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/out">
+         <obj_property name="ElementShortName">out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/out">
+         <obj_property name="ElementShortName">out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/radar_rx_controller/changed">
+         <obj_property name="ElementShortName">changed</obj_property>
+         <obj_property name="ObjectShortName">changed</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/space">
+         <obj_property name="ElementShortName">space[5:0]</obj_property>
+         <obj_property name="ObjectShortName">space[5:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/occupied">
+         <obj_property name="ElementShortName">occupied[5:0]</obj_property>
+         <obj_property name="ObjectShortName">occupied[5:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/SR_RX_CTRL_COMMAND">
+         <obj_property name="ElementShortName">SR_RX_CTRL_COMMAND[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_COMMAND[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/SR_RX_CTRL_TIME_HI">
+         <obj_property name="ElementShortName">SR_RX_CTRL_TIME_HI[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_TIME_HI[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/SR_RX_CTRL_TIME_LO">
+         <obj_property name="ElementShortName">SR_RX_CTRL_TIME_LO[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_TIME_LO[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/SR_RX_CTRL_HALT">
+         <obj_property name="ElementShortName">SR_RX_CTRL_HALT[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_HALT[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/SR_RX_CTRL_MAXLEN">
+         <obj_property name="ElementShortName">SR_RX_CTRL_MAXLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_MAXLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/SR_RX_CTRL_CLEAR_CMDS">
+         <obj_property name="ElementShortName">SR_RX_CTRL_CLEAR_CMDS[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_CLEAR_CMDS[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/SR_RX_CTRL_OUTPUT_FORMAT">
+         <obj_property name="ElementShortName">SR_RX_CTRL_OUTPUT_FORMAT[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_OUTPUT_FORMAT[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/IBS_IDLE">
+         <obj_property name="ElementShortName">IBS_IDLE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IBS_IDLE[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/IBS_RUNNING">
+         <obj_property name="ElementShortName">IBS_RUNNING[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IBS_RUNNING[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/IBS_ERR_WAIT_FOR_READY">
+         <obj_property name="ElementShortName">IBS_ERR_WAIT_FOR_READY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IBS_ERR_WAIT_FOR_READY[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/IBS_ERR_SEND_PKT">
+         <obj_property name="ElementShortName">IBS_ERR_SEND_PKT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IBS_ERR_SEND_PKT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/ERR_OVERRUN">
+         <obj_property name="ElementShortName">ERR_OVERRUN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERR_OVERRUN[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/ERR_BROKENCHAIN">
+         <obj_property name="ElementShortName">ERR_BROKENCHAIN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERR_BROKENCHAIN[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/radar_rx_controller/ERR_LATECMD">
+         <obj_property name="ElementShortName">ERR_LATECMD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERR_LATECMD[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group516">
+      <obj_property name="label">Sim Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/tx_stb">
+         <obj_property name="ElementShortName">tx_stb</obj_property>
+         <obj_property name="ObjectShortName">tx_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_stb">
+         <obj_property name="ElementShortName">rx_stb</obj_property>
+         <obj_property name="ObjectShortName">rx_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/tx">
+         <obj_property name="ElementShortName">tx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx">
+         <obj_property name="ElementShortName">rx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfin_axis_tdata">
+         <obj_property name="ElementShortName">wfin_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/wfin_axis_tvalid">
+         <obj_property name="ElementShortName">wfin_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/wfin_axis_tlast">
+         <obj_property name="ElementShortName">wfin_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfin_axis_tkeep">
+         <obj_property name="ElementShortName">wfin_axis_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tkeep[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/wfin_axis_tready">
+         <obj_property name="ElementShortName">wfin_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/awg_data_valid">
+         <obj_property name="ElementShortName">awg_data_valid</obj_property>
+         <obj_property name="ObjectShortName">awg_data_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/awg_data_last">
+         <obj_property name="ElementShortName">awg_data_last</obj_property>
+         <obj_property name="ObjectShortName">awg_data_last</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/awg_out_i">
+         <obj_property name="ElementShortName">awg_out_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/awg_out_q">
+         <obj_property name="ElementShortName">awg_out_q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_out_q[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/awg_data_len">
+         <obj_property name="ElementShortName">awg_data_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_data_len[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/num_adc_samples">
+         <obj_property name="ElementShortName">num_adc_samples[31:0]</obj_property>
+         <obj_property name="ObjectShortName">num_adc_samples[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/set_stb">
+         <obj_property name="ElementShortName">set_stb</obj_property>
+         <obj_property name="ObjectShortName">set_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/set_addr">
+         <obj_property name="ElementShortName">set_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">set_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/set_data">
+         <obj_property name="ElementShortName">set_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/stb_count">
+         <obj_property name="ElementShortName">stb_count</obj_property>
+         <obj_property name="ObjectShortName">stb_count</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_counter">
+         <obj_property name="ElementShortName">rx_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_counter[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/vita_counter">
+         <obj_property name="ElementShortName">vita_counter[63:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_counter[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfin_axis_tdata_reg">
+         <obj_property name="ElementShortName">wfin_axis_tdata_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tdata_reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/wfin_axis_tvalid_reg">
+         <obj_property name="ElementShortName">wfin_axis_tvalid_reg</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tvalid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/wfin_axis_tlast_reg">
+         <obj_property name="ElementShortName">wfin_axis_tlast_reg</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tlast_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfin_axis_tkeep_reg">
+         <obj_property name="ElementShortName">wfin_axis_tkeep_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wfin_axis_tkeep_reg[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/counter">
+         <obj_property name="ElementShortName">counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/wf_written">
+         <obj_property name="ElementShortName">wf_written</obj_property>
+         <obj_property name="ObjectShortName">wf_written</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfrm_ind">
+         <obj_property name="ElementShortName">wfrm_ind[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_ind[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfrm_len">
+         <obj_property name="ElementShortName">wfrm_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_len[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfrm_id">
+         <obj_property name="ElementShortName">wfrm_id[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_id[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfrm_placeholder">
+         <obj_property name="ElementShortName">wfrm_placeholder[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_placeholder[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfrm_cmd">
+         <obj_property name="ElementShortName">wfrm_cmd[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_cmd[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/wfrm_counter">
+         <obj_property name="ElementShortName">wfrm_counter[1:0]</obj_property>
+         <obj_property name="ObjectShortName">wfrm_counter[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/reg_counter">
+         <obj_property name="ElementShortName">reg_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/chirp_count">
+         <obj_property name="ElementShortName">chirp_count[10:0]</obj_property>
+         <obj_property name="ObjectShortName">chirp_count[10:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/awg_ready">
+         <obj_property name="ElementShortName">awg_ready</obj_property>
+         <obj_property name="ObjectShortName">awg_ready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/awg_done">
+         <obj_property name="ElementShortName">awg_done</obj_property>
+         <obj_property name="ObjectShortName">awg_done</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/awg_active">
+         <obj_property name="ElementShortName">awg_active</obj_property>
+         <obj_property name="ObjectShortName">awg_active</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/awg_init">
+         <obj_property name="ElementShortName">awg_init</obj_property>
+         <obj_property name="ObjectShortName">awg_init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/awg_enable">
+         <obj_property name="ElementShortName">awg_enable</obj_property>
+         <obj_property name="ObjectShortName">awg_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/adc_enable">
+         <obj_property name="ElementShortName">adc_enable</obj_property>
+         <obj_property name="ObjectShortName">adc_enable</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/adc_run">
+         <obj_property name="ElementShortName">adc_run</obj_property>
+         <obj_property name="ObjectShortName">adc_run</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/awg_control_word_r">
+         <obj_property name="ElementShortName">awg_control_word_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_control_word_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/awg_control_word">
+         <obj_property name="ElementShortName">awg_control_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awg_control_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/run_awg">
+         <obj_property name="ElementShortName">run_awg</obj_property>
+         <obj_property name="ObjectShortName">run_awg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/sample_awg">
+         <obj_property name="ElementShortName">sample_awg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_awg[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/loopback">
+         <obj_property name="ElementShortName">loopback</obj_property>
+         <obj_property name="ObjectShortName">loopback</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/tx_idle">
+         <obj_property name="ElementShortName">tx_idle[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_idle[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/sample_tx">
+         <obj_property name="ElementShortName">sample_tx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_tx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/txresp_tdata">
+         <obj_property name="ElementShortName">txresp_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">txresp_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/txresp_tuser">
+         <obj_property name="ElementShortName">txresp_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">txresp_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/txresp_tlast">
+         <obj_property name="ElementShortName">txresp_tlast</obj_property>
+         <obj_property name="ObjectShortName">txresp_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/txresp_tvalid">
+         <obj_property name="ElementShortName">txresp_tvalid</obj_property>
+         <obj_property name="ObjectShortName">txresp_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/txresp_tready">
+         <obj_property name="ElementShortName">txresp_tready</obj_property>
+         <obj_property name="ObjectShortName">txresp_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/sample_rx">
+         <obj_property name="ElementShortName">sample_rx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_rx[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/sample_rx_stb">
+         <obj_property name="ElementShortName">sample_rx_stb</obj_property>
+         <obj_property name="ObjectShortName">sample_rx_stb</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rxresp_tdata">
+         <obj_property name="ElementShortName">rxresp_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rxresp_tuser">
+         <obj_property name="ElementShortName">rxresp_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rxresp_tlast">
+         <obj_property name="ElementShortName">rxresp_tlast</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rxresp_tvalid">
+         <obj_property name="ElementShortName">rxresp_tvalid</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rxresp_tready">
+         <obj_property name="ElementShortName">rxresp_tready</obj_property>
+         <obj_property name="ObjectShortName">rxresp_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_tdata">
+         <obj_property name="ElementShortName">rx_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_tlast">
+         <obj_property name="ElementShortName">rx_tlast</obj_property>
+         <obj_property name="ObjectShortName">rx_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_tvalid">
+         <obj_property name="ElementShortName">rx_tvalid</obj_property>
+         <obj_property name="ObjectShortName">rx_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_tuser">
+         <obj_property name="ElementShortName">rx_tuser[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_tuser[127:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_tready">
+         <obj_property name="ElementShortName">rx_tready</obj_property>
+         <obj_property name="ObjectShortName">rx_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/run_rx">
+         <obj_property name="ElementShortName">run_rx</obj_property>
+         <obj_property name="ObjectShortName">run_rx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/clear_tx">
+         <obj_property name="ElementShortName">clear_tx</obj_property>
+         <obj_property name="ObjectShortName">clear_tx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/clear_rx">
+         <obj_property name="ElementShortName">clear_rx</obj_property>
+         <obj_property name="ObjectShortName">clear_rx</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/src_sid">
+         <obj_property name="ElementShortName">src_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">src_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/dst_sid">
+         <obj_property name="ElementShortName">dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_resp_dst_sid">
+         <obj_property name="ElementShortName">rx_resp_dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_resp_dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/tx_resp_dst_sid">
+         <obj_property name="ElementShortName">tx_resp_dst_sid[15:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_resp_dst_sid[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_command_i">
+         <obj_property name="ElementShortName">rx_command_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_command_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/rx_time_i">
+         <obj_property name="ElementShortName">rx_time_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_time_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/rx_store_command">
+         <obj_property name="ElementShortName">rx_store_command</obj_property>
+         <obj_property name="ObjectShortName">rx_store_command</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/vita_time">
+         <obj_property name="ElementShortName">vita_time[63:0]</obj_property>
+         <obj_property name="ObjectShortName">vita_time[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/axis_adc_tdata">
+         <obj_property name="ElementShortName">axis_adc_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/axis_adc_tvalid">
+         <obj_property name="ElementShortName">axis_adc_tvalid</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/axis_adc_tlast">
+         <obj_property name="ElementShortName">axis_adc_tlast</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/axis_adc_tkeep">
+         <obj_property name="ElementShortName">axis_adc_tkeep[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tkeep[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/axis_adc_tstrb">
+         <obj_property name="ElementShortName">axis_adc_tstrb[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tstrb[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/axis_adc_tid">
+         <obj_property name="ElementShortName">axis_adc_tid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tid[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/axis_adc_tdest">
+         <obj_property name="ElementShortName">axis_adc_tdest[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tdest[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/axis_adc_tuser">
+         <obj_property name="ElementShortName">axis_adc_tuser[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tuser[0:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/axis_adc_tready">
+         <obj_property name="ElementShortName">axis_adc_tready</obj_property>
+         <obj_property name="ObjectShortName">axis_adc_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/iq_tdata">
+         <obj_property name="ElementShortName">iq_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">iq_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/iq_tvalid">
+         <obj_property name="ElementShortName">iq_tvalid</obj_property>
+         <obj_property name="ObjectShortName">iq_tvalid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/iq_tlast">
+         <obj_property name="ElementShortName">iq_tlast</obj_property>
+         <obj_property name="ObjectShortName">iq_tlast</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/iq_tready">
+         <obj_property name="ElementShortName">iq_tready</obj_property>
+         <obj_property name="ObjectShortName">iq_tready</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/iq_first">
+         <obj_property name="ElementShortName">iq_first</obj_property>
+         <obj_property name="ObjectShortName">iq_first</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/FMC_TCLK_PERIOD">
+         <obj_property name="ElementShortName">FMC_TCLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FMC_TCLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/RESET_PERIOD">
+         <obj_property name="ElementShortName">RESET_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESET_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/CTRL_WORD_SEL_CHIRP">
+         <obj_property name="ElementShortName">CTRL_WORD_SEL_CHIRP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTRL_WORD_SEL_CHIRP[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/CTRL_WORD_SEL_AWG">
+         <obj_property name="ElementShortName">CTRL_WORD_SEL_AWG[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTRL_WORD_SEL_AWG[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/CHIRP_CLK_FREQ">
+         <obj_property name="ElementShortName">CHIRP_CLK_FREQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_CLK_FREQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/ADC_SAMPLE_COUNT_INIT">
+         <obj_property name="ElementShortName">ADC_SAMPLE_COUNT_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_SAMPLE_COUNT_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/CHIRP_PRF_INT_COUNT_INIT">
+         <obj_property name="ElementShortName">CHIRP_PRF_INT_COUNT_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_PRF_INT_COUNT_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/CHIRP_PRF_FRAC_COUNT_INIT">
+         <obj_property name="ElementShortName">CHIRP_PRF_FRAC_COUNT_INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CHIRP_PRF_FRAC_COUNT_INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/ADC_AXI_DATA_WIDTH">
+         <obj_property name="ElementShortName">ADC_AXI_DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/ADC_AXI_TID_WIDTH">
+         <obj_property name="ElementShortName">ADC_AXI_TID_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TID_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/ADC_AXI_TDEST_WIDTH">
+         <obj_property name="ElementShortName">ADC_AXI_TDEST_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TDEST_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/ADC_AXI_TUSER_WIDTH">
+         <obj_property name="ElementShortName">ADC_AXI_TUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_TUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/ADC_AXI_STREAM_ID">
+         <obj_property name="ElementShortName">ADC_AXI_STREAM_ID</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_STREAM_ID</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/wavegen_sim_tb/ADC_AXI_STREAM_DEST">
+         <obj_property name="ElementShortName">ADC_AXI_STREAM_DEST</obj_property>
+         <obj_property name="ObjectShortName">ADC_AXI_STREAM_DEST</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/SR_TX_CTRL_ERROR_POLICY">
+         <obj_property name="ElementShortName">SR_TX_CTRL_ERROR_POLICY[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_TX_CTRL_ERROR_POLICY[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/SR_RX_CTRL_COMMAND">
+         <obj_property name="ElementShortName">SR_RX_CTRL_COMMAND[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_COMMAND[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/SR_RX_CTRL_TIME_HI">
+         <obj_property name="ElementShortName">SR_RX_CTRL_TIME_HI[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_TIME_HI[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/SR_RX_CTRL_TIME_LO">
+         <obj_property name="ElementShortName">SR_RX_CTRL_TIME_LO[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_TIME_LO[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/SR_RX_CTRL_HALT">
+         <obj_property name="ElementShortName">SR_RX_CTRL_HALT[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_HALT[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/SR_RX_CTRL_MAXLEN">
+         <obj_property name="ElementShortName">SR_RX_CTRL_MAXLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_MAXLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/SR_RX_CTRL_CLEAR_CMDS">
+         <obj_property name="ElementShortName">SR_RX_CTRL_CLEAR_CMDS[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_CLEAR_CMDS[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/wavegen_sim_tb/SR_RX_CTRL_OUTPUT_FORMAT">
+         <obj_property name="ElementShortName">SR_RX_CTRL_OUTPUT_FORMAT[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SR_RX_CTRL_OUTPUT_FORMAT[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

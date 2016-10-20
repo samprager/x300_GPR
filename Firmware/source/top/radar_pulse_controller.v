@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module radar_pulse_controller #(
-  parameter CLK_FREQ = 245760000,    // Hz
+  parameter CLK_FREQ = 200000000,    // Hz
   parameter CHIRP_PRP = 1000000, //Pule Repetition Period (usec)
   parameter ADC_SAMPLE_COUNT_INIT = 32'h000001fe,
   parameter CHIRP_PRF_INT_COUNT_INIT = 32'h00000000,
@@ -34,6 +34,11 @@ module radar_pulse_controller #(
   input reset,
 
   input set_stb, input [7:0] set_addr, input [31:0] set_data,
+
+  output [31:0] num_adc_samples,
+  input awg_data_valid,
+  output adc_run,
+  output adc_last,
 
   input awg_ready,          // continuous high when dac ready
   input awg_active,         // continuous high while chirping
@@ -64,6 +69,8 @@ reg awg_done_int;
 reg awg_init_int;
 reg awg_enable_int;
 reg adc_enable_int;
+reg adc_run_int;
+reg adc_last_int;
 
 wire [31:0] chirp_count_int;
 wire [31:0] chirp_count_frac;
@@ -96,7 +103,7 @@ setting_reg #(.my_addr(SR_ADC_SAMPLE_ADDR), .at_reset(ADC_SAMPLE_COUNT_INIT)) sr
 always @(posedge clk)
 begin
     if(reset)
-        adc_collect_count_max <= ADC_SAMPLE_COUNT_INIT;
+      adc_collect_count_max <= ADC_SAMPLE_COUNT_INIT;
    // else if (update_adc_sample_time)
     else
      //   adc_collect_count_max <= adc_sample_time_rrr;
@@ -119,21 +126,24 @@ always @(posedge clk)
 begin
   if(reset)
     chirp_count <= 0;
-  else if (gen_state == ACTIVE & (|chirp_count))
-    chirp_count <= chirp_count - 1;
-  else if (gen_state == IDLE) begin
+  else if (gen_state == ACTIVE) begin
+    if (|chirp_count)
+        chirp_count <= chirp_count - 1;
+  end else begin
         chirp_count <= chirp_prf_count_max;
-   end
+  end
 end
 
 always @(posedge clk)
 begin
   if(reset)
     adc_collect_count <= 0;
-  else if (gen_state == COLLECT & (|adc_collect_count))
-    adc_collect_count <= adc_collect_count - 1;
-  else if (gen_state == IDLE)
+  else if (gen_state == COLLECT) begin
+    if (|adc_collect_count)
+        adc_collect_count <= adc_collect_count - 1;
+  end else begin
     adc_collect_count <= adc_collect_count_max;
+  end
 end
 
 always @(posedge clk)
@@ -233,9 +243,33 @@ begin
     adc_enable_int <= 1'b0;
 end
 
+always @(posedge clk)
+begin
+  if(reset)
+    adc_run_int <= 1'b0;
+  else if (awg_done | gen_state == COLLECT)
+    adc_run_int <= 1'b1;
+  else
+    adc_run_int <= 1'b0;
+end
+
+always @(posedge clk)
+begin
+  if(reset)
+    adc_last_int <= 1'b0;
+  else if (gen_state == COLLECT & adc_collect_count == 1)
+    adc_last_int <= 1'b1;
+  else
+    adc_last_int <= 1'b0;
+end
+
 
 assign awg_enable = awg_enable_int;
 assign awg_init = awg_init_int;
 assign adc_enable = adc_enable_int;
+assign num_adc_samples = adc_sample_count + 1'b1;
+
+assign adc_run = adc_run_int | awg_data_valid;
+assign adc_last = adc_last_int;
 
 endmodule

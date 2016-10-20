@@ -23,18 +23,18 @@ module wavegen_block #(
     parameter CHIRP_TUNING_COEF_INIT = 32'b1,
     parameter CHIRP_COUNT_MAX_INIT = 32'h00000dff, // 3584 samples
     parameter CHIRP_FREQ_OFFSET_INIT = 32'h0b00, // 2816 -> 10.56 MHz min freq
-    parameter CHIRP_CTRL_WORD_INIT = 32'h20,
 
     parameter SR_CH_COUNTER_ADDR = 0,
     parameter SR_CH_TUNING_COEF_ADDR = 1,
     parameter SR_CH_FREQ_OFFSET_ADDR = 2,
-    parameter SR_CH_CTRL_WORD_ADDR = 3
+
+    parameter AWG_DEFAULT_SRC_CTRL = 2'b00
  )(
         input clk,
         input rst,
         output [15:0] awg_out_i, output [15:0] awg_out_q,
-        output awg_data_valid,
-        output [32:0] awg_data_len,
+        output awg_data_valid, output awg_data_last,
+        output [31:0] awg_data_len,
 
         input set_stb, input [7:0] set_addr, input [31:0] set_data,
 
@@ -47,7 +47,7 @@ module wavegen_block #(
         input [3:0]                      wr_axis_tdest,
         input [3:0]                      wr_axis_tid,
 
-        input [31:0]                     chirp_control_word,
+        input [31:0]                     awg_control_word,
 
       // Control Module signals
         output awg_ready,
@@ -58,7 +58,7 @@ module wavegen_block #(
         input  adc_enable
 
    );
-
+localparam DDS_LATENCY = 2;
 
 wire [31:0] chirp_freq_offset;
 wire [31:0] chirp_tuning_word_coeff;
@@ -98,27 +98,22 @@ wire wf_write_ready;
 wire wf_read_ready;
 
 wire [31:0] wfout_size;
+wire [31:0] chirp_out_size;
 
 wire [15:0] wfrm_data_i;
 wire [15:0] wfrm_data_q;
-wire wfrm_data_valid;
+wire wfrm_data_valid, wfrm_data_last;
 
 wire [15:0] chirp_data_i;
 wire [15:0] chirp_data_q;
-wire chirp_data_valid;
+wire chirp_data_valid, chirp_data_last;
 
 wire [31:0] adc_counter;
 wire adc_data_valid;
 
-// wire data_valid;
-//  reg [7:0] dds_route_ctrl_reg;
-wire [1:0] dds_route_ctrl_u;
-wire [1:0] dds_route_ctrl_l;
 wire [1:0] dds_source_ctrl;
 wire dds_source_select;
 
-reg [1:0] dds_route_ctrl_u_r;
-reg [1:0] dds_route_ctrl_l_r;
 reg [1:0] dds_source_ctrl_r;
 
 wire wfrm_ready;
@@ -146,25 +141,25 @@ setting_reg #(.my_addr(SR_CH_FREQ_OFFSET_ADDR), .at_reset(CHIRP_FREQ_OFFSET_INIT
 .clk(clk),.rst(rst),.strobe(set_stb),.addr(set_addr),
 .in(set_data),.out(chirp_freq_offset),.changed());
 
-CHIRP_DDS #(.DDS_LATENCY(DDS_LATENCY)) CHIRP_DDS_INST(
-    .clock  (clk),
-	.reset	(rst),
-	.if_out_i  (chirp_data_i),			//i data to dac, 16-bit
-	.if_out_q  (chirp_data_q),		    // q data to dac, 16-bit,
-    .if_out_valid (chirp_data_valid),
+
+chirpgen #(.DDS_LATENCY(DDS_LATENCY)) chirpgen_inst(
+    .clk  (clk),
+	.rst	(rst),
+	.chirp_out_i  (chirp_data_i),			//i data to dac, 16-bit
+	.chirp_out_q  (chirp_data_q),		    // q data to dac, 16-bit,
+    .chirp_out_valid (chirp_data_valid),
+    .chirp_out_last(chirp_data_last),
 
   .chirp_ready (dds_ready),
   .chirp_done (dds_done),
   .chirp_active (dds_active),
   .chirp_init  (dds_init),
   .chirp_enable  (dds_enable),
- // .adc_enable    (adc_enable),
-
-//        .dac_loopback               (chirp_control_word[0]),
   .freq_offset_in (chirp_freq_offset),
   .tuning_word_coeff_in (chirp_tuning_word_coeff),
   .chirp_count_max_in (chirp_count_max)
 );
+assign chirp_out_size = chirp_count_max+1'b1;
 
 // Accepts commands to start and stop Radar pulse and requests samples
 // from waveform in BRAM
@@ -187,6 +182,7 @@ waveform_dds waveform_dds_inst(
     .wfrm_axis_tready(wfout_axis_tready),
 
     .wfrm_data_valid(wfrm_data_valid),
+    .wfrm_data_last(wfrm_data_last),
     .wfrm_data_i(wfrm_data_i),
     .wfrm_data_q(wfrm_data_q)
 );
@@ -255,19 +251,22 @@ assign awg_done = ((dds_source_select & wfrm_done)|(!dds_source_select & dds_don
 assign awg_active = ((dds_source_select & wfrm_active)|(!dds_source_select & dds_active));
 assign awg_ready =  ((dds_source_select & wfrm_ready)|(!dds_source_select & dds_ready));
 
-assign dds_source_select = (&dds_source_ctrl);
 
 assign awg_out_i = dds_source_select ? wfrm_data_i : chirp_data_i;
 assign awg_out_q = dds_source_select ? wfrm_data_q : chirp_data_q;
 assign awg_data_valid = dds_source_select ? wfrm_data_valid : chirp_data_valid;
+assign awg_data_last = dds_source_select ? wfrm_data_last : chirp_data_last;
 
-assign awg_data_len = dds_source_select ? wfout_size : chirp_count_max;
+assign awg_data_len = dds_source_select ? wfout_size : chirp_out_size;
 
 assign dds_source_ctrl = dds_source_ctrl_r;
+assign dds_source_select = (&dds_source_ctrl);
 
   always @(posedge clk) begin
-     if (!chirp_enable)
-         dds_source_ctrl_r <= chirp_control_word[9:8];
+     if (rst)
+        dds_source_ctrl_r <= AWG_DEFAULT_SRC_CTRL;
+     else if (!awg_active)
+         dds_source_ctrl_r <= awg_control_word[9:8];
   end
 
 endmodule
