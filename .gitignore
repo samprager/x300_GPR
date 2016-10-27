@@ -15,12 +15,13 @@
 #########
 #Source files:
 #########
-#Do NOT ignore VHDL, Verilog, block diagrams or EDIF files.
+#Do NOT ignore VHDL, Verilog, System Verilog, block diagrams or EDIF files.
 !*.vhd
 !*.v
 !*.vh
 !*.bd
 !*.edif
+!*.sv
 #########
 #IP files
 #########
@@ -153,3 +154,20 @@
 # Submodules
 #########
 !*/submodules/*
+
+#########
+# Makefile.srcs Source
+#########
+!*.srcs
+
+#########
+# Makefile.inc Includes
+#########
+!*.inc
+
+#########
+# Makefiles 
+#########
+!*Makefile*
+
+
