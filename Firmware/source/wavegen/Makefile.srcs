@@ -1,0 +1,12 @@
+
+##################################################
+# Radar Sources
+##################################################
+WAVEGEN_SRCS = $(addprefix $(GPR_DIR)/wavegen/, \
+bram_stream_wrapper.v \
+waveform_dds.v \
+waveform_formatter.v \
+waveform_stream.v \
+wavegen_block.v \
+chirpgen.v \
+)

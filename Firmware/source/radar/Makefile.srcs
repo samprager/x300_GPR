@@ -1,0 +1,16 @@
+
+##################################################
+# Radar Sources
+##################################################
+RADAR_SRCS = $(addprefix $(GPR_DIR)/radar/, \
+radar_core_regs.vh \
+radar_block.v \
+radar_core.v \
+radar_tx_controller.v \
+radar_rx_controller.v \
+radar_pulse_controller.v \
+rx_command_gen.v \
+radar_sample_synchronizer.v \
+adc_data_axis_wrapper.v \
+axis_delay_fifo.v \
+)
