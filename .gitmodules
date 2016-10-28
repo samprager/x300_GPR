@@ -1,4 +1,4 @@
 [submodule "Firmware/submodules/fpga"]
 	path = Firmware/submodules/fpga
-	url = https://github.com/EttusResearch/fpga.git
+	url = https://samprager@github.com/samprager/fpga.git
 	branch = rfnoc-devel
