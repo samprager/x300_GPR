@@ -150,7 +150,7 @@ module radar_block #(
     .out_set_stb(set_stb_mux), .out_set_addr(set_addr_mux), .out_set_data(set_data_mux), .ready(1'b1));
 
   // VITA time is shared between radio cores
-  `include "radio_core_regs.vh"
+  `include "../../lib/radio/radio_core_regs.vh"
   `include "radar_core_regs.vh"
   wire [63:0] vita_time_lastpps;
   timekeeper #(

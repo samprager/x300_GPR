@@ -221,17 +221,17 @@ module x300_gpr_core (
    // Included automatically instantiated CEs sources file created by RFNoC mod tool
 `ifdef RFNOC
  `ifdef X300
-   `include "rfnoc_ce_auto_inst_x300.v"
+   `include "../top/x300/rfnoc_ce_auto_inst_x300.v"
  `endif
  `ifdef X310
-   `include "rfnoc_ce_auto_inst_x310.v"
+   `include "../top/x300/rfnoc_ce_auto_inst_x310.v"
  `endif
 `else
  `ifdef X300
-   `include "rfnoc_ce_default_inst_x300.v"
+   `include "../top/x300/rfnoc_ce_default_inst_x300.v"
  `endif
  `ifdef X310
-   `include "rfnoc_ce_default_inst_x310.v"
+   `include "../top/x300/rfnoc_ce_default_inst_x310.v"
  `endif
 `endif
 

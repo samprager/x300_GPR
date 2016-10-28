@@ -38,7 +38,7 @@ module radar_core #(
   output [63:0] resp_tdata, output resp_tlast, output resp_tvalid, input resp_tready
 );
 
-  `include "radio_core_regs.vh"
+  `include "../../lib/radio/radio_core_regs.vh"
   `include "radar_core_regs.vh"
 
   wire awg_ready;

@@ -10,7 +10,7 @@
 ///////////////////////////////////
 
 //Defines `LVFPGA_IFACE constants
-`include "../../lib/io_port2/LvFpga_Chinch_Interface.vh"
+`include "../lib/io_port2/LvFpga_Chinch_Interface.vh"
 
 module x300_gpr
 
