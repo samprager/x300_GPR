@@ -1,3 +1,7 @@
+Loading FPGA Image:
+uhd_image_loader --args="type=x300,addr=192.168.10.2" \
+    --fpga-path="/home/radar/Projects/x300_GPR/Firmware/bitfiles/x300_gpr.bit"
+
 Recreate vivado project:
 
 In kc705_GPR/Design/Firmware/implementation/ run:
