@@ -92,6 +92,10 @@
 #########
 !*.m
 #########
+#########
+# Shell Scripts
+#########
+!*.sh*
 #Sim Output Directory
 #########
 *.sim/sim_1/*
@@ -169,5 +173,7 @@
 # Makefiles 
 #########
 !*Makefile*
+
+
 
 
