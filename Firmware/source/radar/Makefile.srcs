@@ -12,5 +12,5 @@ radar_pulse_controller.v \
 rx_command_gen.v \
 radar_sample_synchronizer.v \
 adc_data_axis_wrapper.v \
-axis_delay_fifo.v \
+axi_delay_fifo.v \
 )
