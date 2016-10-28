@@ -1,4 +1,4 @@
-
+# Unused for now
 include $(TOOLS_DIR)/make/viv_ip_builder.mak
 
 GPR_IP_SRCS = $(addprefix $(GPR_IP_DIR)/, \
